@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+if
+  [[ -s "/home/deltasoft/.rvm/gems/ruby-1.9.3-p551@cs_comments_service/environment" ]]
+then
+  source "/home/deltasoft/.rvm/gems/ruby-1.9.3-p551@cs_comments_service/environment"
+  exec rdoc "$@"
+else
+  echo "ERROR: Missing RVM environment file: '/home/deltasoft/.rvm/gems/ruby-1.9.3-p551@cs_comments_service/environment'" >&2
+  exit 1
+fi

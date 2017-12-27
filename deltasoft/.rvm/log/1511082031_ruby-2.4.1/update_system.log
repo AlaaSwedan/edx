@@ -1,0 +1,127 @@
+[2017-11-19 09:00:31] requirements_debian_update_system
+requirements_debian_update_system () 
+{ 
+    __rvm_try_sudo apt-get --quiet --yes update || { 
+        \typeset __ret=$?;
+        case ${__ret} in 
+            100)
+                rvm_error "There has been an error while updating your system using \`apt-get\`.
+It seems that there are some 404 Not Found errors for repositories listed in:
+
+    /etc/apt/sources.list
+    /etc/apt/sources.list.d/*.list
+
+Make sure that all repositories are available from your system and verify your setup by running manually:
+
+    sudo apt-get update
+
+Make sure that it works correctly before proceeding with RVM.
+
+If you are working from the GUI instead of the terminal, you might want to verify and fix broken
+repositories using \"Software & Updates\" application.
+"
+            ;;
+        esac;
+        return ${__ret}
+    }
+}
+current path: /edx/app/forum/cs_comments_service
+PATH=/usr/lib/jvm/java-8-oracle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/deltasoft/.rvm/bin
+command(2): requirements_debian_update_system ruby-2.4.1
+++ __rvm_try_sudo apt-get --quiet --yes update
+++ typeset -a command_to_run
+++ typeset sudo_path sbin_path missing_paths
+++ command_to_run=("$@")
+++ ((  UID == 0  ))
+++ case "$rvm_autolibs_flag_number" in
+++ is_a_function __rvm_sudo
+++ typeset -f __rvm_sudo
+++ missing_paths=
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /sbin ]]
+++ [[ :/usr/lib/jvm/java-8-oracle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/deltasoft/.rvm/bin: != *\:\/\s\b\i\n\:* ]]
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /usr/sbin ]]
+++ [[ :/usr/lib/jvm/java-8-oracle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/deltasoft/.rvm/bin: != *\:\/\u\s\r\/\s\b\i\n\:* ]]
+++ for sbin_path in /sbin /usr/sbin /usr/local/sbin
+++ [[ -d /usr/local/sbin ]]
+++ [[ :/usr/lib/jvm/java-8-oracle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/deltasoft/.rvm/bin: != *\:\/\u\s\r\/\l\o\c\a\l\/\s\b\i\n\:* ]]
+++ [[ -n '' ]]
+++ command_to_run=(__rvm_sudo -p "%p password required for '$*': " "${command_to_run[@]}")
+++ __rvm_sudo -p '%p password required for '\''apt-get --quiet --yes update'\'': ' apt-get --quiet --yes update
+++ command sudo -p '%p password required for '\''apt-get --quiet --yes update'\'': ' apt-get --quiet --yes update
+++ sudo -p '%p password required for '\''apt-get --quiet --yes update'\'': ' apt-get --quiet --yes update
+Ign http://repo.mongodb.org trusty/mongodb-org/3.2 InRelease
+Hit http://repo.mongodb.org trusty/mongodb-org/3.2 Release.gpg
+Hit http://repo.mongodb.org trusty/mongodb-org/3.2 Release
+Hit http://repo.mongodb.org trusty/mongodb-org/3.2/multiverse amd64 Packages
+Hit http://ppa.launchpad.net trusty InRelease
+Ign http://repo.mongodb.org trusty/mongodb-org/3.2/multiverse Translation-en
+Hit http://ppa.launchpad.net trusty InRelease
+Ign http://azure.archive.ubuntu.com trusty InRelease
+Get:1 http://azure.archive.ubuntu.com trusty-updates InRelease [65.9 kB]
+Hit http://ppa.launchpad.net trusty InRelease
+Hit http://ppa.launchpad.net trusty/main amd64 Packages
+Hit http://ppa.launchpad.net trusty/main Translation-en
+Hit http://azure.archive.ubuntu.com trusty-backports InRelease
+Hit http://ppa.launchpad.net trusty/main amd64 Packages
+Hit http://azure.archive.ubuntu.com trusty Release.gpg
+Hit http://security.ubuntu.com trusty-security InRelease
+Get:2 http://azure.archive.ubuntu.com trusty-updates/main Sources [407 kB]
+Hit http://ppa.launchpad.net trusty/main Translation-en
+Hit http://ppa.edx.org trusty InRelease
+Hit http://ppa.launchpad.net trusty/main amd64 Packages
+Hit http://ppa.launchpad.net trusty/main Translation-en
+Get:3 http://azure.archive.ubuntu.com trusty-updates/restricted Sources [6322 B]
+Get:4 http://azure.archive.ubuntu.com trusty-updates/universe Sources [195 kB]
+Hit http://security.ubuntu.com trusty-security/main Sources
+Get:5 http://azure.archive.ubuntu.com trusty-updates/multiverse Sources [7740 B]
+Hit http://ppa.edx.org trusty/main amd64 Packages
+Get:6 http://azure.archive.ubuntu.com trusty-updates/main amd64 Packages [1035 kB]
+Hit http://nginx.org trusty InRelease
+Hit http://security.ubuntu.com trusty-security/universe Sources
+Get:7 http://azure.archive.ubuntu.com trusty-updates/restricted amd64 Packages [17.2 kB]
+Get:8 http://azure.archive.ubuntu.com trusty-updates/universe amd64 Packages [432 kB]
+Get:9 http://azure.archive.ubuntu.com trusty-updates/multiverse amd64 Packages [14.9 kB]
+Hit http://azure.archive.ubuntu.com trusty-updates/main Translation-en
+Hit http://security.ubuntu.com trusty-security/main amd64 Packages
+Hit http://azure.archive.ubuntu.com trusty-updates/multiverse Translation-en
+Hit http://nginx.org trusty/nginx amd64 Packages
+Hit http://azure.archive.ubuntu.com trusty-updates/restricted Translation-en
+Hit http://azure.archive.ubuntu.com trusty-updates/universe Translation-en
+Hit http://azure.archive.ubuntu.com trusty-backports/main Sources
+Hit http://security.ubuntu.com trusty-security/universe amd64 Packages
+Hit http://azure.archive.ubuntu.com trusty-backports/restricted Sources
+Hit http://security.ubuntu.com trusty-security/main Translation-en
+Hit http://azure.archive.ubuntu.com trusty-backports/universe Sources
+Hit http://azure.archive.ubuntu.com trusty-backports/multiverse Sources
+Hit http://azure.archive.ubuntu.com trusty-backports/main amd64 Packages
+Hit http://azure.archive.ubuntu.com trusty-backports/restricted amd64 Packages
+Hit http://azure.archive.ubuntu.com trusty-backports/universe amd64 Packages
+Hit http://security.ubuntu.com trusty-security/universe Translation-en
+Hit http://azure.archive.ubuntu.com trusty-backports/multiverse amd64 Packages
+Hit http://azure.archive.ubuntu.com trusty-backports/main Translation-en
+Hit http://azure.archive.ubuntu.com trusty-backports/multiverse Translation-en
+Hit http://azure.archive.ubuntu.com trusty-backports/restricted Translation-en
+Hit http://azure.archive.ubuntu.com trusty-backports/universe Translation-en
+Hit http://azure.archive.ubuntu.com trusty Release
+Hit http://azure.archive.ubuntu.com trusty/main Sources
+Hit http://azure.archive.ubuntu.com trusty/restricted Sources
+Hit http://azure.archive.ubuntu.com trusty/universe Sources
+Ign http://ppa.edx.org trusty/main Translation-en
+Hit http://azure.archive.ubuntu.com trusty/multiverse Sources
+Hit http://azure.archive.ubuntu.com trusty/main amd64 Packages
+Hit http://azure.archive.ubuntu.com trusty/restricted amd64 Packages
+Hit http://azure.archive.ubuntu.com trusty/universe amd64 Packages
+Hit http://azure.archive.ubuntu.com trusty/multiverse amd64 Packages
+Hit http://azure.archive.ubuntu.com trusty/main Translation-en
+Hit http://azure.archive.ubuntu.com trusty/multiverse Translation-en
+Hit http://azure.archive.ubuntu.com trusty/restricted Translation-en
+Hit http://azure.archive.ubuntu.com trusty/universe Translation-en
+Ign http://nginx.org trusty/nginx Translation-en
+Hit https://packagecloud.io trusty InRelease
+Hit https://packagecloud.io trusty/main amd64 Packages
+Get:10 https://packagecloud.io trusty/main Translation-en
+Ign https://packagecloud.io trusty/main Translation-en
+Fetched 2181 kB in 2s (746 kB/s)
+Reading package lists...
