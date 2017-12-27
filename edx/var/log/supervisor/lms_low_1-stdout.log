@@ -1,0 +1,1764 @@
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f5e1e04dfd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f09cbefefd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7ffb21320fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fd2dfdeafd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f63c22a8fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f528c01cfd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f1291c11fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fb7ef364fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f4a905b3fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f142e55ffd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f7955111fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f1c166edfd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f0184891fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f2cf0e7bfd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fa2a0818fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f3a2adf2fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f212edf3fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f788762efd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f8037974fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fb39a53afd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f61994f3fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7ff906c33fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fb98d62ffd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f9d287b6fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f24ade51fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fd5fe9a1fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7ffbd6a51fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+
+ 
+ -------------- celery@edx.lms.core.low.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fccadd80fd0
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.lms.core.low exchange=edx.lms.core(direct) key=edx.lms.core.low
+                
+
+[tasks]
+  . bulk_email.tasks.send_course_email
+  . celery_utils.tasks.mark_resolved
+  . certificates.tasks.generate_certificate
+  . email_marketing.tasks.get_email_cookies_via_sailthru
+  . email_marketing.tasks.update_user
+  . email_marketing.tasks.update_user_email
+  . lms.djangoapps.email_marketing.tasks.get_email_cookies_via_sailthru
+  . lms.djangoapps.email_marketing.tasks.update_user
+  . lms.djangoapps.email_marketing.tasks.update_user_email
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . lms.djangoapps.instructor_task.tasks.calculate_grades_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_may_enroll_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_grade_report
+  . lms.djangoapps.instructor_task.tasks.calculate_problem_responses_csv
+  . lms.djangoapps.instructor_task.tasks.calculate_students_features_csv
+  . lms.djangoapps.instructor_task.tasks.cohort_students
+  . lms.djangoapps.instructor_task.tasks.course_survey_report_csv
+  . lms.djangoapps.instructor_task.tasks.delete_problem_state
+  . lms.djangoapps.instructor_task.tasks.enrollment_report_features_csv
+  . lms.djangoapps.instructor_task.tasks.exec_summary_report_csv
+  . lms.djangoapps.instructor_task.tasks.export_ora2_data
+  . lms.djangoapps.instructor_task.tasks.generate_certificates
+  . lms.djangoapps.instructor_task.tasks.override_problem_score
+  . lms.djangoapps.instructor_task.tasks.proctored_exam_results_csv
+  . lms.djangoapps.instructor_task.tasks.rescore_problem
+  . lms.djangoapps.instructor_task.tasks.reset_problem_attempts
+  . lms.djangoapps.instructor_task.tasks.send_bulk_course_email
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.programs.tasks.v1.tasks.award_program_certificates
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . third_party_auth.fetch_saml_metadata
+

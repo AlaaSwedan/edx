@@ -1,0 +1,1316 @@
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f946906a210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fdad7ba7210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f75b7577210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f9aba1f1210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7efd84e0b210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fae984f1210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f214e1be210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f0d23590210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f06c5ff3210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fba53e90210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f19a5633210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f7e02874210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f464a486210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fbdbe17f210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f7e1043c210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f588ac54210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f96893d2210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fec4579f210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f84565d7210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7efd66400210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f592f18d210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f432dd63210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f83ddb96210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7fa9157eb210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7ff38d54f210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f4f9f257210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7f11222c7210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+
+ 
+ -------------- celery@edx.cms.core.default.tatweer02 v3.1.18 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-4.4.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         proj:0x7ff3e2d97210
+- ** ---------- .> transport:   amqp://celery:**@localhost:5672//
+- ** ---------- .> results:     djcelery.backends.cache:CacheBackend
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> edx.cms.core.default exchange=edx.cms.core(direct) key=edx.cms.core.default
+                
+
+[tasks]
+  . celery_utils.tasks.mark_resolved
+  . cms_user_tasks.tasks.send_task_complete_email
+  . contentstore.tasks.CourseExportTask
+  . contentstore.tasks.CourseImportTask
+  . contentstore.tasks.export_olx
+  . contentstore.tasks.import_olx
+  . contentstore.tasks.push_course_update_task
+  . contentstore.tasks.rerun_course
+  . contentstore.tasks.update_library_index
+  . contentstore.tasks.update_search_index
+  . lms.djangoapps.grades.tasks.compute_all_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course
+  . lms.djangoapps.grades.tasks.compute_grades_for_course_v2
+  . lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3
+  . openedx.core.djangoapps.bookmarks.tasks.update_xblock_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.get_course_in_cache_v2
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache
+  . openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2
+  . openedx.core.djangoapps.content.course_overviews.tasks.async_course_overview_update
+  . openedx.core.djangoapps.content.course_structures.tasks.update_course_structure
+  . openedx.core.djangoapps.coursegraph.tasks.dump_course_to_neo4j
+  . openedx.core.djangoapps.credit.tasks.update_credit_course_requirements
+  . openedx.core.djangoapps.schedules.tasks._recurring_nudge_schedule_send
+  . openedx.core.djangoapps.schedules.tasks.recurring_nudge_schedule_hour
+  . openedx.core.djangoapps.schedules.tasks.update_course_schedules
+  . openedx.core.djangoapps.service_status.tasks.delayed_ping
+  . openedx.core.djangoapps.verified_track_content.tasks.sync_cohort_with_mode
+  . student.tasks.send_activation_email
+  . user_tasks.tasks.purge_old_user_tasks
+

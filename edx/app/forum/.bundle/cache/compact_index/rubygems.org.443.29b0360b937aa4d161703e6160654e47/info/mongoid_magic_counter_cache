@@ -1,0 +1,8 @@
+---
+0.0.1.beta bson_ext:~> 1.5,mongoid:= 2.2.6,rake:>= 0|checksum:d2c4f164e5a4fea63a7acdb042e62ec89f54de111da3a733dab69d71b705fcd2,rubygems:> 1.3.1
+0.0.2.beta bson_ext:~> 1.5,mongoid:~> 2.0,rake:>= 0|checksum:38351c5bc08c5a86c5dcfa0c7bb860721650ccbb9bdf99f8b9716a534eea4ed3,rubygems:> 1.3.1
+0.0.2 bson_ext:~> 1.5,mongoid:~> 2.0,rake:>= 0|checksum:682d6b81eee5992e141e7a750787d197f4d0214a80e8d10f3f1bad7d73a66142
+0.1.1 mongoid:<= 3.0&>= 2.2,rake:>= 0|checksum:64af046307699799fa63cf136f3ae03d8b7f564b95ad597c8520379a0cdb1d95
+1.0.0 mongoid:>= 0,rake:>= 0|checksum:a8eb597176eafe199f6ec4f69560f5489524426a61337a92619d6744d7ded87d
+1.1.0 mongoid:>= 0,rake:>= 0|checksum:ccef0ce61a1c15f3f4365b06c55bb346361dd8947fd99620f07a566bc5fe2b70
+1.1.1 mongoid:>= 0,rake:>= 0|checksum:5d0419c545149d0f37faacb78262ae185c696cc0d1cffc9d4c5eef93d53671ac

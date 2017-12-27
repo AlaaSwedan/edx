@@ -1,0 +1,1730 @@
+2017-10-03 06:29:18,325 INFO 98707 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 06:29:18,968 WARNING 98707 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 06:29:18,990 INFO 98707 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 06:29:19,004 INFO 98707 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 06:29:20,013 INFO 98707 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-10-03 06:29:20,050 WARNING 98707 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-10-03 06:45:12,896 INFO 98707 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 06:45:21,254 INFO 114918 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 06:45:21,649 WARNING 114918 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 06:45:21,665 INFO 114918 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 06:45:21,679 INFO 114918 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 06:45:22,692 INFO 114918 [celery.worker.consumer] consumer.py:573 - mingle: sync with 5 nodes
+2017-10-03 06:45:22,693 INFO 114918 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-03 06:45:22,715 WARNING 114918 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-10-03 06:45:24,965 INFO 114918 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high.tatweer02
+2017-10-03 06:45:27,902 INFO 114918 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high_mem.tatweer02
+2017-10-03 06:45:31,212 INFO 114918 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-10-03 07:01:22,630 INFO 114918 [celery.worker.control] control.py:270 - sync with celery@tatweer02
+2017-10-03 07:01:23,146 INFO 114918 [celery.worker.control] control.py:270 - sync with celery@tatweer02
+2017-10-03 07:01:23,398 INFO 114918 [celery.worker.control] control.py:270 - sync with celery@tatweer02
+2017-10-03 07:01:24,357 WARNING 114918 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 07:01:24.356391 recv: 2017-10-03 11:01:24.354795]
+
+2017-10-03 07:01:24,507 INFO 114918 [celery.worker.control] control.py:270 - sync with celery@tatweer02
+2017-10-03 07:20:28,784 WARNING 114918 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-10-03 07:20:28,807 ERROR 114918 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-10-03 07:20:30,818 ERROR 114918 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-10-03 07:20:34,827 ERROR 114918 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-10-03 07:20:40,847 INFO 114918 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 07:20:40,902 INFO 114918 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 07:20:42,071 INFO 114918 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-10-03 07:23:21,189 INFO 114918 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 07:23:29,856 INFO 57091 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 07:23:30,246 WARNING 57091 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 07:23:30,267 INFO 57091 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 07:23:30,278 INFO 57091 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 07:23:31,294 INFO 57091 [celery.worker.consumer] consumer.py:573 - mingle: sync with 5 nodes
+2017-10-03 07:23:31,296 INFO 57091 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-03 07:23:31,315 WARNING 57091 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-10-03 07:23:32,143 WARNING 57091 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 07:23:32.142892 recv: 2017-10-03 11:23:32.141688]
+
+2017-10-03 07:23:33,403 INFO 57091 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high.tatweer02
+2017-10-03 07:23:36,296 INFO 57091 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high_mem.tatweer02
+2017-10-03 07:23:39,391 INFO 57091 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-10-03 07:33:25,421 INFO 57091 [celery.worker.control] control.py:270 - sync with celery@tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 09:43:47,044 INFO 45822 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 09:43:50,545 WARNING 45822 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 09:43:50,652 INFO 45822 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 09:43:50,716 INFO 45822 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 09:43:51,742 INFO 45822 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-10-03 09:43:51,743 INFO 45822 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-03 09:43:51,759 WARNING 45822 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-10-03 09:43:52,049 WARNING 45822 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 09:43:52.049657 recv: 2017-10-03 13:43:52.048635]
+
+2017-10-03 09:43:52,695 INFO 45822 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high_mem.tatweer02
+2017-10-03 09:43:52,749 INFO 45822 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-10-03 09:43:52,813 INFO 45822 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-10-03 09:43:52,924 INFO 45822 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-10-03 09:43:53,114 INFO 45822 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 09:46:19,750 INFO 51804 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 09:46:21,295 WARNING 51804 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 09:46:21,313 INFO 51804 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 09:46:21,328 INFO 51804 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 09:46:22,339 INFO 51804 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-10-03 09:46:22,340 INFO 51804 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-03 09:46:22,356 WARNING 51804 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-10-03 09:46:23,029 WARNING 51804 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 09:46:23.029476 recv: 2017-10-03 13:46:23.027190]
+
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 10:04:08,624 INFO 71280 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 10:04:13,601 WARNING 71280 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 10:04:13,773 INFO 71280 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 10:04:13,869 INFO 71280 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 10:04:14,932 INFO 71280 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-10-03 10:04:14,933 INFO 71280 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-03 10:04:14,969 WARNING 71280 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-10-03 10:04:15,446 WARNING 71280 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 10:04:15.446113 recv: 2017-10-03 14:04:15.444472]
+
+2017-10-03 10:04:17,139 INFO 71280 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high.tatweer02
+2017-10-03 10:04:18,390 INFO 71280 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high_mem.tatweer02
+2017-10-03 10:04:19,763 INFO 71280 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-10-03 10:04:19,935 INFO 71280 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+2017-10-03 10:04:19,939 INFO 71280 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-10-03 10:04:20,097 INFO 71280 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-10-03 10:08:07,762 INFO 71280 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[b2810359-2e0c-46bf-8752-8acf7b200b14] eta:[2017-10-03 10:08:37.741751-04:00]
+2017-10-03 10:08:38,467 INFO 76298 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f1442c88bd0>, size: 1402
+2017-10-03 10:08:38,469 INFO 71280 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[b2810359-2e0c-46bf-8752-8acf7b200b14] succeeded in 0.175550245s: None
+2017-10-03 10:09:08,245 INFO 71280 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[d7fe497d-f348-4774-9bd4-28f6c3357ccf] eta:[2017-10-03 10:09:38.236945-04:00]
+2017-10-03 10:09:38,327 INFO 76298 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f1442d506d0>, size: 1401
+2017-10-03 10:09:38,329 INFO 71280 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[d7fe497d-f348-4774-9bd4-28f6c3357ccf] succeeded in 0.014887704001s: None
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 10:21:46,576 INFO 2056 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 10:21:49,681 WARNING 2056 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 10:21:49,727 INFO 2056 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 10:21:49,766 INFO 2056 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 10:21:50,780 INFO 2056 [celery.worker.consumer] consumer.py:573 - mingle: sync with 3 nodes
+2017-10-03 10:21:50,781 INFO 2056 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-03 10:21:50,798 WARNING 2056 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-10-03 10:21:52,129 WARNING 2056 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 10:21:52.128882 recv: 2017-10-03 14:21:52.127527]
+
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 10:48:18,624 INFO 25417 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 10:48:21,343 WARNING 25417 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 10:48:21,430 INFO 25417 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 10:48:21,479 INFO 25417 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 10:48:22,500 INFO 25417 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-10-03 10:48:22,503 INFO 25417 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-03 10:48:22,518 WARNING 25417 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-10-03 10:48:22,554 INFO 25417 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high.tatweer02
+2017-10-03 10:48:22,563 INFO 25417 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-10-03 10:48:22,612 INFO 25417 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+2017-10-03 10:48:23,296 WARNING 25417 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 10:48:23.296159 recv: 2017-10-03 14:48:23.295269]
+
+2017-10-03 12:20:43,773 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[8d65f76a-5adb-499e-8693-e508151d10eb] eta:[2017-10-03 12:21:13.762586-04:00]
+2017-10-03 12:21:03,534 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[abb7f5e7-b9f8-4d08-9761-e07f10e02b67] eta:[2017-10-03 12:21:33.525675-04:00]
+2017-10-03 12:21:06,789 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[5bfa5ce8-c6cc-499a-88f9-9e6a356bc01a] eta:[2017-10-03 12:21:36.779343-04:00]
+2017-10-03 12:21:15,503 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd265de610>, size: 1939
+2017-10-03 12:21:15,504 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[8d65f76a-5adb-499e-8693-e508151d10eb] succeeded in 0.169975731999s: None
+2017-10-03 12:21:27,544 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[14d6023a-c4a0-471c-a6f7-6e4292d01ed3] eta:[2017-10-03 12:21:57.523650-04:00]
+2017-10-03 12:21:35,367 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd26604e90>, size: 1933
+2017-10-03 12:21:35,368 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[abb7f5e7-b9f8-4d08-9761-e07f10e02b67] succeeded in 0.016530803s: None
+2017-10-03 12:21:37,369 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd265b9690>, size: 1933
+2017-10-03 12:21:37,370 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[5bfa5ce8-c6cc-499a-88f9-9e6a356bc01a] succeeded in 0.0165801029998s: None
+2017-10-03 12:21:38,138 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.compute_all_grades_for_course[78a49990-5353-47bc-a420-0eecfad18d46]
+2017-10-03 12:21:38,166 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.compute_grades_for_course_v2[13645206-faa5-4849-bd21-c3bbfbc76279]
+2017-10-03 12:21:38,168 INFO 30350 [celery_utils.logged_task] logged_task.py:31 - Task lms.djangoapps.grades.tasks.compute_grades_for_course_v2[13645206-faa5-4849-bd21-c3bbfbc76279] submitted with arguments None, {u'event_transaction_type': u'None', u'event_transaction_id': u'2f7c3851-07be-43b7-aac6-0e161867ed56', 'offset': 0, 'course_key': u'course-v1:tetco+t1+T_1', 'batch_size': 100}
+2017-10-03 12:21:38,169 INFO 25417 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.compute_all_grades_for_course[78a49990-5353-47bc-a420-0eecfad18d46] succeeded in 0.0298065249999s: None
+2017-10-03 12:21:38,171 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[49622c86-ecd6-4e37-89c7-97b31d243d02] eta:[2017-10-03 12:22:08.160965-04:00]
+2017-10-03 12:21:38,185 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd267055d0>, size: 1933
+2017-10-03 12:21:38,287 INFO 30350 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:tetco+t1+T_1, version: 59d3b9070aa5b563b191de6d, edited_on: 2017-10-03 16:21:27.501000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 3, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-10-03 12:21:38,288 INFO 25417 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.compute_grades_for_course_v2[13645206-faa5-4849-bd21-c3bbfbc76279] succeeded in 0.118234705s: None
+2017-10-03 12:21:57,950 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd2657cf90>, size: 1936
+2017-10-03 12:21:57,951 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[14d6023a-c4a0-471c-a6f7-6e4292d01ed3] succeeded in 0.0164281010002s: None
+2017-10-03 12:22:09,387 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd265b9e10>, size: 1936
+2017-10-03 12:22:09,388 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[49622c86-ecd6-4e37-89c7-97b31d243d02] succeeded in 0.0185045870003s: None
+2017-10-03 12:23:39,089 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[8754f063-6254-41f5-9976-0efd95591545] eta:[2017-10-03 12:24:09.073999-04:00]
+2017-10-03 12:23:50,283 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[ccc9eb9a-4b19-41dd-8987-857cda643110] eta:[2017-10-03 12:24:20.275291-04:00]
+2017-10-03 12:24:09,474 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd265b63d0>, size: 2153
+2017-10-03 12:24:09,475 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[8754f063-6254-41f5-9976-0efd95591545] succeeded in 0.0218792469996s: None
+2017-10-03 12:24:21,485 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd2653ee90>, size: 2153
+2017-10-03 12:24:21,486 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[ccc9eb9a-4b19-41dd-8987-857cda643110] succeeded in 0.0226703400003s: None
+2017-10-03 12:24:50,031 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[48f84fb7-7bb6-4835-9236-4a452a0a72d0] eta:[2017-10-03 12:25:20.022685-04:00]
+2017-10-03 12:25:02,563 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[df6f4f4f-77de-44a3-8669-05dd609949e2] eta:[2017-10-03 12:25:32.553612-04:00]
+2017-10-03 12:25:21,534 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd2653ea10>, size: 2363
+2017-10-03 12:25:21,535 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[48f84fb7-7bb6-4835-9236-4a452a0a72d0] succeeded in 0.0211351409998s: None
+2017-10-03 12:25:32,981 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd264ebc90>, size: 2363
+2017-10-03 12:25:32,983 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[df6f4f4f-77de-44a3-8669-05dd609949e2] succeeded in 0.0213461379999s: None
+2017-10-03 12:25:35,975 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[53ece5ad-5f28-4b9d-b6a0-acdd8f6081b0] eta:[2017-10-03 12:26:05.965866-04:00]
+2017-10-03 12:25:51,148 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[c5b848b8-b0b1-4a12-924d-ac8c59effe3c] eta:[2017-10-03 12:26:21.139320-04:00]
+2017-10-03 12:26:07,567 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd2650e650>, size: 2560
+2017-10-03 12:26:07,568 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[53ece5ad-5f28-4b9d-b6a0-acdd8f6081b0] succeeded in 0.0260740969998s: None
+2017-10-03 12:26:21,578 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd264a6810>, size: 2560
+2017-10-03 12:26:21,579 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[c5b848b8-b0b1-4a12-924d-ac8c59effe3c] succeeded in 0.0242785089995s: None
+2017-10-03 12:27:10,127 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[f973232f-c996-42c4-9317-6a107aa6e5be] eta:[2017-10-03 12:27:40.119155-04:00]
+2017-10-03 12:27:22,756 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[d9d3bfe8-0788-460a-a858-3fe80e9b763e] eta:[2017-10-03 12:27:52.735991-04:00]
+2017-10-03 12:27:24,180 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[1a50b15a-aea3-4f7e-80bc-06710e73032d] eta:[2017-10-03 12:27:54.171120-04:00]
+2017-10-03 12:27:41,639 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd264c0d90>, size: 2766
+2017-10-03 12:27:41,641 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[f973232f-c996-42c4-9317-6a107aa6e5be] succeeded in 0.0285767599999s: None
+2017-10-03 12:27:47,732 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[a7ecfdfc-56ed-489a-b213-cef65284cde2] eta:[2017-10-03 12:28:17.713392-04:00]
+2017-10-03 12:27:48,329 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[b06d7b0f-aca6-42dd-8c70-3dc2bd1e1f02] eta:[2017-10-03 12:28:18.319941-04:00]
+2017-10-03 12:27:53,002 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd264654d0>, size: 2970
+2017-10-03 12:27:53,003 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[d9d3bfe8-0788-460a-a858-3fe80e9b763e] succeeded in 0.026827873s: None
+2017-10-03 12:27:55,654 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd2647f8d0>, size: 2970
+2017-10-03 12:27:55,655 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[1a50b15a-aea3-4f7e-80bc-06710e73032d] succeeded in 0.0284601580006s: None
+2017-10-03 12:28:09,630 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[5e94861e-8dd1-459c-8010-6fe6b4e796d1] eta:[2017-10-03 12:28:39.621653-04:00]
+2017-10-03 12:28:18,008 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd26426150>, size: 3141
+2017-10-03 12:28:18,009 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[a7ecfdfc-56ed-489a-b213-cef65284cde2] succeeded in 0.0290578490003s: None
+2017-10-03 12:28:19,676 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd26470050>, size: 3141
+2017-10-03 12:28:19,677 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[b06d7b0f-aca6-42dd-8c70-3dc2bd1e1f02] succeeded in 0.0343609030006s: None
+2017-10-03 12:28:31,090 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[609bebf9-0cf1-4c62-84d5-9be5ad1ee250] eta:[2017-10-03 12:29:01.082041-04:00]
+2017-10-03 12:28:39,686 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd264c0250>, size: 3128
+2017-10-03 12:28:39,687 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[5e94861e-8dd1-459c-8010-6fe6b4e796d1] succeeded in 0.0315928230002s: None
+2017-10-03 12:28:47,598 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[c56a3a23-8f76-4ece-a55c-82c2a6298fed] eta:[2017-10-03 12:29:17.588497-04:00]
+2017-10-03 12:28:50,261 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[6a501517-3f44-4a3f-a151-fc5b19758387] eta:[2017-10-03 12:29:20.253151-04:00]
+2017-10-03 12:29:01,707 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd26513090>, size: 3292
+2017-10-03 12:29:01,708 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[609bebf9-0cf1-4c62-84d5-9be5ad1ee250] succeeded in 0.0336979000003s: None
+2017-10-03 12:29:15,155 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[5a2b0525-0dea-4c1c-bb49-6010a41a0db1] eta:[2017-10-03 12:29:45.146978-04:00]
+2017-10-03 12:29:17,719 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd2653ec50>, size: 3304
+2017-10-03 12:29:17,721 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[c56a3a23-8f76-4ece-a55c-82c2a6298fed] succeeded in 0.0326665060002s: None
+2017-10-03 12:29:21,716 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd265c7bd0>, size: 3304
+2017-10-03 12:29:21,718 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[6a501517-3f44-4a3f-a151-fc5b19758387] succeeded in 0.037145065s: None
+2017-10-03 12:29:45,733 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd264a9310>, size: 3304
+2017-10-03 12:29:45,734 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[5a2b0525-0dea-4c1c-bb49-6010a41a0db1] succeeded in 0.0331481950006s: None
+2017-10-03 12:31:51,833 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[eb1bf4fd-f668-4bb8-b43f-000c25adc0dd] eta:[2017-10-03 12:32:21.821132-04:00]
+2017-10-03 12:32:21,849 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd2650bbd0>, size: 2968
+2017-10-03 12:32:21,850 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[eb1bf4fd-f668-4bb8-b43f-000c25adc0dd] succeeded in 0.0270283270002s: None
+2017-10-03 12:32:45,092 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[4b0183fd-6eda-4378-a2e1-d0f76cd3df1c] eta:[2017-10-03 12:33:15.082134-04:00]
+2017-10-03 12:32:51,727 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[26ba92ac-d22d-473f-a981-04d932b7b24d] eta:[2017-10-03 12:33:21.719001-04:00]
+2017-10-03 12:33:07,387 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[6c2be7e8-0960-4e23-9679-134b00aed654] eta:[2017-10-03 12:33:37.379070-04:00]
+2017-10-03 12:33:16,319 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd25918850>, size: 6715
+2017-10-03 12:33:16,320 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[4b0183fd-6eda-4378-a2e1-d0f76cd3df1c] succeeded in 0.464490775s: None
+2017-10-03 12:33:19,963 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[2f4d0eac-9e6d-4fcf-a3cb-da2d4a891ca2] eta:[2017-10-03 12:33:49.954462-04:00]
+2017-10-03 12:33:21,955 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd257fcf10>, size: 6714
+2017-10-03 12:33:21,957 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[26ba92ac-d22d-473f-a981-04d932b7b24d] succeeded in 0.0965769940003s: None
+2017-10-03 12:33:33,836 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[6bc642a1-a5b4-4b63-8f76-028bb696bf5e] eta:[2017-10-03 12:34:03.828509-04:00]
+2017-10-03 12:33:37,961 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd25788050>, size: 6715
+2017-10-03 12:33:37,963 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[6c2be7e8-0960-4e23-9679-134b00aed654] succeeded in 0.0921983319995s: None
+2017-10-03 12:33:51,967 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd2649cb90>, size: 6715
+2017-10-03 12:33:51,968 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[2f4d0eac-9e6d-4fcf-a3cb-da2d4a891ca2] succeeded in 0.0858387919998s: None
+2017-10-03 12:34:03,976 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd2640ee90>, size: 6715
+2017-10-03 12:34:03,978 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[6bc642a1-a5b4-4b63-8f76-028bb696bf5e] succeeded in 0.0873878709999s: None
+2017-10-03 12:34:04,866 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[a7ad7a5e-1a7b-4bf6-b096-92246b48645c] eta:[2017-10-03 12:34:34.856285-04:00]
+2017-10-03 12:34:35,999 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd257e02d0>, size: 6712
+2017-10-03 12:34:36,000 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[a7ad7a5e-1a7b-4bf6-b096-92246b48645c] succeeded in 0.0918535070005s: None
+2017-10-03 12:35:05,721 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[665f54d2-e900-4c01-981a-0ce063ed5b99] eta:[2017-10-03 12:35:35.706092-04:00]
+2017-10-03 12:35:13,126 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[10d96321-4243-440a-b40e-ba8cf116dcdf] eta:[2017-10-03 12:35:43.118017-04:00]
+2017-10-03 12:35:36,042 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd256bd3d0>, size: 6714
+2017-10-03 12:35:36,044 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[665f54d2-e900-4c01-981a-0ce063ed5b99] succeeded in 0.09619183s: None
+2017-10-03 12:35:39,721 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[07974006-aff0-40a9-a2f8-756449aae4a8] eta:[2017-10-03 12:36:09.706761-04:00]
+2017-10-03 12:35:39,907 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[edf6bac5-16d6-42fb-9d59-0178ce95d507] eta:[2017-10-03 12:36:09.898779-04:00]
+2017-10-03 12:35:44,052 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd257fca90>, size: 6715
+2017-10-03 12:35:44,053 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[10d96321-4243-440a-b40e-ba8cf116dcdf] succeeded in 0.0951749379992s: None
+2017-10-03 12:35:49,754 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[69a18a20-53e2-47f3-840d-c2f60040f4e4] eta:[2017-10-03 12:36:19.745902-04:00]
+2017-10-03 12:36:09,992 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd25779610>, size: 6713
+2017-10-03 12:36:09,993 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[07974006-aff0-40a9-a2f8-756449aae4a8] succeeded in 0.0942001359999s: None
+2017-10-03 12:36:10,074 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd257ba850>, size: 6713
+2017-10-03 12:36:10,075 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[edf6bac5-16d6-42fb-9d59-0178ce95d507] succeeded in 0.0811956839998s: None
+2017-10-03 12:36:10,948 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[a36fdf6a-1d46-4438-820e-c0e87d177fed] eta:[2017-10-03 12:36:40.939883-04:00]
+2017-10-03 12:36:20,069 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd25635ad0>, size: 6715
+2017-10-03 12:36:20,070 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[69a18a20-53e2-47f3-840d-c2f60040f4e4] succeeded in 0.0880353009998s: None
+2017-10-03 12:36:42,091 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd25661dd0>, size: 6715
+2017-10-03 12:36:42,093 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[a36fdf6a-1d46-4438-820e-c0e87d177fed] succeeded in 0.0901823679997s: None
+2017-10-03 12:39:18,501 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[87e8e702-c57f-4535-9b09-28689ec28e02] eta:[2017-10-03 12:39:48.492833-04:00]
+2017-10-03 12:39:28,637 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[f4afc77e-ec25-499d-a5e7-4c644ffe00cb] eta:[2017-10-03 12:39:58.626773-04:00]
+2017-10-03 12:39:42,727 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[5211a4f1-f370-4e5a-8ddb-97cd28546733] eta:[2017-10-03 12:40:12.718330-04:00]
+2017-10-03 12:39:50,221 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd256d9910>, size: 6716
+2017-10-03 12:39:50,222 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[87e8e702-c57f-4535-9b09-28689ec28e02] succeeded in 0.0893927430006s: None
+2017-10-03 12:39:51,198 INFO 25417 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[fbd649ec-94d3-4c11-9cd8-9ca9f4cc76a7] eta:[2017-10-03 12:40:21.180307-04:00]
+2017-10-03 12:40:00,227 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd2561e490>, size: 6717
+2017-10-03 12:40:00,229 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[f4afc77e-ec25-499d-a5e7-4c644ffe00cb] succeeded in 0.0872187240002s: None
+2017-10-03 12:40:13,145 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd256d9bd0>, size: 6717
+2017-10-03 12:40:13,147 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[5211a4f1-f370-4e5a-8ddb-97cd28546733] succeeded in 0.0878484130008s: None
+2017-10-03 12:40:21,978 INFO 30350 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7efd256bd810>, size: 6717
+2017-10-03 12:40:21,979 INFO 25417 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[fbd649ec-94d3-4c11-9cd8-9ca9f4cc76a7] succeeded in 0.27680286s: None
+
+worker: Warm shutdown (MainProcess)
+2017-10-07 03:43:49,209 INFO 1643 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-07 03:43:50,935 WARNING 1643 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-07 03:43:50,992 INFO 1643 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-07 03:43:51,014 INFO 1643 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-07 03:43:52,026 INFO 1643 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-10-07 03:43:52,027 INFO 1643 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-07 03:43:52,043 WARNING 1643 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-10-07 03:43:52,626 WARNING 1643 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-07 03:43:52.626293 recv: 2017-10-07 07:43:52.625121]
+
+2017-10-07 03:54:02,984 WARNING 1643 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 530, in _close
+    (class_id, method_id), ConnectionError)
+ConnectionForced: (0, 0): (320) CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'
+2017-10-07 03:54:03,005 ERROR 1643 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-10-07 03:54:05,011 ERROR 1643 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-10-07 03:54:09,019 ERROR 1643 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-10-07 03:54:15,038 INFO 1643 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-07 03:54:15,062 INFO 1643 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-07 03:54:16,671 INFO 1643 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-10-07 04:05:02,538 WARNING 1643 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-10-07 04:05:02,563 ERROR 1643 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-10-07 04:05:04,570 ERROR 1643 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-10-07 04:05:08,579 ERROR 1643 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-10-07 04:05:14,596 INFO 1643 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-07 04:05:14,640 INFO 1643 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-07 04:05:15,901 INFO 1643 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-10-08 06:57:04,126 INFO 1643 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[c8f3b603-4e65-4ba3-952f-4bc7d626f37f] eta:[2017-10-08 06:57:34.116513-04:00]
+2017-10-08 06:57:21,527 INFO 1643 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[8e7d53d7-194a-443a-b2be-0499efff1324] eta:[2017-10-08 06:57:51.519298-04:00]
+2017-10-08 06:57:34,929 INFO 6939 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd2896ebbd0>, size: 6735
+2017-10-08 06:57:34,930 INFO 1643 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[c8f3b603-4e65-4ba3-952f-4bc7d626f37f] succeeded in 0.611649747996s: None
+2017-10-08 06:57:52,418 INFO 6939 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd2895197d0>, size: 6735
+2017-10-08 06:57:52,419 INFO 1643 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[8e7d53d7-194a-443a-b2be-0499efff1324] succeeded in 0.0900806840073s: None
+2017-10-08 06:58:49,660 INFO 1643 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[e1ceb9e4-c664-4005-b477-970592e932a8] eta:[2017-10-08 06:59:19.648221-04:00]
+2017-10-08 06:58:56,045 INFO 1643 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[da4fd73f-bb2c-467d-bb7f-7306266c0d4a] eta:[2017-10-08 06:59:26.035732-04:00]
+2017-10-08 06:59:07,211 INFO 1643 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[6c1a57ea-c875-432e-a514-b34a0fb8024e] eta:[2017-10-08 06:59:37.200592-04:00]
+2017-10-08 06:59:10,567 INFO 1643 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[3da1e307-abd0-43ec-b3f3-4b794af5a5a8] eta:[2017-10-08 06:59:40.558595-04:00]
+2017-10-08 06:59:20,407 INFO 6939 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd28952d6d0>, size: 1948
+2017-10-08 06:59:20,408 INFO 1643 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[e1ceb9e4-c664-4005-b477-970592e932a8] succeeded in 0.0211941430025s: None
+2017-10-08 06:59:21,933 INFO 1643 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[5a4bb12b-4bdf-4421-9f31-bcac6c0ae9a4] eta:[2017-10-08 06:59:51.919791-04:00]
+2017-10-08 06:59:26,408 INFO 6939 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd28953c110>, size: 1933
+2017-10-08 06:59:26,409 INFO 1643 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[da4fd73f-bb2c-467d-bb7f-7306266c0d4a] succeeded in 0.0188948389987s: None
+2017-10-08 06:59:38,418 INFO 6939 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd28952d910>, size: 1933
+2017-10-08 06:59:38,419 INFO 1643 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[6c1a57ea-c875-432e-a514-b34a0fb8024e] succeeded in 0.0182470369909s: None
+2017-10-08 06:59:40,945 INFO 6939 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd2894ce550>, size: 1933
+2017-10-08 06:59:40,946 INFO 1643 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[3da1e307-abd0-43ec-b3f3-4b794af5a5a8] succeeded in 0.0157180319948s: None
+2017-10-08 06:59:52,428 INFO 6939 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd2894ce590>, size: 1933
+2017-10-08 06:59:52,429 INFO 1643 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[5a4bb12b-4bdf-4421-9f31-bcac6c0ae9a4] succeeded in 0.0189981389995s: None
+2017-10-08 07:01:49,243 INFO 1643 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[26171c87-32b5-4c2b-83cb-6bacff68a5ca] eta:[2017-10-08 07:02:19.234539-04:00]
+2017-10-08 07:02:20,554 INFO 6939 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd2894efd50>, size: 3230
+2017-10-08 07:02:20,555 INFO 1643 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[26171c87-32b5-4c2b-83cb-6bacff68a5ca] succeeded in 0.039987680997s: None
+2017-10-09 05:57:08,331 INFO 1643 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[de61bb9b-fca8-4574-8ede-b8d457ab9c23] eta:[2017-10-09 05:57:10.319250-04:00]
+2017-10-09 05:57:10,848 INFO 6939 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd2894fb510>, size: 3230
+2017-10-09 05:57:10,932 INFO 6939 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:Tetco+C10+Tl-10, version: 59da059d0aa5b5073c0e5cc3, edited_on: 2017-10-08 11:01:49.207000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 3, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-10-09 05:57:10,934 INFO 1643 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[de61bb9b-fca8-4574-8ede-b8d457ab9c23] succeeded in 0.0947059719765s: None
+2017-10-09 08:26:57,356 INFO 1643 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[f1fc3ce9-8fd5-4258-a355-f11577077c5b] eta:[2017-10-09 08:26:59.345465-04:00]
+2017-10-09 08:27:00,249 INFO 6939 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd289486c10>, size: 6715
+2017-10-09 08:27:00,283 INFO 6939 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:tetco+t1+T_1, version: 59da04910aa5b507442ffa01, edited_on: 2017-10-08 10:57:21.491000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 3, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-10-09 08:27:00,284 INFO 1643 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[f1fc3ce9-8fd5-4258-a355-f11577077c5b] succeeded in 0.0409240860026s: None
+2017-10-09 08:38:30,935 INFO 1643 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[40957408-98ff-49fe-ade8-866d5e3b24e7] eta:[2017-10-09 08:39:00.926197-04:00]
+2017-10-09 08:38:52,057 INFO 1643 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[d13ec904-ac15-411a-848f-f15c51c0ffaa] eta:[2017-10-09 08:39:22.048419-04:00]
+2017-10-09 08:39:01,812 INFO 6939 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd2894ba6d0>, size: 3242
+2017-10-09 08:39:01,813 INFO 1643 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[40957408-98ff-49fe-ade8-866d5e3b24e7] succeeded in 0.0568756189896s: None
+2017-10-09 08:39:23,806 INFO 6939 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd2894bdd90>, size: 3242
+2017-10-09 08:39:23,808 INFO 1643 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[d13ec904-ac15-411a-848f-f15c51c0ffaa] succeeded in 0.0372913790052s: None
+2017-10-09 08:41:03,944 INFO 1643 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[d7c48456-d35e-469a-8298-28ae55dfb682] eta:[2017-10-09 08:41:33.934020-04:00]
+2017-10-09 08:41:35,445 INFO 6939 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd2894c1dd0>, size: 3242
+2017-10-09 08:41:35,447 INFO 1643 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[d7c48456-d35e-469a-8298-28ae55dfb682] succeeded in 0.0382956799876s: None
+2017-10-09 08:44:01,427 INFO 1643 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[64590ce1-5d5d-42f4-b488-24176a948f70] eta:[2017-10-09 08:44:31.407481-04:00]
+2017-10-09 08:44:32,036 INFO 6939 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd2894f5450>, size: 3253
+2017-10-09 08:44:32,038 INFO 1643 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[64590ce1-5d5d-42f4-b488-24176a948f70] succeeded in 0.0368133759766s: None
+
+worker: Warm shutdown (MainProcess)
+2017-10-11 05:31:09,246 INFO 69276 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-11 05:31:10,660 WARNING 69276 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-11 05:31:10,677 INFO 69276 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-11 05:31:10,693 INFO 69276 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-11 05:31:11,706 INFO 69276 [celery.worker.consumer] consumer.py:573 - mingle: sync with 3 nodes
+2017-10-11 05:31:11,707 INFO 69276 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-11 05:31:11,721 WARNING 69276 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-10-11 05:31:12,163 WARNING 69276 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-11 05:31:12.163475 recv: 2017-10-11 09:31:12.161484]
+
+
+worker: Warm shutdown (MainProcess)
+2017-10-11 05:33:22,382 INFO 75016 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-11 05:33:24,044 WARNING 75016 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-11 05:33:24,071 INFO 75016 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-11 05:33:24,082 INFO 75016 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-11 05:33:25,093 INFO 75016 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-10-11 05:33:25,094 INFO 75016 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-11 05:33:25,111 WARNING 75016 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-10-11 05:33:25,435 WARNING 75016 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-11 05:33:25.435855 recv: 2017-10-11 09:33:25.434503]
+
+2017-10-14 10:25:14,880 WARNING 75016 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-10-14 10:25:14,914 ERROR 75016 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-10-14 10:25:16,922 ERROR 75016 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-10-14 10:25:20,930 ERROR 75016 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-10-14 10:25:26,951 INFO 75016 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-14 10:25:26,992 INFO 75016 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-14 10:25:28,283 INFO 75016 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-10-14 10:41:59,748 WARNING 75016 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-10-14 10:41:59,795 ERROR 75016 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-10-14 10:42:01,802 ERROR 75016 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-10-14 10:42:05,812 ERROR 75016 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-10-14 10:42:11,851 INFO 75016 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-14 10:42:11,890 INFO 75016 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-14 10:42:12,924 INFO 75016 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-10-14 10:42:13,011 INFO 75016 [celery.worker.control] control.py:270 - sync with celery@tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-10-29 11:05:36,733 INFO 1662 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-29 11:05:38,372 WARNING 1662 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-29 11:05:38,388 INFO 1662 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-29 11:05:38,405 INFO 1662 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-29 11:05:39,419 INFO 1662 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-10-29 11:05:39,420 INFO 1662 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-29 11:05:39,434 WARNING 1662 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-10-29 11:05:41,398 WARNING 1662 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-29 11:05:41.398461 recv: 2017-10-29 15:05:41.396657]
+
+2017-11-18 08:53:44,068 WARNING 1662 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-11-18 08:53:44,116 ERROR 1662 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-11-18 08:53:46,122 ERROR 1662 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-11-18 08:53:50,132 ERROR 1662 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-11-18 08:53:56,161 INFO 1662 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-18 08:53:56,190 INFO 1662 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-18 08:53:57,206 INFO 1662 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+2017-11-18 10:25:52,545 INFO 2057 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-18 10:25:54,019 WARNING 2057 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-18 10:25:54,038 INFO 2057 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-18 10:25:54,060 INFO 2057 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-18 10:25:55,069 INFO 2057 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-11-18 10:25:55,070 INFO 2057 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-18 10:25:55,084 WARNING 2057 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-11-18 10:25:55,304 WARNING 2057 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-18 10:25:55.304146 recv: 2017-11-18 14:25:55.301964]
+
+2017-11-18 10:29:48,100 WARNING 2057 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-11-18 10:29:48,136 ERROR 2057 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-11-18 10:29:50,143 ERROR 2057 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-11-18 10:29:54,152 ERROR 2057 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-11-18 10:30:00,172 INFO 2057 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-18 10:30:00,205 INFO 2057 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-18 10:30:01,441 INFO 2057 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-11-19 04:15:12,655 WARNING 2057 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 530, in _close
+    (class_id, method_id), ConnectionError)
+ConnectionForced: (0, 0): (320) CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'
+2017-11-19 04:15:12,681 ERROR 2057 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-11-19 04:15:14,688 ERROR 2057 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-11-19 04:15:18,697 ERROR 2057 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-11-19 04:15:24,712 INFO 2057 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-19 04:15:24,747 INFO 2057 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-19 04:15:25,997 INFO 2057 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-11-19 08:19:36,258 WARNING 2057 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-11-19 08:19:36,268 ERROR 2057 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-11-19 08:19:38,275 ERROR 2057 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-11-19 08:19:42,285 ERROR 2057 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-11-19 08:19:48,298 INFO 2057 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-19 08:19:48,354 INFO 2057 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-19 08:19:49,574 INFO 2057 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+2017-11-19 09:36:17,531 INFO 2079 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-19 09:36:20,502 WARNING 2079 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-19 09:36:20,587 INFO 2079 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-19 09:36:20,625 INFO 2079 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-19 09:36:21,652 INFO 2079 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-11-19 09:36:21,653 INFO 2079 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-19 09:36:21,666 WARNING 2079 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-11-19 09:36:21,774 WARNING 2079 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-19 09:36:21.774680 recv: 2017-11-19 13:36:21.773265]
+
+
+worker: Warm shutdown (MainProcess)
+2017-11-19 10:07:03,695 INFO 29656 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-19 10:07:07,317 WARNING 29656 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-19 10:07:07,454 INFO 29656 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-19 10:07:07,532 INFO 29656 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-19 10:07:08,565 INFO 29656 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-11-19 10:07:08,566 INFO 29656 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-19 10:07:08,586 WARNING 29656 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-11-19 10:07:08,610 WARNING 29656 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-19 10:07:08.610412 recv: 2017-11-19 14:07:08.608804]
+
+2017-11-19 10:07:09,497 INFO 29656 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high_mem.tatweer02
+2017-11-19 10:07:09,536 INFO 29656 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-11-19 10:07:09,648 INFO 29656 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-11-19 10:07:09,676 INFO 29656 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-11-19 10:07:09,750 INFO 29656 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-11-19 10:09:14,232 INFO 35437 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-19 10:09:16,125 WARNING 35437 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-19 10:09:16,145 INFO 35437 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-19 10:09:16,164 INFO 35437 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-19 10:09:17,176 INFO 35437 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-11-19 10:09:17,178 INFO 35437 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-19 10:09:17,191 WARNING 35437 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-11-19 10:09:18,515 WARNING 35437 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-19 10:09:18.514972 recv: 2017-11-19 14:09:18.512249]
+
+
+worker: Warm shutdown (MainProcess)
+2017-11-20 04:23:03,653 INFO 3301 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-20 04:23:06,978 WARNING 3301 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-20 04:23:07,025 INFO 3301 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-20 04:23:07,049 INFO 3301 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-20 04:23:08,061 INFO 3301 [celery.worker.consumer] consumer.py:573 - mingle: sync with 3 nodes
+2017-11-20 04:23:08,062 INFO 3301 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-20 04:23:08,083 WARNING 3301 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-11-20 04:23:09,344 WARNING 3301 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-20 04:23:09.343187 recv: 2017-11-20 08:23:09.341080]
+
+2017-11-20 05:01:25,698 WARNING 3301 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-11-20 05:01:25,721 ERROR 3301 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-11-20 05:01:27,727 ERROR 3301 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-11-20 05:01:31,736 ERROR 3301 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-11-20 05:01:37,753 INFO 3301 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-20 05:01:37,848 INFO 3301 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-20 05:01:38,867 INFO 3301 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+2017-11-20 09:15:09,001 INFO 47405 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-20 09:15:12,766 WARNING 47405 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-20 09:15:12,876 INFO 47405 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-20 09:15:12,927 INFO 47405 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-20 09:15:13,951 INFO 47405 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-11-20 09:15:13,952 INFO 47405 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-20 09:15:13,975 WARNING 47405 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-11-20 09:15:13,989 INFO 47405 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-11-20 09:15:14,175 INFO 47405 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high.tatweer02
+2017-11-20 09:15:14,183 INFO 47405 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-11-20 09:15:14,212 INFO 47405 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-11-20 09:15:14,301 WARNING 47405 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-20 09:15:14.301105 recv: 2017-11-20 13:15:14.300055]
+
+2017-11-20 09:15:14,350 INFO 47405 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+2017-11-20 10:01:58,816 WARNING 47405 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-11-20 10:01:58,826 ERROR 47405 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-11-20 10:02:00,833 ERROR 47405 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-11-20 10:02:04,842 ERROR 47405 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-11-20 10:02:10,854 INFO 47405 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-20 10:02:10,929 INFO 47405 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-20 10:02:12,247 INFO 47405 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+2017-11-20 10:27:48,592 INFO 51215 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-20 10:27:51,651 WARNING 51215 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-20 10:27:51,780 INFO 51215 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-20 10:27:51,838 INFO 51215 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-20 10:27:52,871 INFO 51215 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-11-20 10:27:52,872 INFO 51215 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-20 10:27:52,911 WARNING 51215 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-11-20 10:27:53,097 WARNING 51215 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-20 10:27:53.096883 recv: 2017-11-20 14:27:53.095346]
+
+2017-11-20 10:27:53,793 INFO 51215 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-11-20 10:27:53,910 INFO 51215 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high_mem.tatweer02
+2017-11-20 10:27:53,932 INFO 51215 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high.tatweer02
+2017-11-20 10:27:54,093 INFO 51215 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-11-20 10:27:54,118 INFO 51215 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-11-20 10:27:54,125 INFO 51215 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-11-20 10:30:00,216 INFO 57137 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-20 10:30:02,184 WARNING 57137 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-20 10:30:02,202 INFO 57137 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-20 10:30:02,212 INFO 57137 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-20 10:30:03,222 INFO 57137 [celery.worker.consumer] consumer.py:573 - mingle: sync with 3 nodes
+2017-11-20 10:30:03,223 INFO 57137 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-20 10:30:03,245 WARNING 57137 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-11-20 10:30:04,139 WARNING 57137 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-20 10:30:04.139491 recv: 2017-11-20 14:30:04.137185]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-19 05:09:56,820 INFO 1698 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-19 05:09:58,906 WARNING 1698 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-19 05:09:58,930 INFO 1698 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-19 05:09:58,945 INFO 1698 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-19 05:09:59,957 INFO 1698 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-12-19 05:09:59,958 INFO 1698 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-19 05:09:59,976 WARNING 1698 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-12-19 05:10:00,609 WARNING 1698 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-19 05:10:00.609499 recv: 2017-12-19 09:10:00.607178]
+
+2017-12-19 05:11:45,390 INFO 1698 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[b4a04732-d925-441a-93ba-72a9dbd827db] eta:[2017-12-19 05:12:15.371773-05:00]
+2017-12-19 05:12:16,140 INFO 6896 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fe1caff6d10>, size: 1398
+2017-12-19 05:12:16,142 INFO 1698 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[b4a04732-d925-441a-93ba-72a9dbd827db] succeeded in 0.183150378s: None
+2017-12-19 05:12:24,143 INFO 1698 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[593d1da7-5f25-47ee-ba31-a4bf4200fd00] eta:[2017-12-19 05:12:54.132263-05:00]
+2017-12-19 05:12:26,181 INFO 1698 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[4d5d7100-723b-4be3-a46b-dc1baca05178] eta:[2017-12-19 05:12:56.170493-05:00]
+2017-12-19 05:12:54,203 INFO 6896 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fe1cafad7d0>, size: 1907
+2017-12-19 05:12:54,204 INFO 1698 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[593d1da7-5f25-47ee-ba31-a4bf4200fd00] succeeded in 0.024046144s: None
+2017-12-19 05:12:56,197 INFO 6896 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fe1cafcdad0>, size: 1907
+2017-12-19 05:12:56,198 INFO 1698 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[4d5d7100-723b-4be3-a46b-dc1baca05178] succeeded in 0.01934016s: None
+2017-12-19 05:13:10,143 INFO 1698 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[41f97656-ad44-4478-8a15-01262ab99f92] eta:[2017-12-19 05:13:40.119634-05:00]
+2017-12-19 05:13:30,854 INFO 1698 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[2e4a69ff-75a8-4001-a5b6-4c7ddc7553d0] eta:[2017-12-19 05:14:00.843350-05:00]
+2017-12-19 05:13:40,221 INFO 6896 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fe1caf86110>, size: 2336
+2017-12-19 05:13:40,222 INFO 1698 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[41f97656-ad44-4478-8a15-01262ab99f92] succeeded in 0.031413634s: None
+2017-12-19 05:14:01,190 INFO 6896 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fe1caf1cbd0>, size: 2336
+2017-12-19 05:14:01,192 INFO 1698 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[2e4a69ff-75a8-4001-a5b6-4c7ddc7553d0] succeeded in 0.024347456s: None
+2017-12-19 05:16:55,622 INFO 1698 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[f806909b-e292-42ac-a2eb-263d8aac7dcf] eta:[2017-12-19 05:17:25.611428-05:00]
+2017-12-19 05:17:26,120 INFO 6896 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fe1caf31cd0>, size: 2344
+2017-12-19 05:17:26,121 INFO 1698 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[f806909b-e292-42ac-a2eb-263d8aac7dcf] succeeded in 0.029085643s: None
+2017-12-19 06:02:06,608 INFO 1698 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[df12ac1d-4be8-4bf9-bfab-fb6b3f73e352] eta:[2017-12-19 06:02:08.595810-05:00]
+2017-12-19 06:02:09,423 INFO 6896 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fe1cafcd750>, size: 3267
+2017-12-19 06:02:09,521 INFO 6896 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:Tetco+C10+Tl-10, version: 59db6f110aa5b5073e2b0a87, edited_on: 2017-10-09 12:44:01.319000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 3, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-12-19 06:02:09,522 INFO 1698 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[df12ac1d-4be8-4bf9-bfab-fb6b3f73e352] succeeded in 0.107218128s: None
+
+worker: Warm shutdown (MainProcess)
+2017-12-19 06:15:41,159 INFO 58613 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-19 06:15:46,269 WARNING 58613 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-19 06:15:46,401 INFO 58613 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-19 06:15:46,482 INFO 58613 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-19 06:15:47,518 INFO 58613 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-12-19 06:15:47,519 INFO 58613 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-19 06:15:47,570 WARNING 58613 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-12-19 06:15:48,459 WARNING 58613 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-19 06:15:48.458879 recv: 2017-12-19 10:15:48.457488]
+
+2017-12-19 06:15:49,077 INFO 58613 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-12-19 06:15:49,205 INFO 58613 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-12-19 06:15:49,218 INFO 58613 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high.tatweer02
+2017-12-19 06:15:49,242 INFO 58613 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+2017-12-19 06:15:49,432 INFO 58613 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-12-19 06:18:44,692 INFO 58613 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[afc47b28-51e8-4299-9acf-3ff5858dc544] eta:[2017-12-19 06:18:46.683111-05:00]
+2017-12-19 06:18:47,641 INFO 63405 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f973a408250>, size: 2344
+2017-12-19 06:18:47,761 INFO 63405 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:test+test01+test_T01, version: 5a38e7170aa5b5093a50f663, edited_on: 2017-12-19 10:16:55.499000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 4, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-12-19 06:18:47,763 INFO 58613 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[afc47b28-51e8-4299-9acf-3ff5858dc544] succeeded in 0.276981606999s: None
+
+worker: Warm shutdown (MainProcess)
+2017-12-19 07:51:00,699 INFO 4834 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-19 07:51:03,834 WARNING 4834 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-19 07:51:03,893 INFO 4834 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-19 07:51:03,952 INFO 4834 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-19 07:51:04,973 INFO 4834 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-12-19 07:51:04,974 INFO 4834 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-19 07:51:04,991 WARNING 4834 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-12-19 07:51:05,049 WARNING 4834 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-19 07:51:05.049644 recv: 2017-12-19 11:51:05.048196]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-19 08:17:26,131 INFO 29655 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-19 08:17:29,596 WARNING 29655 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-19 08:17:29,699 INFO 29655 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-19 08:17:29,758 INFO 29655 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-19 08:17:30,790 INFO 29655 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-12-19 08:17:30,791 INFO 29655 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-19 08:17:30,807 WARNING 29655 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-12-19 08:17:31,025 WARNING 29655 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-19 08:17:31.025089 recv: 2017-12-19 12:17:31.023786]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-20 13:24:43,932 INFO 8041 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-20 13:24:47,516 WARNING 8041 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-20 13:24:47,639 INFO 8041 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-20 13:24:47,703 INFO 8041 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-20 13:24:48,737 INFO 8041 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-12-20 13:24:48,739 INFO 8041 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-20 13:24:48,773 WARNING 8041 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-12-20 13:24:48,953 WARNING 8041 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-20 13:24:48.953137 recv: 2017-12-20 17:24:48.951810]
+
+2017-12-20 13:24:49,291 INFO 8041 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high_mem.tatweer02
+2017-12-20 13:24:49,369 INFO 8041 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high.tatweer02
+2017-12-20 13:24:49,396 INFO 8041 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-12-20 13:24:49,496 INFO 8041 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+2017-12-20 13:24:49,578 INFO 8041 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-12-20 13:24:49,630 INFO 8041 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-12-21 02:10:33,683 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[0eb12772-0c98-4cbb-89da-28c2f7eb6d60] eta:[2017-12-21 02:11:03.672076-05:00]
+2017-12-21 02:11:06,147 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de5e7f90>, size: 3252
+2017-12-21 02:11:06,149 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[0eb12772-0c98-4cbb-89da-28c2f7eb6d60] succeeded in 0.597876487998s: None
+2017-12-21 02:15:24,010 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[a6abaac1-b724-41ab-b1ad-e4a88d107356] eta:[2017-12-21 02:15:53.998488-05:00]
+2017-12-21 02:15:35,879 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[730d0f69-9c60-47c2-a190-ddc5d6fac63c] eta:[2017-12-21 02:16:05.870999-05:00]
+2017-12-21 02:15:37,018 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[146edba6-8930-46c4-9f49-ea90989ea9b7] eta:[2017-12-21 02:16:07.004177-05:00]
+2017-12-21 02:15:55,474 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[3468ebfc-1d81-4fb3-ac8d-c912cfe15228] eta:[2017-12-21 02:16:25.463892-05:00]
+2017-12-21 02:15:55,519 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de593bd0>, size: 3480
+2017-12-21 02:15:55,520 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[a6abaac1-b724-41ab-b1ad-e4a88d107356] succeeded in 0.0444781380065s: None
+2017-12-21 02:16:07,044 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de546410>, size: 3480
+2017-12-21 02:16:07,045 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[730d0f69-9c60-47c2-a190-ddc5d6fac63c] succeeded in 0.039428988006s: None
+2017-12-21 02:16:07,081 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de4f72d0>, size: 3480
+2017-12-21 02:16:07,082 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[146edba6-8930-46c4-9f49-ea90989ea9b7] succeeded in 0.0361463559966s: None
+2017-12-21 02:16:25,419 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[30500f70-863f-4ea7-b318-e5cd1534bee2] eta:[2017-12-21 02:16:55.409652-05:00]
+2017-12-21 02:16:25,802 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de4ae190>, size: 3486
+2017-12-21 02:16:25,804 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[3468ebfc-1d81-4fb3-ac8d-c912cfe15228] succeeded in 0.0472388649941s: None
+2017-12-21 02:16:32,824 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[cd9233e4-4fb1-4b3c-bb5e-8b8ce52a11f6] eta:[2017-12-21 02:17:02.815634-05:00]
+2017-12-21 02:16:50,497 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[3dfc5ebe-dcb1-4b69-bc6a-8fd3258011c6] eta:[2017-12-21 02:17:20.479049-05:00]
+2017-12-21 02:16:55,828 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de4de410>, size: 3660
+2017-12-21 02:16:55,829 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[30500f70-863f-4ea7-b318-e5cd1534bee2] succeeded in 0.04574614999s: None
+2017-12-21 02:16:58,189 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[86425a24-8975-4dad-9409-7e7d17e05644] eta:[2017-12-21 02:17:28.180587-05:00]
+2017-12-21 02:17:03,842 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de495c10>, size: 3857
+2017-12-21 02:17:03,843 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[cd9233e4-4fb1-4b3c-bb5e-8b8ce52a11f6] succeeded in 0.0482154749916s: None
+2017-12-21 02:17:06,555 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[200c9115-be8c-43f5-99f9-7dfdf492c072] eta:[2017-12-21 02:17:36.545187-05:00]
+2017-12-21 02:17:20,897 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de455290>, size: 3843
+2017-12-21 02:17:20,898 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[3dfc5ebe-dcb1-4b69-bc6a-8fd3258011c6] succeeded in 0.0462695560127s: None
+2017-12-21 02:17:29,859 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de495f90>, size: 3843
+2017-12-21 02:17:29,861 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[86425a24-8975-4dad-9409-7e7d17e05644] succeeded in 0.0506060990156s: None
+2017-12-21 02:17:37,875 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de4c0310>, size: 3843
+2017-12-21 02:17:37,877 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[200c9115-be8c-43f5-99f9-7dfdf492c072] succeeded in 0.0512616040069s: None
+2017-12-21 02:17:48,686 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[11616f50-34b2-4371-aa84-5adb036b2fc1] eta:[2017-12-21 02:18:18.677825-05:00]
+2017-12-21 02:17:51,862 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[97f06278-66a0-4f72-9a7e-2faba41da99b] eta:[2017-12-21 02:18:21.839690-05:00]
+2017-12-21 02:18:05,639 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[ad6a16b9-a06e-4aaa-80f5-cdb0df5089f1] eta:[2017-12-21 02:18:35.619194-05:00]
+2017-12-21 02:18:06,977 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[adfbf605-7643-4d8c-851c-f772b8ab587d] eta:[2017-12-21 02:18:36.967348-05:00]
+2017-12-21 02:18:19,728 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de593510>, size: 4214
+2017-12-21 02:18:19,729 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[11616f50-34b2-4371-aa84-5adb036b2fc1] succeeded in 0.0489740819903s: None
+2017-12-21 02:18:21,901 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de53b390>, size: 4214
+2017-12-21 02:18:21,903 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[97f06278-66a0-4f72-9a7e-2faba41da99b] succeeded in 0.0573376640095s: None
+2017-12-21 02:18:35,909 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de5050d0>, size: 4214
+2017-12-21 02:18:35,911 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[ad6a16b9-a06e-4aaa-80f5-cdb0df5089f1] succeeded in 0.0518819100107s: None
+2017-12-21 02:18:37,910 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de4cadd0>, size: 4214
+2017-12-21 02:18:37,911 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[adfbf605-7643-4d8c-851c-f772b8ab587d] succeeded in 0.054941741022s: None
+2017-12-21 02:18:42,289 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[65c9d940-ccdb-469e-a09d-e43c7a8a97cc] eta:[2017-12-21 02:19:12.274203-05:00]
+2017-12-21 02:19:02,911 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[c38b901b-c2d1-47f7-8bdc-d80c699496a1] eta:[2017-12-21 02:19:32.900387-05:00]
+2017-12-21 02:19:13,956 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de3b7f90>, size: 4412
+2017-12-21 02:19:13,957 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[65c9d940-ccdb-469e-a09d-e43c7a8a97cc] succeeded in 0.0673931640049s: None
+2017-12-21 02:19:17,903 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[e102fbf6-0320-4982-8b86-941fafedd7f8] eta:[2017-12-21 02:19:47.883096-05:00]
+2017-12-21 02:19:33,959 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de4a6390>, size: 4399
+2017-12-21 02:19:33,961 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[c38b901b-c2d1-47f7-8bdc-d80c699496a1] succeeded in 0.0613064029894s: None
+2017-12-21 02:19:47,964 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77df292250>, size: 4399
+2017-12-21 02:19:47,965 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[e102fbf6-0320-4982-8b86-941fafedd7f8] succeeded in 0.060252692987s: None
+2017-12-23 03:20:01,111 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[11fdb5ee-eb4e-4f0d-b7d7-e4cceb71be6c] eta:[2017-12-23 03:20:31.100973-05:00]
+2017-12-23 03:20:31,554 INFO 12437 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f77de455310>, size: 4410
+2017-12-23 03:20:31,556 INFO 8041 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[11fdb5ee-eb4e-4f0d-b7d7-e4cceb71be6c] succeeded in 0.0570263619884s: None
+2017-12-23 10:15:37,512 INFO 8041 [celery.worker.strategy] strategy.py:55 - Received task: student.tasks.send_activation_email[ff51353d-eb62-45ce-b2bc-76d245bf4eba]
+2017-12-23 10:15:37,739 INFO 12437 [edx.celery.task] tasks.py:26 - Activation Email has been sent to User bmbnmvbmcvm@yahoo.com
+2017-12-23 10:15:37,740 INFO 8041 [celery.worker.job] job.py:401 - Task student.tasks.send_activation_email[ff51353d-eb62-45ce-b2bc-76d245bf4eba] succeeded in 0.227111714019s: None
+
+worker: Warm shutdown (MainProcess)
+2017-12-25 05:52:14,011 INFO 20948 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-25 05:52:17,161 WARNING 20948 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-25 05:52:17,252 INFO 20948 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-25 05:52:17,286 INFO 20948 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-25 05:52:18,311 INFO 20948 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-12-25 05:52:18,313 INFO 20948 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-25 05:52:18,329 WARNING 20948 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-12-25 05:52:19,044 WARNING 20948 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-25 05:52:19.044758 recv: 2017-12-25 09:52:19.043554]
+
+2017-12-25 05:52:29,700 INFO 20948 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[87976aa5-a1dd-419a-a624-0764f668e5fb] eta:[2017-12-25 05:52:59.687346-05:00]
+2017-12-25 05:53:00,328 INFO 25952 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fdde795a910>, size: 4405
+2017-12-25 05:53:00,330 INFO 20948 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[87976aa5-a1dd-419a-a624-0764f668e5fb] succeeded in 0.627851971949s: None
+2017-12-25 05:53:39,170 INFO 20948 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[e2a2e49e-23c8-4b2e-8ca3-d991285d5b6f] eta:[2017-12-25 05:54:09.156012-05:00]
+2017-12-25 05:54:09,829 INFO 25952 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fdde77e0e50>, size: 6736
+2017-12-25 05:54:09,830 INFO 20948 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[e2a2e49e-23c8-4b2e-8ca3-d991285d5b6f] succeeded in 0.0992219750187s: None
+
+worker: Warm shutdown (MainProcess)
+2017-12-25 07:08:01,933 INFO 81842 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-25 07:08:03,974 WARNING 81842 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-25 07:08:03,993 INFO 81842 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-25 07:08:04,014 INFO 81842 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-25 07:08:05,026 INFO 81842 [celery.worker.consumer] consumer.py:573 - mingle: sync with 3 nodes
+2017-12-25 07:08:05,028 INFO 81842 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-25 07:08:05,044 WARNING 81842 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-12-25 07:08:05,450 WARNING 81842 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-25 07:08:05.450081 recv: 2017-12-25 11:08:05.448046]
+
+2017-12-25 08:01:16,170 INFO 81842 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[185f1d64-9e42-4423-b20f-3acfd30719d1] eta:[2017-12-25 08:01:18.152429-05:00]
+2017-12-25 08:01:18,494 INFO 86881 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f8f559729d0>, size: 4405
+2017-12-25 08:01:18,620 INFO 86881 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:Tetco+C10+Tl-10, version: 5a40d86d0aa5b5526c8d4c66, edited_on: 2017-12-25 10:52:29.659000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 3, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-12-25 08:01:18,622 INFO 81842 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[185f1d64-9e42-4423-b20f-3acfd30719d1] succeeded in 0.290043325978s: None
+
+worker: Warm shutdown (MainProcess)
+2017-12-25 10:25:11,486 INFO 1622 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-25 10:25:14,071 WARNING 1622 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-25 10:25:14,123 INFO 1622 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-25 10:25:14,166 INFO 1622 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-25 10:25:15,189 INFO 1622 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-12-25 10:25:15,190 INFO 1622 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-25 10:25:15,208 WARNING 1622 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-12-25 10:25:16,611 WARNING 1622 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-25 10:25:16.610975 recv: 2017-12-25 14:25:16.608485]
+
+2017-12-25 16:05:07,134 INFO 1622 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[f9662dea-8fcc-44ed-a5a3-32327dbb59b8] eta:[2017-12-25 16:05:09.123915-05:00]
+2017-12-25 16:05:09,497 INFO 5801 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f16a73f99d0>, size: 4449
+2017-12-25 16:05:09,618 INFO 5801 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:Tetco+C10+Tl-10, version: 5a40d86d0aa5b5526c8d4c66, edited_on: 2017-12-25 10:52:29.659000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 3, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-12-25 16:05:09,620 INFO 1622 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[f9662dea-8fcc-44ed-a5a3-32327dbb59b8] succeeded in 0.300864916997s: None
+2017-12-26 03:03:41,790 INFO 1622 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[7e501aca-753b-4aee-ad34-af240ca633c2] eta:[2017-12-26 03:04:11.774780-05:00]
+2017-12-26 03:04:12,517 INFO 5801 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f16a660cc10>, size: 4596
+2017-12-26 03:04:12,519 INFO 1622 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[7e501aca-753b-4aee-ad34-af240ca633c2] succeeded in 0.444321868003s: None
+2017-12-26 04:11:46,214 INFO 1622 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.instructor_task.tasks.calculate_students_features_csv[d96963cf-fbaf-4e88-afb6-583e0164e181]
+2017-12-26 04:11:46,248 INFO 5801 [edx.celery.task] runner.py:100 - Task: d96963cf-fbaf-4e88-afb6-583e0164e181, InstructorTask ID: 1, Course: course-v1:Tetco+C10+Tl-10, Input: [u'id', u'username', u'name', u'email', u'language', u'location', u'year_of_birth', u'gender', u'level_of_education', u'mailing_address', u'goals', u'enrollment_mode', u'verification_status', u'city', u'country'], Starting update (nothing generated yet)
+2017-12-26 04:11:46,260 INFO 5801 [edx.celery.task] runner.py:119 - Task: d96963cf-fbaf-4e88-afb6-583e0164e181, InstructorTask ID: 1, Course: course-v1:Tetco+C10+Tl-10, Input: [u'id', u'username', u'name', u'email', u'language', u'location', u'year_of_birth', u'gender', u'level_of_education', u'mailing_address', u'goals', u'enrollment_mode', u'verification_status', u'city', u'country'], Task type: generated, Finishing task: {'preassigned': 0, 'failed': 0, 'step': 'Uploading CSV', 'skipped': 0, 'succeeded': 3, 'duration_ms': 10, 'attempted': 3, 'total': 3, 'action_name': 'generated'}
+2017-12-26 04:11:46,275 INFO 1622 [celery.worker.job] job.py:401 - Task lms.djangoapps.instructor_task.tasks.calculate_students_features_csv[d96963cf-fbaf-4e88-afb6-583e0164e181] succeeded in 0.0592938239934s: {'preassigned': 0, 'failed': 0, 'step': 'Uploading CSV', 'skipped': 0, 'succeeded': 3, 'duration_ms': 10, 'attempted': 3,...
+2017-12-26 05:51:11,607 INFO 1622 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[e0da7497-2c5e-4a44-a0d3-31e6bf71510a] eta:[2017-12-26 05:51:13.596111-05:00]
+2017-12-26 05:51:15,261 INFO 5801 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f16a66b8b90>, size: 4596
+2017-12-26 05:51:15,294 INFO 5801 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:Tetco+C10+Tl-10, version: 5a42025d0aa5b5073083bf9a, edited_on: 2017-12-26 08:03:41.714000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 3, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-12-26 05:51:15,296 INFO 1622 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[e0da7497-2c5e-4a44-a0d3-31e6bf71510a] succeeded in 0.0453936260019s: None
+2017-12-26 05:53:27,917 INFO 1622 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[d8730692-c0a8-41ad-a98f-940ac661c49f] eta:[2017-12-26 05:53:57.905637-05:00]
+2017-12-26 05:53:59,390 INFO 5801 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f16a65d3350>, size: 1393
+2017-12-26 05:53:59,392 INFO 1622 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[d8730692-c0a8-41ad-a98f-940ac661c49f] succeeded in 0.0227209629957s: None
+2017-12-26 05:54:02,498 INFO 1622 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[27799ba3-43ee-429d-8009-ba444fae5f5a] eta:[2017-12-26 05:54:32.481319-05:00]
+2017-12-26 05:54:04,620 INFO 1622 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[007b075a-02ae-4831-b18d-d251be64827f] eta:[2017-12-26 05:54:34.597624-05:00]
+2017-12-26 05:54:33,425 INFO 5801 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f16a65d3d90>, size: 1912
+2017-12-26 05:54:33,426 INFO 1622 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[27799ba3-43ee-429d-8009-ba444fae5f5a] succeeded in 0.0261470880068s: None
+2017-12-26 05:54:34,372 INFO 1622 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[dedecc13-66a0-4bd7-aeb4-82fe5e51e1fa] eta:[2017-12-26 05:55:04.362718-05:00]
+2017-12-26 05:54:35,426 INFO 5801 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f16a6707c10>, size: 1917
+2017-12-26 05:54:35,427 INFO 1622 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[007b075a-02ae-4831-b18d-d251be64827f] succeeded in 0.028999407994s: None
+2017-12-26 05:54:43,847 INFO 1622 [celery.worker.strategy] strategy.py:55 - Received task: openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[343648eb-3591-4599-89e2-0727cfc645f0] eta:[2017-12-26 05:55:13.834655-05:00]
+2017-12-26 05:55:05,452 INFO 5801 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f16a659de50>, size: 2345
+2017-12-26 05:55:05,453 INFO 1622 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[dedecc13-66a0-4bd7-aeb4-82fe5e51e1fa] succeeded in 0.032011629999s: None
+2017-12-26 05:55:14,343 INFO 1622 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[791de769-5cbf-4406-8504-c7227c3de290] eta:[2017-12-26 05:55:16.325919-05:00]
+2017-12-26 05:55:14,369 INFO 5801 [openedx.core.djangoapps.content.block_structure.store] store.py:161 - BlockStructure: Added to cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f16a6543190>, size: 2345
+2017-12-26 05:55:14,372 INFO 1622 [celery.worker.job] job.py:401 - Task openedx.core.djangoapps.content.block_structure.tasks.update_course_in_cache_v2[343648eb-3591-4599-89e2-0727cfc645f0] succeeded in 0.0272914959933s: None
+2017-12-26 05:55:16,636 INFO 5801 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f16a6543510>, size: 2345
+2017-12-26 05:55:16,658 INFO 5801 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:edx+t1+T_01, version: 5a422a730aa5b5073083bf9b, edited_on: 2017-12-26 10:54:43.802000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 3, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-12-26 05:55:16,660 INFO 1622 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[791de769-5cbf-4406-8504-c7227c3de290] succeeded in 0.0289580079989s: None
+2017-12-26 05:56:20,983 INFO 1622 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[f9d3db30-ab11-43ac-9b11-569bbc9eaaec] eta:[2017-12-26 05:56:22.962978-05:00]
+2017-12-26 05:56:23,483 INFO 5801 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f16a6559f90>, size: 2345
+2017-12-26 05:56:23,507 INFO 5801 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:edx+t1+T_01, version: 5a422a730aa5b5073083bf9b, edited_on: 2017-12-26 10:54:43.802000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 3, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-12-26 05:56:23,509 INFO 1622 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[f9d3db30-ab11-43ac-9b11-569bbc9eaaec] succeeded in 0.0364871620113s: None
+2017-12-26 06:17:44,736 INFO 1622 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[501a91d4-cfca-42e3-aff7-0ffe93be8fb7] eta:[2017-12-26 06:17:46.726025-05:00]
+2017-12-26 06:17:48,419 INFO 5801 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7f16a65709d0>, size: 4596
+2017-12-26 06:17:48,452 INFO 5801 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:Tetco+C10+Tl-10, version: 5a42025d0aa5b5073083bf9a, edited_on: 2017-12-26 08:03:41.714000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 4, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-12-26 06:17:48,453 INFO 1622 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[501a91d4-cfca-42e3-aff7-0ffe93be8fb7] succeeded in 0.0409797929897s: None
+
+worker: Warm shutdown (MainProcess)
+2017-12-26 09:26:50,280 INFO 60080 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-26 09:26:56,432 WARNING 60080 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-26 09:26:56,535 INFO 60080 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-26 09:26:56,613 INFO 60080 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-26 09:26:57,651 INFO 60080 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-12-26 09:26:57,652 INFO 60080 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-26 09:26:57,673 WARNING 60080 [celery.redirected] log.py:282 - celery@edx.lms.core.default.tatweer02 ready.
+2017-12-26 09:26:58,685 WARNING 60080 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-26 09:26:58.685673 recv: 2017-12-26 13:26:58.683537]
+
+2017-12-26 09:39:30,212 INFO 60080 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[9caeebd4-ee85-4652-8f8e-74b54eda4eb9] eta:[2017-12-26 09:39:32.194503-05:00]
+2017-12-26 09:39:32,462 INFO 63962 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd0ae085990>, size: 2345
+2017-12-26 09:39:32,577 INFO 63962 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:edx+t1+T_01, version: 5a422a730aa5b5073083bf9b, edited_on: 2017-12-26 10:54:43.802000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 3, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-12-26 09:39:32,578 INFO 60080 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[9caeebd4-ee85-4652-8f8e-74b54eda4eb9] succeeded in 0.293493967998s: None
+2017-12-26 09:39:32,692 INFO 60080 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[456a690f-c48a-45f0-ba64-59fc783ded26] eta:[2017-12-26 09:39:34.673355-05:00]
+2017-12-26 09:39:34,986 INFO 63962 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd0ae025590>, size: 2345
+2017-12-26 09:39:34,992 INFO 60080 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[a7f26c10-9a45-4d35-b833-974ec7d17dc1] eta:[2017-12-26 09:39:36.975952-05:00]
+2017-12-26 09:39:35,016 INFO 63962 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:edx+t1+T_01, version: 5a422a730aa5b5073083bf9b, edited_on: 2017-12-26 10:54:43.802000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 3, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-12-26 09:39:35,018 INFO 60080 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[456a690f-c48a-45f0-ba64-59fc783ded26] succeeded in 0.0372130619944s: None
+2017-12-26 09:39:36,990 INFO 63962 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd0ae025390>, size: 2345
+2017-12-26 09:39:37,013 INFO 63962 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:edx+t1+T_01, version: 5a422a730aa5b5073083bf9b, edited_on: 2017-12-26 10:54:43.802000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 3, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-12-26 09:39:37,014 INFO 60080 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[a7f26c10-9a45-4d35-b833-974ec7d17dc1] succeeded in 0.0308219169965s: None
+2017-12-26 09:39:37,182 INFO 60080 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[6af95277-6f55-4a93-8ad3-b280005cf650] eta:[2017-12-26 09:39:39.168670-05:00]
+2017-12-26 09:39:39,323 INFO 63962 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd0ae0189d0>, size: 2345
+2017-12-26 09:39:39,347 INFO 63962 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:edx+t1+T_01, version: 5a422a730aa5b5073083bf9b, edited_on: 2017-12-26 10:54:43.802000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 3, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-12-26 09:39:39,348 INFO 60080 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[6af95277-6f55-4a93-8ad3-b280005cf650] succeeded in 0.030332313996s: None
+2017-12-26 09:40:39,350 INFO 60080 [celery.worker.strategy] strategy.py:55 - Received task: student.tasks.send_activation_email[93d95c3d-7c3e-4008-aefc-5ec558b47e55]
+2017-12-26 09:40:39,568 INFO 63962 [edx.celery.task] tasks.py:26 - Activation Email has been sent to User mss53.delrasoft@gmail.com
+2017-12-26 09:40:39,569 INFO 60080 [celery.worker.job] job.py:401 - Task student.tasks.send_activation_email[93d95c3d-7c3e-4008-aefc-5ec558b47e55] succeeded in 0.212940104s: None
+2017-12-26 09:41:56,101 INFO 60080 [celery.worker.strategy] strategy.py:55 - Received task: lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[90e53c46-0320-4496-9f10-bc98daf27f15] eta:[2017-12-26 09:41:58.084378-05:00]
+2017-12-26 09:41:58,176 INFO 63962 [openedx.core.djangoapps.content.block_structure.store] store.py:177 - BlockStructure: Read from cache; <openedx.core.djangoapps.content.block_structure.store.StubModel object at 0x7fd0cfaade50>, size: 2345
+2017-12-26 09:41:58,202 INFO 63962 [lms.djangoapps.grades.course_grade_factory] course_grade_factory.py:208 - Grades: Update, Course: course_key: course-v1:edx+t1+T_01, version: 5a422a730aa5b5073083bf9b, edited_on: 2017-12-26 10:54:43.802000+00:00, grading_policy: ChVp0lHGQGCevD0t4njna/C44zQ=, User: 7, Course Grade: percent: 0.0, letter_grade: None, passed: False, persisted: False
+2017-12-26 09:41:58,203 INFO 60080 [celery.worker.job] job.py:401 - Task lms.djangoapps.grades.tasks.recalculate_subsection_grade_v3[90e53c46-0320-4496-9f10-bc98daf27f15] succeeded in 0.0361860550038s: None

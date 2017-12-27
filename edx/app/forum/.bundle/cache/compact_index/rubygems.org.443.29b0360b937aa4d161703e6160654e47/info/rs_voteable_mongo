@@ -1,0 +1,6 @@
+---
+1.0.0 mongoid:< 5.0&>= 3.0|checksum:5dd177ee651a9a44c65843477c93d636dea5ab4dcda37be6d74ee83fe328ad59
+1.0.1 mongoid:< 5.0&>= 3.0|checksum:fa838226bf02a1b6d931b86b6074c3371b2dd4d04a236e218b8617692bb28941
+1.0.2 mongoid:< 5.0&>= 3.0|checksum:59d6bc06f15a67279ecd02b4c2ccbed05954365a90125f4f1b3a9f9ea8b5e99f
+1.1.0 mongoid:~> 5.0|checksum:f8584add2297acfd0ddf0e9278e5cc2c6481a73707ca586da7ab3c4bfc6f47da
+1.2.0 mongoid:~> 6.0|checksum:e31fe4dbde8f929c0d7c362cfef3ca5f140dc1c7c4bf03b64cb232859b441390

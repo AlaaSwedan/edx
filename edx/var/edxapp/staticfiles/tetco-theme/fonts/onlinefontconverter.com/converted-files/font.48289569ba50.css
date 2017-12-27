@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'DroidArabicKufi';
+  src: url("/static/tetco-theme/fonts/onlinefontconverter.com/converted-files/DroidArabicKufi.d537f1fc1da1.woff") format('woff'),
+       url("/static/tetco-theme/fonts/onlinefontconverter.com/converted-files/DroidArabicKufi.3a4032086da3.ttf") format('truetype'),
+       url("/static/tetco-theme/fonts/onlinefontconverter.com/converted-files/DroidArabicKufi.adc07e4c76da.svg#DroidArabicKufi") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DroidKufi-Regular.arabic';
+  src: url("/static/tetco-theme/fonts/onlinefontconverter.com/converted-files/DroidKufi-Regular.arabic.7bbc002a4bda.eot");
+  src: url("/static/tetco-theme/fonts/onlinefontconverter.com/converted-files/DroidKufi-Regular.arabic.7bbc002a4bda.eot?#iefix") format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DroidKufi-Regular';
+  src: url("/static/tetco-theme/fonts/onlinefontconverter.com/converted-files/DroidKufi-Regular.87e6ce446481.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

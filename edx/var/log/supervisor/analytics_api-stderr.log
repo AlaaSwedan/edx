@@ -1,0 +1,419 @@
+[2017-10-03 11:02:08 +0000] [28261] [INFO] Starting gunicorn 19.6.0
+[2017-10-03 11:02:08 +0000] [28261] [INFO] Listening at: http://127.0.0.1:8100 (28261)
+[2017-10-03 11:02:08 +0000] [28261] [INFO] Using worker: sync
+[2017-10-03 11:02:08 +0000] [28285] [INFO] Booting worker with pid: 28285
+[2017-10-03 11:02:08 +0000] [28286] [INFO] Booting worker with pid: 28286
+[2017-10-03 11:02:09 +0000] [28285] [INFO] Worker exiting (pid: 28285)
+[2017-10-03 11:02:09 +0000] [28261] [INFO] Handling signal: term
+[2017-10-03 11:02:09 +0000] [28286] [INFO] Worker exiting (pid: 28286)
+[2017-10-03 11:02:09 +0000] [28372] [INFO] Starting gunicorn 19.6.0
+[2017-10-03 11:02:09 +0000] [28372] [INFO] Listening at: http://127.0.0.1:8100 (28372)
+[2017-10-03 11:02:09 +0000] [28372] [INFO] Using worker: sync
+[2017-10-03 11:02:09 +0000] [28377] [INFO] Booting worker with pid: 28377
+[2017-10-03 11:02:09 +0000] [28378] [INFO] Booting worker with pid: 28378
+[2017-10-03 11:33:40 +0000] [77343] [INFO] Starting gunicorn 19.6.0
+[2017-10-03 11:33:40 +0000] [77343] [INFO] Listening at: http://127.0.0.1:8100 (77343)
+[2017-10-03 11:33:40 +0000] [77343] [INFO] Using worker: sync
+[2017-10-03 11:33:40 +0000] [77348] [INFO] Booting worker with pid: 77348
+[2017-10-03 11:33:40 +0000] [77349] [INFO] Booting worker with pid: 77349
+[2017-10-03 13:43:17 +0000] [45814] [INFO] Starting gunicorn 19.6.0
+[2017-10-03 13:43:17 +0000] [45814] [INFO] Listening at: http://127.0.0.1:8100 (45814)
+[2017-10-03 13:43:17 +0000] [45814] [INFO] Using worker: sync
+[2017-10-03 13:43:17 +0000] [45855] [INFO] Booting worker with pid: 45855
+[2017-10-03 13:43:17 +0000] [45859] [INFO] Booting worker with pid: 45859
+[2017-10-03 13:45:41 +0000] [45859] [INFO] Worker exiting (pid: 45859)
+[2017-10-03 13:45:41 +0000] [45855] [INFO] Worker exiting (pid: 45855)
+[2017-10-03 13:45:41 +0000] [45814] [INFO] Handling signal: term
+[2017-10-03 13:45:45 +0000] [51806] [INFO] Starting gunicorn 19.6.0
+[2017-10-03 13:45:45 +0000] [51806] [INFO] Listening at: http://127.0.0.1:8100 (51806)
+[2017-10-03 13:45:45 +0000] [51806] [INFO] Using worker: sync
+[2017-10-03 13:45:45 +0000] [51838] [INFO] Booting worker with pid: 51838
+[2017-10-03 13:45:45 +0000] [51839] [INFO] Booting worker with pid: 51839
+[2017-10-03 14:03:37 +0000] [51806] [INFO] Handling signal: term
+[2017-10-03 14:03:37 +0000] [51838] [INFO] Worker exiting (pid: 51838)
+[2017-10-03 14:03:37 +0000] [51839] [INFO] Worker exiting (pid: 51839)
+[2017-10-03 14:03:40 +0000] [71275] [INFO] Starting gunicorn 19.6.0
+[2017-10-03 14:03:40 +0000] [71275] [INFO] Listening at: http://127.0.0.1:8100 (71275)
+[2017-10-03 14:03:40 +0000] [71275] [INFO] Using worker: sync
+[2017-10-03 14:03:40 +0000] [71314] [INFO] Booting worker with pid: 71314
+[2017-10-03 14:03:40 +0000] [71315] [INFO] Booting worker with pid: 71315
+[2017-10-03 14:20:34 +0000] [71275] [INFO] Handling signal: term
+[2017-10-03 14:20:34 +0000] [71314] [INFO] Worker exiting (pid: 71314)
+[2017-10-03 14:21:13 +0000] [2038] [INFO] Starting gunicorn 19.6.0
+[2017-10-03 14:21:13 +0000] [2038] [INFO] Listening at: http://127.0.0.1:8100 (2038)
+[2017-10-03 14:21:13 +0000] [2038] [INFO] Using worker: sync
+[2017-10-03 14:21:14 +0000] [2242] [INFO] Booting worker with pid: 2242
+[2017-10-03 14:21:14 +0000] [2243] [INFO] Booting worker with pid: 2243
+[2017-10-03 14:47:46 +0000] [25424] [INFO] Starting gunicorn 19.6.0
+[2017-10-03 14:47:46 +0000] [25424] [INFO] Listening at: http://127.0.0.1:8100 (25424)
+[2017-10-03 14:47:46 +0000] [25424] [INFO] Using worker: sync
+[2017-10-03 14:47:46 +0000] [25459] [INFO] Booting worker with pid: 25459
+[2017-10-03 14:47:46 +0000] [25463] [INFO] Booting worker with pid: 25463
+[2017-10-06 23:59:07 +0000] [25463] [INFO] Worker exiting (pid: 25463)
+[2017-10-06 23:59:07 +0000] [25424] [INFO] Handling signal: term
+[2017-10-06 23:59:07 +0000] [25459] [INFO] Worker exiting (pid: 25459)
+[2017-10-07 07:43:10 +0000] [1637] [INFO] Starting gunicorn 19.6.0
+[2017-10-07 07:43:10 +0000] [1637] [INFO] Listening at: http://127.0.0.1:8100 (1637)
+[2017-10-07 07:43:10 +0000] [1637] [INFO] Using worker: sync
+[2017-10-07 07:43:10 +0000] [1741] [INFO] Booting worker with pid: 1741
+[2017-10-07 07:43:10 +0000] [1742] [INFO] Booting worker with pid: 1742
+[2017-10-07 07:43:12 +0000] [1741] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/edx/app/analytics_api/analytics_api/analyticsdataserver/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()  # pylint: disable=invalid-name
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/utils/log.py", line 75, in configure_logging
+    logging_config_func(logging_settings)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+[2017-10-07 07:43:12 +0000] [1742] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/edx/app/analytics_api/analytics_api/analyticsdataserver/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()  # pylint: disable=invalid-name
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/utils/log.py", line 75, in configure_logging
+    logging_config_func(logging_settings)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+[2017-10-07 07:43:12 +0000] [1742] [INFO] Worker exiting (pid: 1742)
+[2017-10-07 07:43:12 +0000] [1741] [INFO] Worker exiting (pid: 1741)
+[2017-10-07 07:43:12 +0000] [1637] [INFO] Shutting down: Master
+[2017-10-07 07:43:12 +0000] [1637] [INFO] Reason: Worker failed to boot.
+[2017-10-07 07:43:13 +0000] [1838] [INFO] Starting gunicorn 19.6.0
+[2017-10-07 07:43:13 +0000] [1838] [INFO] Listening at: http://127.0.0.1:8100 (1838)
+[2017-10-07 07:43:13 +0000] [1838] [INFO] Using worker: sync
+[2017-10-07 07:43:13 +0000] [1867] [INFO] Booting worker with pid: 1867
+[2017-10-07 07:43:13 +0000] [1882] [INFO] Booting worker with pid: 1882
+[2017-10-07 07:43:14 +0000] [1867] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/edx/app/analytics_api/analytics_api/analyticsdataserver/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()  # pylint: disable=invalid-name
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/utils/log.py", line 75, in configure_logging
+    logging_config_func(logging_settings)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+[2017-10-07 07:43:14 +0000] [1867] [INFO] Worker exiting (pid: 1867)
+[2017-10-07 07:43:14 +0000] [1882] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/edx/app/analytics_api/analytics_api/analyticsdataserver/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()  # pylint: disable=invalid-name
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/utils/log.py", line 75, in configure_logging
+    logging_config_func(logging_settings)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+[2017-10-07 07:43:14 +0000] [1882] [INFO] Worker exiting (pid: 1882)
+[2017-10-07 07:43:14 +0000] [1838] [INFO] Shutting down: Master
+[2017-10-07 07:43:14 +0000] [1838] [INFO] Reason: Worker failed to boot.
+[2017-10-07 07:43:16 +0000] [2018] [INFO] Starting gunicorn 19.6.0
+[2017-10-07 07:43:16 +0000] [2018] [INFO] Listening at: http://127.0.0.1:8100 (2018)
+[2017-10-07 07:43:16 +0000] [2018] [INFO] Using worker: sync
+[2017-10-07 07:43:16 +0000] [2041] [INFO] Booting worker with pid: 2041
+[2017-10-07 07:43:16 +0000] [2042] [INFO] Booting worker with pid: 2042
+[2017-10-11 09:30:34 +0000] [69270] [INFO] Starting gunicorn 19.6.0
+[2017-10-11 09:30:34 +0000] [69270] [INFO] Listening at: http://127.0.0.1:8100 (69270)
+[2017-10-11 09:30:34 +0000] [69270] [INFO] Using worker: sync
+[2017-10-11 09:30:34 +0000] [69310] [INFO] Booting worker with pid: 69310
+[2017-10-11 09:30:34 +0000] [69311] [INFO] Booting worker with pid: 69311
+[2017-10-11 09:32:44 +0000] [69311] [INFO] Worker exiting (pid: 69311)
+[2017-10-11 09:32:44 +0000] [69270] [INFO] Handling signal: term
+[2017-10-11 09:32:44 +0000] [69310] [INFO] Worker exiting (pid: 69310)
+[2017-10-11 09:32:47 +0000] [75018] [INFO] Starting gunicorn 19.6.0
+[2017-10-11 09:32:47 +0000] [75018] [INFO] Listening at: http://127.0.0.1:8100 (75018)
+[2017-10-11 09:32:47 +0000] [75018] [INFO] Using worker: sync
+[2017-10-11 09:32:47 +0000] [75055] [INFO] Booting worker with pid: 75055
+[2017-10-11 09:32:47 +0000] [75056] [INFO] Booting worker with pid: 75056
+[2017-10-23 23:34:02 +0000] [75056] [INFO] Worker exiting (pid: 75056)
+[2017-10-23 23:34:02 +0000] [75055] [INFO] Worker exiting (pid: 75055)
+[2017-10-23 23:34:02 +0000] [75018] [INFO] Handling signal: term
+[2017-10-29 15:04:59 +0000] [1659] [INFO] Starting gunicorn 19.6.0
+[2017-10-29 15:04:59 +0000] [1659] [INFO] Listening at: http://127.0.0.1:8100 (1659)
+[2017-10-29 15:04:59 +0000] [1659] [INFO] Using worker: sync
+[2017-10-29 15:04:59 +0000] [1778] [INFO] Booting worker with pid: 1778
+[2017-10-29 15:04:59 +0000] [1785] [INFO] Booting worker with pid: 1785
+[2017-11-18 15:24:43 +0000] [1778] [INFO] Worker exiting (pid: 1778)
+[2017-11-18 15:24:43 +0000] [1785] [INFO] Worker exiting (pid: 1785)
+[2017-11-18 15:24:43 +0000] [1659] [INFO] Handling signal: term
+[2017-11-18 15:25:16 +0000] [2062] [INFO] Starting gunicorn 19.6.0
+[2017-11-18 15:25:16 +0000] [2062] [INFO] Listening at: http://127.0.0.1:8100 (2062)
+[2017-11-18 15:25:16 +0000] [2062] [INFO] Using worker: sync
+[2017-11-18 15:25:16 +0000] [2308] [INFO] Booting worker with pid: 2308
+[2017-11-18 15:25:16 +0000] [2309] [INFO] Booting worker with pid: 2309
+[2017-11-19 14:35:18 +0000] [2308] [INFO] Worker exiting (pid: 2308)
+[2017-11-19 14:35:18 +0000] [2309] [INFO] Worker exiting (pid: 2309)
+[2017-11-19 14:35:18 +0000] [2062] [INFO] Handling signal: term
+[2017-11-19 14:35:44 +0000] [2080] [INFO] Starting gunicorn 19.6.0
+[2017-11-19 14:35:44 +0000] [2080] [INFO] Listening at: http://127.0.0.1:8100 (2080)
+[2017-11-19 14:35:44 +0000] [2080] [INFO] Using worker: sync
+[2017-11-19 14:35:44 +0000] [2261] [INFO] Booting worker with pid: 2261
+[2017-11-19 14:35:44 +0000] [2262] [INFO] Booting worker with pid: 2262
+[2017-11-19 15:06:29 +0000] [2262] [INFO] Worker exiting (pid: 2262)
+[2017-11-19 15:06:29 +0000] [2080] [INFO] Handling signal: term
+[2017-11-19 15:06:29 +0000] [2261] [INFO] Worker exiting (pid: 2261)
+[2017-11-19 15:06:33 +0000] [29660] [INFO] Starting gunicorn 19.6.0
+[2017-11-19 15:06:33 +0000] [29660] [INFO] Listening at: http://127.0.0.1:8100 (29660)
+[2017-11-19 15:06:33 +0000] [29660] [INFO] Using worker: sync
+[2017-11-19 15:06:33 +0000] [29700] [INFO] Booting worker with pid: 29700
+[2017-11-19 15:06:33 +0000] [29710] [INFO] Booting worker with pid: 29710
+[2017-11-19 15:08:35 +0000] [29710] [INFO] Worker exiting (pid: 29710)
+[2017-11-19 15:08:35 +0000] [29700] [INFO] Worker exiting (pid: 29700)
+[2017-11-19 15:08:35 +0000] [29660] [INFO] Handling signal: term
+[2017-11-19 15:08:39 +0000] [35442] [INFO] Starting gunicorn 19.6.0
+[2017-11-19 15:08:39 +0000] [35442] [INFO] Listening at: http://127.0.0.1:8100 (35442)
+[2017-11-19 15:08:39 +0000] [35442] [INFO] Using worker: sync
+[2017-11-19 15:08:39 +0000] [35475] [INFO] Booting worker with pid: 35475
+[2017-11-19 15:08:39 +0000] [35476] [INFO] Booting worker with pid: 35476
+[2017-11-20 09:22:26 +0000] [35475] [INFO] Worker exiting (pid: 35475)
+[2017-11-20 09:22:26 +0000] [35476] [INFO] Worker exiting (pid: 35476)
+[2017-11-20 09:22:26 +0000] [35442] [INFO] Handling signal: term
+[2017-11-20 09:22:30 +0000] [3309] [INFO] Starting gunicorn 19.6.0
+[2017-11-20 09:22:30 +0000] [3309] [INFO] Listening at: http://127.0.0.1:8100 (3309)
+[2017-11-20 09:22:30 +0000] [3309] [INFO] Using worker: sync
+[2017-11-20 09:22:30 +0000] [3345] [INFO] Booting worker with pid: 3345
+[2017-11-20 09:22:30 +0000] [3346] [INFO] Booting worker with pid: 3346
+[2017-11-20 14:14:32 +0000] [47415] [INFO] Starting gunicorn 19.6.0
+[2017-11-20 14:14:32 +0000] [47415] [INFO] Listening at: http://127.0.0.1:8100 (47415)
+[2017-11-20 14:14:32 +0000] [47415] [INFO] Using worker: sync
+[2017-11-20 14:14:32 +0000] [47454] [INFO] Booting worker with pid: 47454
+[2017-11-20 14:14:32 +0000] [47464] [INFO] Booting worker with pid: 47464
+[2017-11-20 15:27:14 +0000] [47454] [INFO] Worker exiting (pid: 47454)
+[2017-11-20 15:27:14 +0000] [47464] [INFO] Worker exiting (pid: 47464)
+[2017-11-20 15:27:17 +0000] [51223] [INFO] Starting gunicorn 19.6.0
+[2017-11-20 15:27:17 +0000] [51223] [INFO] Listening at: http://127.0.0.1:8100 (51223)
+[2017-11-20 15:27:17 +0000] [51223] [INFO] Using worker: sync
+[2017-11-20 15:27:17 +0000] [51252] [INFO] Booting worker with pid: 51252
+[2017-11-20 15:27:17 +0000] [51253] [INFO] Booting worker with pid: 51253
+[2017-11-20 15:29:14 +0000] [51253] [INFO] Worker exiting (pid: 51253)
+[2017-11-20 15:29:18 +0000] [57133] [INFO] Starting gunicorn 19.6.0
+[2017-11-20 15:29:18 +0000] [57133] [INFO] Listening at: http://127.0.0.1:8100 (57133)
+[2017-11-20 15:29:18 +0000] [57133] [INFO] Using worker: sync
+[2017-11-20 15:29:18 +0000] [57172] [INFO] Booting worker with pid: 57172
+[2017-11-20 15:29:18 +0000] [57173] [INFO] Booting worker with pid: 57173
+[2017-12-19 10:09:19 +0000] [1688] [INFO] Starting gunicorn 19.6.0
+[2017-12-19 10:09:19 +0000] [1688] [INFO] Listening at: http://127.0.0.1:8100 (1688)
+[2017-12-19 10:09:19 +0000] [1688] [INFO] Using worker: sync
+[2017-12-19 10:09:19 +0000] [1796] [INFO] Booting worker with pid: 1796
+[2017-12-19 10:09:19 +0000] [1802] [INFO] Booting worker with pid: 1802
+[2017-12-19 11:15:01 +0000] [1802] [INFO] Worker exiting (pid: 1802)
+[2017-12-19 11:15:01 +0000] [1796] [INFO] Worker exiting (pid: 1796)
+[2017-12-19 11:15:04 +0000] [58618] [INFO] Starting gunicorn 19.6.0
+[2017-12-19 11:15:04 +0000] [58618] [INFO] Listening at: http://127.0.0.1:8100 (58618)
+[2017-12-19 11:15:04 +0000] [58618] [INFO] Using worker: sync
+[2017-12-19 11:15:04 +0000] [58660] [INFO] Booting worker with pid: 58660
+[2017-12-19 11:15:04 +0000] [58661] [INFO] Booting worker with pid: 58661
+[2017-12-19 12:50:16 +0000] [58660] [INFO] Worker exiting (pid: 58660)
+[2017-12-19 12:50:16 +0000] [58661] [INFO] Worker exiting (pid: 58661)
+[2017-12-19 12:50:16 +0000] [58618] [INFO] Handling signal: term
+[2017-12-19 12:50:16 +0000] [58618] [INFO] Shutting down: Master
+[2017-12-19 12:50:20 +0000] [4841] [INFO] Starting gunicorn 19.6.0
+[2017-12-19 12:50:20 +0000] [4841] [INFO] Listening at: http://127.0.0.1:8100 (4841)
+[2017-12-19 12:50:20 +0000] [4841] [INFO] Using worker: sync
+[2017-12-19 12:50:20 +0000] [4878] [INFO] Booting worker with pid: 4878
+[2017-12-19 12:50:20 +0000] [4883] [INFO] Booting worker with pid: 4883
+[2017-12-19 13:16:49 +0000] [4878] [INFO] Worker exiting (pid: 4878)
+[2017-12-19 13:16:49 +0000] [4841] [INFO] Handling signal: term
+[2017-12-19 13:16:49 +0000] [4883] [INFO] Worker exiting (pid: 4883)
+[2017-12-19 13:16:53 +0000] [29663] [INFO] Starting gunicorn 19.6.0
+[2017-12-19 13:16:53 +0000] [29663] [INFO] Listening at: http://127.0.0.1:8100 (29663)
+[2017-12-19 13:16:53 +0000] [29663] [INFO] Using worker: sync
+[2017-12-19 13:16:53 +0000] [29699] [INFO] Booting worker with pid: 29699
+[2017-12-19 13:16:53 +0000] [29707] [INFO] Booting worker with pid: 29707
+[2017-12-20 18:24:09 +0000] [29707] [INFO] Worker exiting (pid: 29707)
+[2017-12-20 18:24:13 +0000] [8045] [INFO] Starting gunicorn 19.6.0
+[2017-12-20 18:24:13 +0000] [8045] [INFO] Listening at: http://127.0.0.1:8100 (8045)
+[2017-12-20 18:24:13 +0000] [8045] [INFO] Using worker: sync
+[2017-12-20 18:24:13 +0000] [8084] [INFO] Booting worker with pid: 8084
+[2017-12-20 18:24:13 +0000] [8086] [INFO] Booting worker with pid: 8086
+[2017-12-25 10:51:36 +0000] [8084] [INFO] Worker exiting (pid: 8084)
+[2017-12-25 10:51:40 +0000] [20952] [INFO] Starting gunicorn 19.6.0
+[2017-12-25 10:51:40 +0000] [20952] [INFO] Listening at: http://127.0.0.1:8100 (20952)
+[2017-12-25 10:51:40 +0000] [20952] [INFO] Using worker: sync
+[2017-12-25 10:51:40 +0000] [20986] [INFO] Booting worker with pid: 20986
+[2017-12-25 10:51:40 +0000] [20991] [INFO] Booting worker with pid: 20991
+[2017-12-25 12:07:26 +0000] [81852] [INFO] Starting gunicorn 19.6.0
+[2017-12-25 12:07:26 +0000] [81852] [INFO] Listening at: http://127.0.0.1:8100 (81852)
+[2017-12-25 12:07:26 +0000] [81852] [INFO] Using worker: sync
+[2017-12-25 12:07:26 +0000] [81890] [INFO] Booting worker with pid: 81890
+[2017-12-25 12:07:27 +0000] [81893] [INFO] Booting worker with pid: 81893
+[2017-12-25 15:21:54 +0000] [81893] [INFO] Worker exiting (pid: 81893)
+[2017-12-25 15:21:54 +0000] [81852] [INFO] Handling signal: term
+[2017-12-25 15:21:54 +0000] [81890] [INFO] Worker exiting (pid: 81890)
+[2017-12-25 15:24:18 +0000] [1615] [INFO] Starting gunicorn 19.6.0
+[2017-12-25 15:24:18 +0000] [1615] [INFO] Listening at: http://127.0.0.1:8100 (1615)
+[2017-12-25 15:24:18 +0000] [1615] [INFO] Using worker: sync
+[2017-12-25 15:24:18 +0000] [1724] [INFO] Booting worker with pid: 1724
+[2017-12-25 15:24:18 +0000] [1730] [INFO] Booting worker with pid: 1730
+[2017-12-25 15:24:20 +0000] [1724] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/edx/app/analytics_api/analytics_api/analyticsdataserver/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()  # pylint: disable=invalid-name
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/utils/log.py", line 75, in configure_logging
+    logging_config_func(logging_settings)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+[2017-12-25 15:24:20 +0000] [1730] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 557, in spawn_worker
+    worker.init_process()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 136, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/util.py", line 357, in import_app
+    __import__(module)
+  File "/edx/app/analytics_api/analytics_api/analyticsdataserver/wsgi.py", line 13, in <module>
+    application = get_wsgi_application()  # pylint: disable=invalid-name
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/django/utils/log.py", line 75, in configure_logging
+    logging_config_func(logging_settings)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+[2017-12-25 15:24:20 +0000] [1724] [INFO] Worker exiting (pid: 1724)
+[2017-12-25 15:24:20 +0000] [1730] [INFO] Worker exiting (pid: 1730)
+Traceback (most recent call last):
+  File "/edx/app/analytics_api/venvs/analytics_api/bin//gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 192, in run
+    super(Application, self).run()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 218, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 331, in halt
+    self.stop()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 381, in stop
+    time.sleep(0.1)
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 231, in handle_chld
+    self.reap_workers()
+  File "/edx/app/analytics_api/venvs/analytics_api/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 506, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2017-12-25 15:24:21 +0000] [1781] [INFO] Starting gunicorn 19.6.0
+[2017-12-25 15:24:21 +0000] [1781] [INFO] Listening at: http://127.0.0.1:8100 (1781)
+[2017-12-25 15:24:21 +0000] [1781] [INFO] Using worker: sync
+[2017-12-25 15:24:21 +0000] [1823] [INFO] Booting worker with pid: 1823
+[2017-12-25 15:24:21 +0000] [1825] [INFO] Booting worker with pid: 1825
+[2017-12-26 14:25:40 +0000] [1825] [INFO] Worker exiting (pid: 1825)
+[2017-12-26 14:25:40 +0000] [1781] [INFO] Handling signal: term
+[2017-12-26 14:25:40 +0000] [1823] [INFO] Worker exiting (pid: 1823)
+[2017-12-26 14:25:44 +0000] [60085] [INFO] Starting gunicorn 19.6.0
+[2017-12-26 14:25:44 +0000] [60085] [INFO] Listening at: http://127.0.0.1:8100 (60085)
+[2017-12-26 14:25:44 +0000] [60085] [INFO] Using worker: sync
+[2017-12-26 14:25:44 +0000] [60105] [INFO] Booting worker with pid: 60105
+[2017-12-26 14:25:44 +0000] [60106] [INFO] Booting worker with pid: 60106

@@ -1,0 +1,1396 @@
+2017-10-03 06:29:17,985 INFO 98710 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 06:29:18,494 WARNING 98710 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 06:29:18,545 INFO 98710 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 06:29:18,627 INFO 98710 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 06:29:19,687 INFO 98710 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-10-03 06:29:19,741 WARNING 98710 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-10-03 06:29:19,835 INFO 98710 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-10-03 06:45:12,893 INFO 98710 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-10-03 06:45:15,862 INFO 98710 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 06:45:24,530 INFO 115166 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 06:45:24,924 WARNING 115166 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 06:45:24,946 INFO 115166 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 06:45:24,958 INFO 115166 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 06:45:25,975 INFO 115166 [celery.worker.consumer] consumer.py:573 - mingle: sync with 5 nodes
+2017-10-03 06:45:25,976 INFO 115166 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-03 06:45:25,992 WARNING 115166 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-10-03 06:45:27,903 INFO 115166 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high_mem.tatweer02
+2017-10-03 06:45:31,210 INFO 115166 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-10-03 07:01:22,631 INFO 115166 [celery.worker.control] control.py:270 - sync with celery@tatweer02
+2017-10-03 07:01:23,146 INFO 115166 [celery.worker.control] control.py:270 - sync with celery@tatweer02
+2017-10-03 07:01:23,398 INFO 115166 [celery.worker.control] control.py:270 - sync with celery@tatweer02
+2017-10-03 07:01:24,356 WARNING 115166 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 07:01:24.356350 recv: 2017-10-03 11:01:24.354795]
+
+2017-10-03 07:01:24,507 INFO 115166 [celery.worker.control] control.py:270 - sync with celery@tatweer02
+2017-10-03 07:20:28,786 WARNING 115166 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-10-03 07:20:28,840 ERROR 115166 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-10-03 07:20:30,847 ERROR 115166 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-10-03 07:20:34,855 ERROR 115166 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-10-03 07:20:40,888 INFO 115166 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 07:20:40,902 INFO 115166 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 07:20:42,060 INFO 115166 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-10-03 07:23:21,187 INFO 115166 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-10-03 07:23:24,313 INFO 115166 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 07:23:32,974 INFO 57259 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 07:23:33,372 WARNING 57259 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 07:23:33,388 INFO 57259 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 07:23:33,397 INFO 57259 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 07:23:34,419 INFO 57259 [celery.worker.consumer] consumer.py:573 - mingle: sync with 5 nodes
+2017-10-03 07:23:34,420 INFO 57259 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-03 07:23:34,437 WARNING 57259 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-10-03 07:23:36,145 WARNING 57259 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 07:23:36.145532 recv: 2017-10-03 11:23:36.143471]
+
+2017-10-03 07:23:36,295 INFO 57259 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high_mem.tatweer02
+2017-10-03 07:23:39,391 INFO 57259 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-10-03 07:33:25,422 INFO 57259 [celery.worker.control] control.py:270 - sync with celery@tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 09:43:47,264 INFO 45825 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 09:43:50,789 WARNING 45825 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 09:43:50,924 INFO 45825 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 09:43:50,992 INFO 45825 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 09:43:52,014 INFO 45825 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-10-03 09:43:52,015 INFO 45825 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-03 09:43:52,042 WARNING 45825 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-10-03 09:43:52,057 WARNING 45825 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 09:43:52.056846 recv: 2017-10-03 13:43:52.048635]
+
+2017-10-03 09:43:52,694 INFO 45825 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high_mem.tatweer02
+2017-10-03 09:43:52,748 INFO 45825 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-10-03 09:43:52,813 INFO 45825 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-10-03 09:43:52,923 INFO 45825 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-10-03 09:43:53,114 INFO 45825 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 09:46:20,132 INFO 51809 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 09:46:21,392 WARNING 51809 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 09:46:21,409 INFO 51809 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 09:46:21,418 INFO 51809 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 09:46:22,429 INFO 51809 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-10-03 09:46:22,430 INFO 51809 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-03 09:46:22,447 WARNING 51809 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-10-03 09:46:23,029 WARNING 51809 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 09:46:23.028843 recv: 2017-10-03 13:46:23.027190]
+
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 10:04:12,412 INFO 71285 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 10:04:16,930 WARNING 71285 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 10:04:17,069 INFO 71285 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 10:04:17,132 INFO 71285 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 10:04:18,145 INFO 71285 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-10-03 10:04:18,146 INFO 71285 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-03 10:04:18,192 WARNING 71285 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-10-03 10:04:18,390 INFO 71285 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high_mem.tatweer02
+2017-10-03 10:04:18,461 WARNING 71285 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 10:04:18.461135 recv: 2017-10-03 14:04:18.459121]
+
+2017-10-03 10:04:19,763 INFO 71285 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-10-03 10:04:19,936 INFO 71285 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+2017-10-03 10:04:19,939 INFO 71285 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-10-03 10:04:20,099 INFO 71285 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 10:21:44,749 INFO 2059 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 10:21:48,441 WARNING 2059 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 10:21:48,558 INFO 2059 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 10:21:48,631 INFO 2059 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 10:21:49,655 INFO 2059 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-10-03 10:21:49,656 INFO 2059 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-03 10:21:49,674 WARNING 2059 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-10-03 10:21:49,771 INFO 2059 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.default.tatweer02
+2017-10-03 10:21:50,128 WARNING 2059 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 10:21:50.128139 recv: 2017-10-03 14:21:50.127113]
+
+2017-10-03 10:21:50,319 INFO 2059 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-10-03 10:21:50,328 INFO 2059 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-10-03 10:21:50,333 INFO 2059 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 10:48:21,115 INFO 25422 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-03 10:48:22,523 WARNING 25422 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-03 10:48:22,540 INFO 25422 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-03 10:48:22,549 INFO 25422 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-03 10:48:23,560 INFO 25422 [celery.worker.consumer] consumer.py:573 - mingle: sync with 3 nodes
+2017-10-03 10:48:23,561 INFO 25422 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-03 10:48:23,585 WARNING 25422 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-10-03 10:48:24,266 WARNING 25422 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 10:48:24.266008 recv: 2017-10-03 14:48:24.264881]
+
+
+worker: Warm shutdown (MainProcess)
+2017-10-07 03:43:49,925 INFO 1646 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-07 03:43:50,996 WARNING 1646 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-07 03:43:51,017 INFO 1646 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-07 03:43:51,030 INFO 1646 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-07 03:43:52,038 INFO 1646 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-10-07 03:43:52,039 INFO 1646 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-07 03:43:52,054 WARNING 1646 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-10-07 03:43:52,626 WARNING 1646 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-07 03:43:52.626305 recv: 2017-10-07 07:43:52.625121]
+
+2017-10-07 03:54:02,984 WARNING 1646 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-10-07 03:54:03,015 ERROR 1646 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-10-07 03:54:05,022 ERROR 1646 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-10-07 03:54:09,036 ERROR 1646 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-10-07 03:54:15,060 INFO 1646 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-07 03:54:15,108 INFO 1646 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-07 03:54:16,336 INFO 1646 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-10-07 04:05:02,537 WARNING 1646 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-10-07 04:05:02,552 ERROR 1646 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-10-07 04:05:04,559 ERROR 1646 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-10-07 04:05:08,567 ERROR 1646 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-10-07 04:05:14,581 INFO 1646 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-07 04:05:14,599 INFO 1646 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-07 04:05:16,154 INFO 1646 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+2017-10-11 05:31:05,634 INFO 69279 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-11 05:31:09,138 WARNING 69279 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-11 05:31:09,240 INFO 69279 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-11 05:31:09,294 INFO 69279 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-11 05:31:10,310 INFO 69279 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-10-11 05:31:10,311 INFO 69279 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-11 05:31:10,331 WARNING 69279 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-10-11 05:31:10,504 INFO 69279 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-10-11 05:31:10,544 INFO 69279 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+2017-10-11 05:31:10,701 INFO 69279 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.default.tatweer02
+2017-10-11 05:31:10,733 INFO 69279 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-10-11 05:31:10,899 INFO 69279 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-10-11 05:31:12,162 WARNING 69279 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-11 05:31:12.162666 recv: 2017-10-11 09:31:12.161484]
+
+
+worker: Warm shutdown (MainProcess)
+2017-10-11 05:33:22,469 INFO 75020 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-11 05:33:24,078 WARNING 75020 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-11 05:33:24,099 INFO 75020 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-11 05:33:24,116 INFO 75020 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-11 05:33:25,126 INFO 75020 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-10-11 05:33:25,127 INFO 75020 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-11 05:33:25,147 WARNING 75020 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-10-11 05:33:25,436 WARNING 75020 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-11 05:33:25.436759 recv: 2017-10-11 09:33:25.434503]
+
+2017-10-14 10:25:14,881 WARNING 75020 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-10-14 10:25:14,907 ERROR 75020 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-10-14 10:25:16,916 ERROR 75020 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-10-14 10:25:20,928 ERROR 75020 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-10-14 10:25:26,979 INFO 75020 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-14 10:25:26,994 INFO 75020 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-14 10:25:28,304 INFO 75020 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-10-14 10:41:59,751 WARNING 75020 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 530, in _close
+    (class_id, method_id), ConnectionError)
+ConnectionForced: (0, 0): (320) CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'
+2017-10-14 10:41:59,770 ERROR 75020 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-10-14 10:42:01,778 ERROR 75020 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-10-14 10:42:05,787 ERROR 75020 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-10-14 10:42:11,802 INFO 75020 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-14 10:42:11,861 INFO 75020 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-14 10:42:12,914 INFO 75020 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-10-14 10:42:13,012 INFO 75020 [celery.worker.control] control.py:270 - sync with celery@tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-10-29 11:05:36,716 INFO 1668 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-10-29 11:05:38,266 WARNING 1668 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-10-29 11:05:38,288 INFO 1668 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-10-29 11:05:38,313 INFO 1668 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-10-29 11:05:39,343 INFO 1668 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-10-29 11:05:39,344 INFO 1668 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-10-29 11:05:39,365 WARNING 1668 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-10-29 11:05:39,398 WARNING 1668 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-29 11:05:39.397979 recv: 2017-10-29 15:05:39.396268]
+
+2017-11-18 08:53:44,067 WARNING 1668 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-11-18 08:53:44,099 ERROR 1668 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-11-18 08:53:46,106 ERROR 1668 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-11-18 08:53:50,133 ERROR 1668 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-11-18 08:53:56,176 INFO 1668 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-18 08:53:56,201 INFO 1668 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-18 08:53:57,220 INFO 1668 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+2017-11-18 10:25:50,610 INFO 2061 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-18 10:25:53,493 WARNING 2061 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-18 10:25:53,560 INFO 2061 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-18 10:25:53,583 INFO 2061 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-18 10:25:54,595 INFO 2061 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-11-18 10:25:54,597 INFO 2061 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-18 10:25:54,612 WARNING 2061 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-11-18 10:25:55,303 WARNING 2061 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-18 10:25:55.303052 recv: 2017-11-18 14:25:55.301964]
+
+2017-11-18 10:29:48,099 WARNING 2061 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 530, in _close
+    (class_id, method_id), ConnectionError)
+ConnectionForced: (0, 0): (320) CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'
+2017-11-18 10:29:48,109 ERROR 2061 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-11-18 10:29:50,117 ERROR 2061 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-11-18 10:29:54,126 ERROR 2061 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-11-18 10:30:00,138 INFO 2061 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-18 10:30:00,157 INFO 2061 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-18 10:30:01,737 INFO 2061 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-11-19 04:15:12,654 WARNING 2061 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-11-19 04:15:12,674 ERROR 2061 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-11-19 04:15:14,681 ERROR 2061 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-11-19 04:15:18,691 ERROR 2061 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-11-19 04:15:24,705 INFO 2061 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-19 04:15:24,746 INFO 2061 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-19 04:15:25,972 INFO 2061 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+2017-11-19 08:19:36,256 WARNING 2061 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-11-19 08:19:36,295 ERROR 2061 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-11-19 08:19:38,301 ERROR 2061 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-11-19 08:19:42,310 ERROR 2061 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-11-19 08:19:48,327 INFO 2061 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-19 08:19:48,377 INFO 2061 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-19 08:19:49,507 INFO 2061 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+2017-11-19 09:36:15,869 INFO 2085 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-19 09:36:19,088 WARNING 2085 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-19 09:36:19,196 INFO 2085 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-19 09:36:19,262 INFO 2085 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-19 09:36:20,280 INFO 2085 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-11-19 09:36:20,281 INFO 2085 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-19 09:36:20,299 WARNING 2085 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-11-19 09:36:20,641 INFO 2085 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.default.tatweer02
+2017-11-19 09:36:20,854 INFO 2085 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-11-19 09:36:21,307 INFO 2085 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+2017-11-19 09:36:21,560 INFO 2085 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-11-19 09:36:21,588 INFO 2085 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-11-19 09:36:21,774 WARNING 2085 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-19 09:36:21.774033 recv: 2017-11-19 13:36:21.773265]
+
+
+worker: Warm shutdown (MainProcess)
+2017-11-19 10:07:04,292 INFO 29661 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-19 10:07:07,746 WARNING 29661 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-19 10:07:07,872 INFO 29661 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-19 10:07:07,920 INFO 29661 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-19 10:07:08,954 INFO 29661 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-11-19 10:07:08,955 INFO 29661 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-19 10:07:08,987 WARNING 29661 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-11-19 10:07:09,496 INFO 29661 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high_mem.tatweer02
+2017-11-19 10:07:09,535 INFO 29661 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-11-19 10:07:09,648 INFO 29661 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-11-19 10:07:09,676 INFO 29661 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-11-19 10:07:09,751 INFO 29661 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+2017-11-19 10:07:10,611 WARNING 29661 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-19 10:07:10.610892 recv: 2017-11-19 14:07:10.609834]
+
+
+worker: Warm shutdown (MainProcess)
+2017-11-19 10:09:13,541 INFO 35440 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-19 10:09:16,028 WARNING 35440 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-19 10:09:16,060 INFO 35440 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-19 10:09:16,073 INFO 35440 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-19 10:09:17,082 INFO 35440 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-11-19 10:09:17,083 INFO 35440 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-19 10:09:17,097 WARNING 35440 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-11-19 10:09:18,513 WARNING 35440 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-19 10:09:18.513807 recv: 2017-11-19 14:09:18.512249]
+
+
+worker: Warm shutdown (MainProcess)
+2017-11-20 04:23:01,333 INFO 3305 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-20 04:23:05,363 WARNING 3305 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-20 04:23:05,492 INFO 3305 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-20 04:23:05,564 INFO 3305 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-20 04:23:06,577 INFO 3305 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-11-20 04:23:06,578 INFO 3305 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-20 04:23:06,611 WARNING 3305 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-11-20 04:23:07,055 INFO 3305 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.default.tatweer02
+2017-11-20 04:23:07,213 INFO 3305 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high_mem.tatweer02
+2017-11-20 04:23:07,232 INFO 3305 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+2017-11-20 04:23:07,265 INFO 3305 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-11-20 04:23:07,331 INFO 3305 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+2017-11-20 04:23:07,341 WARNING 3305 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-20 04:23:07.341602 recv: 2017-11-20 08:23:07.340655]
+
+2017-11-20 05:01:25,700 WARNING 3305 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 530, in _close
+    (class_id, method_id), ConnectionError)
+ConnectionForced: (0, 0): (320) CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'
+2017-11-20 05:01:25,720 ERROR 3305 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-11-20 05:01:27,728 ERROR 3305 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-11-20 05:01:31,738 ERROR 3305 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-11-20 05:01:37,760 INFO 3305 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-20 05:01:37,846 INFO 3305 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-20 05:01:38,859 INFO 3305 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+2017-11-20 09:15:11,536 INFO 47409 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-20 09:15:14,125 WARNING 47409 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-20 09:15:14,147 INFO 47409 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-20 09:15:14,160 INFO 47409 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-20 09:15:15,181 INFO 47409 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-11-20 09:15:15,182 INFO 47409 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-20 09:15:15,203 WARNING 47409 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-11-20 09:15:15,552 WARNING 47409 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-20 09:15:15.551885 recv: 2017-11-20 13:15:15.549462]
+
+2017-11-20 10:01:58,814 WARNING 47409 [celery.worker.consumer] consumer.py:289 - consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+2017-11-20 10:01:58,883 ERROR 47409 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+2017-11-20 10:02:00,890 ERROR 47409 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+2017-11-20 10:02:04,898 ERROR 47409 [celery.worker.consumer] consumer.py:364 - consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+2017-11-20 10:02:10,930 INFO 47409 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-20 10:02:10,967 INFO 47409 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-20 10:02:12,183 INFO 47409 [celery.worker.consumer] consumer.py:585 - mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+2017-11-20 10:27:52,408 INFO 51219 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-20 10:27:53,878 WARNING 51219 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-20 10:27:53,912 INFO 51219 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-20 10:27:53,923 INFO 51219 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-20 10:27:54,949 INFO 51219 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-11-20 10:27:54,950 INFO 51219 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-20 10:27:54,962 WARNING 51219 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-11-20 10:27:55,099 WARNING 51219 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-20 10:27:55.099211 recv: 2017-11-20 14:27:55.096623]
+
+
+worker: Warm shutdown (MainProcess)
+2017-11-20 10:29:53,801 INFO 57140 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-11-20 10:29:58,825 WARNING 57140 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-11-20 10:29:58,992 INFO 57140 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-11-20 10:29:59,092 INFO 57140 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-11-20 10:30:00,118 INFO 57140 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-11-20 10:30:00,119 INFO 57140 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-11-20 10:30:00,161 WARNING 57140 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-11-20 10:30:00,197 WARNING 57140 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-20 10:30:00.197716 recv: 2017-11-20 14:30:00.195851]
+
+2017-11-20 10:30:01,703 INFO 57140 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-11-20 10:30:01,847 INFO 57140 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high_mem.tatweer02
+2017-11-20 10:30:02,007 INFO 57140 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-11-20 10:30:02,030 INFO 57140 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+2017-11-20 10:30:02,217 INFO 57140 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.default.tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-12-19 05:09:56,690 INFO 1701 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-19 05:09:58,899 WARNING 1701 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-19 05:09:58,917 INFO 1701 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-19 05:09:58,936 INFO 1701 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-19 05:09:59,946 INFO 1701 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-12-19 05:09:59,948 INFO 1701 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-19 05:09:59,973 WARNING 1701 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-12-19 05:10:00,609 WARNING 1701 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-19 05:10:00.609319 recv: 2017-12-19 09:10:00.607178]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-19 06:15:47,349 INFO 58617 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-19 06:15:49,170 WARNING 58617 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-19 06:15:49,200 INFO 58617 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-19 06:15:49,209 INFO 58617 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-19 06:15:50,223 INFO 58617 [celery.worker.consumer] consumer.py:573 - mingle: sync with 3 nodes
+2017-12-19 06:15:50,224 INFO 58617 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-19 06:15:50,255 WARNING 58617 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-12-19 06:15:50,462 WARNING 58617 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-19 06:15:50.462288 recv: 2017-12-19 10:15:50.460640]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-19 07:51:02,039 INFO 4840 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-19 07:51:04,203 WARNING 4840 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-19 07:51:04,225 INFO 4840 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-19 07:51:04,237 INFO 4840 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-19 07:51:05,252 INFO 4840 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-12-19 07:51:05,253 INFO 4840 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-19 07:51:05,270 WARNING 4840 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-12-19 07:51:06,795 WARNING 4840 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-19 07:51:06.795722 recv: 2017-12-19 11:51:06.793291]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-19 08:17:28,044 INFO 29659 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-19 08:17:30,332 WARNING 29659 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-19 08:17:30,351 INFO 29659 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-19 08:17:30,366 INFO 29659 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-19 08:17:31,384 INFO 29659 [celery.worker.consumer] consumer.py:573 - mingle: sync with 3 nodes
+2017-12-19 08:17:31,385 INFO 29659 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-19 08:17:31,399 WARNING 29659 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-12-19 08:17:31,437 WARNING 29659 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-19 08:17:31.437488 recv: 2017-12-19 12:17:31.435920]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-20 13:24:47,407 INFO 8046 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-20 13:24:49,321 WARNING 8046 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-20 13:24:49,337 INFO 8046 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-20 13:24:49,363 INFO 8046 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-20 13:24:50,374 INFO 8046 [celery.worker.consumer] consumer.py:573 - mingle: sync with 2 nodes
+2017-12-20 13:24:50,375 INFO 8046 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-20 13:24:50,392 WARNING 8046 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-12-20 13:24:50,493 WARNING 8046 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-20 13:24:50.493224 recv: 2017-12-20 17:24:50.491351]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-25 05:52:09,870 INFO 20953 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-25 05:52:13,295 WARNING 20953 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-25 05:52:13,420 INFO 20953 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-25 05:52:13,481 INFO 20953 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-25 05:52:14,492 INFO 20953 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-12-25 05:52:14,494 INFO 20953 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-25 05:52:14,536 WARNING 20953 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-12-25 05:52:15,044 WARNING 20953 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-25 05:52:15.044010 recv: 2017-12-25 09:52:15.042618]
+
+2017-12-25 05:52:16,671 INFO 20953 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.high_mem.tatweer02
+2017-12-25 05:52:17,306 INFO 20953 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.default.tatweer02
+2017-12-25 05:52:17,685 INFO 20953 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.low.tatweer02
+2017-12-25 05:52:17,691 INFO 20953 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.high.tatweer02
+2017-12-25 05:52:17,826 INFO 20953 [celery.worker.control] control.py:270 - sync with celery@edx.cms.core.default.tatweer02
+2017-12-25 05:52:17,836 INFO 20953 [celery.worker.control] control.py:270 - sync with celery@edx.lms.core.low.tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-12-25 07:08:00,063 INFO 81848 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-25 07:08:03,704 WARNING 81848 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-25 07:08:03,787 INFO 81848 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-25 07:08:03,819 INFO 81848 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-25 07:08:04,831 INFO 81848 [celery.worker.consumer] consumer.py:573 - mingle: sync with 3 nodes
+2017-12-25 07:08:04,832 INFO 81848 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-25 07:08:04,849 WARNING 81848 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-12-25 07:08:05,450 WARNING 81848 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-25 07:08:05.449864 recv: 2017-12-25 11:08:05.448046]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-25 10:25:11,416 INFO 1625 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-25 10:25:14,062 WARNING 1625 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-25 10:25:14,132 INFO 1625 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-25 10:25:14,202 INFO 1625 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-25 10:25:15,254 INFO 1625 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-12-25 10:25:15,255 INFO 1625 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-25 10:25:15,287 WARNING 1625 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-12-25 10:25:16,612 WARNING 1625 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-25 10:25:16.611941 recv: 2017-12-25 14:25:16.608485]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-26 09:26:52,756 INFO 60089 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+2017-12-26 09:26:56,980 WARNING 60089 [py.warnings] worker.py:161 - /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+2017-12-26 09:26:57,022 INFO 60089 [celery.worker.consumer] consumer.py:479 - Connected to amqp://celery:**@127.0.0.1:5672//
+2017-12-26 09:26:57,053 INFO 60089 [celery.worker.consumer] consumer.py:567 - mingle: searching for neighbors
+2017-12-26 09:26:58,067 INFO 60089 [celery.worker.consumer] consumer.py:573 - mingle: sync with 1 nodes
+2017-12-26 09:26:58,068 INFO 60089 [celery.worker.consumer] consumer.py:583 - mingle: sync complete
+2017-12-26 09:26:58,092 WARNING 60089 [celery.redirected] log.py:282 - celery@edx.lms.core.high.tatweer02 ready.
+2017-12-26 09:26:58,688 WARNING 60089 [celery.events.state] state.py:74 - Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-26 09:26:58.688442 recv: 2017-12-26 13:26:58.683537]
+

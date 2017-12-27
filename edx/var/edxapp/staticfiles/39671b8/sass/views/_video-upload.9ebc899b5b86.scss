@@ -1,0 +1,388 @@
+.view-video-uploads {
+  .content-primary, .content-supplementary {
+    @include box-sizing(border-box);
+  }
+
+  .nav-actions {
+    .fa-cloud-upload {
+      @extend %t-copy;
+
+      vertical-align: bottom;
+      margin-right: ($baseline/5);
+    }
+  }
+
+  .file-upload-form {
+    @include clearfix();
+
+    width: 100%;
+
+    .file-drop-area {
+      border: 2px dashed $gray-l3;
+      border-radius: ($baseline/5);
+      padding: ($baseline*1.25);
+      background: $white;
+
+      @include text-align(center);
+
+      cursor: pointer;
+
+      &:hover,
+      &.is-dragged {
+        background: $blue-l5;
+        border-style: solid;
+        border-color: $blue-l4;
+      }
+
+      &:hover .upload-text-link {
+        text-decoration:underline;
+      }
+
+      .fa-cloud-upload{
+        font-size:7em;
+        vertical-align: top;
+
+        @include margin-right(0.1em);
+      }
+
+      .text-container {
+        display: inline-block;
+
+        @include text-align(left);
+
+        .upload-text-link {
+          color: $ui-link-color;
+        }
+
+        .video-uploads-header {
+          font-size: 1.5em;
+          margin-bottom: .25em;
+          font-weight: 600
+        }
+
+        .video-max-file-size-text {
+          margin-top: ($baseline/2);
+        }
+      }
+    }
+  }
+
+  .active-video-upload-container {
+    margin-bottom: ($baseline*2);
+
+    .active-video-upload-list {
+      @extend %cont-no-list;
+
+      .active-video-upload {
+        display: inline-block;
+        min-height: ($baseline*4);
+        width: (flex-grid(4) - 1.85);
+        margin: (flex-gutter() - 1.85);
+        border: 1px solid $gray-l3;
+        border-radius: ($baseline/5);
+        padding: ($baseline/2);
+        vertical-align: top;
+
+        .video-detail-name {
+          @extend %cont-truncated;
+          @extend %t-strong;
+
+          margin-bottom: ($baseline/2);
+          font-size: 90%;
+        }
+
+        .video-detail-status, .more-details-action {
+          @include font-size(12);
+          @include line-height(12);
+        }
+
+        .more-details-action, .upload-failure {
+          display: none;
+        }
+
+        .video-detail-progress {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          margin-bottom: ($baseline/2);
+          border: none;
+          width: 100%;
+          height: ($baseline/4);
+        }
+
+        .video-detail-progress::-webkit-progress-bar {
+          background-color: $white;
+        }
+
+        // Sadly, these rules must be separate or both Chrome and Firefox break
+        .video-detail-progress::-webkit-progress-value {
+          background-color: $color-ready;
+        }
+
+        .video-detail-progress::-moz-progress-bar {
+          background-color: $color-ready;
+        }
+
+        &:hover {
+          @include transition(all $tmg-f3);
+
+          background: $white;
+        }
+
+        &.queued {
+          .video-detail-progress {
+            visibility: hidden;
+          }
+        }
+
+        &.error {
+          .video-upload-status {
+            color: $color-error;
+          }
+
+          // Sadly, these rules must be separate or both Chrome and Firefox break
+          .video-detail-progress::-webkit-progress-value {
+            background-color: $color-error;
+          }
+
+          .video-detail-progress::-moz-progress-bar {
+            background-color: $color-error;
+          }
+
+          .more-details-action, .upload-failure {
+            display: inline-block;
+            color: $color-error;
+          }
+
+          .more-details-action {
+            margin-top: ($baseline/5);
+            float: right;
+          }
+        }
+
+        &.success {
+          .video-upload-status {
+            color: $color-ready;
+          }
+        }
+      }
+    }
+  }
+
+  .button {
+    @extend %ui-btn-non;
+  }
+
+  .assets-library {
+    .js-table-body .video-id-col {
+      word-break: break-all;
+    }
+
+    .assets-title {
+      display: inline-block;
+      width: flex-grid(5, 9);
+
+      @include margin-right(flex-gutter());
+    }
+
+    .wrapper-encodings-download {
+      display: inline-block;
+      width: flex-grid(4, 9);
+      text-align: right;
+    }
+
+    .actions-list {
+      @extend %actions-list;
+    }
+  }
+
+  .video-table {
+    .video-row {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+
+      .video-col {
+        display: table-cell;
+      }
+
+      .name-col {
+        width: 25%;
+      }
+
+      .thumbnail-col, .video-id-col {
+        width: 15%;
+      }
+
+      .date-col, .status-col {
+        width: 10%;
+      }
+
+      .actions-col {
+        width: 5%;
+      }
+
+      .video-head-col.thumbnail-col {
+        width: 17% !important;
+      }
+    }
+  }
+
+  .thumbnail-error-wrapper {
+    display: table-row;
+    white-space: nowrap;
+    color: $red;
+
+    .icon {
+      margin: ($baseline*0.75) ($baseline/4) 0 ($baseline/2);
+    }
+  }
+
+  $thumbnail-width: ($baseline*7.5);
+  $thumbnail-height: ($baseline*5);
+
+  .thumbnail-wrapper {
+    position: relative;
+    max-width: $thumbnail-width;
+    max-height: $thumbnail-height;
+
+    img {
+      width: $thumbnail-width;
+      height: $thumbnail-height;
+    }
+
+    * {
+      cursor: pointer;
+    }
+
+    &.upload,
+    &.requirements {
+      border: 1px dashed $gray-l3;
+    }
+
+    &.requirements {
+      .requirements-text {
+        font-weight: 600;
+      }
+
+      .requirements-instructions {
+        font-size: 15px;
+        font-family: "Open Sans";
+        text-align: left;
+        color: $gray-d2;
+        line-height: 1.5;
+      }
+
+      .video-duration {
+        opacity: 0;
+      }
+    }
+
+    &.edit {
+      background: black;
+
+      &:hover,
+      &:focus,
+      &.focused {
+        img, .video-duration {
+          @include transition(all 0.3s linear);
+
+          opacity: 0.1;
+        }
+      }
+    }
+
+    &.progress {
+      background: white;
+
+      img {
+        @include transition(all 0.5s linear);
+
+        opacity: 0.15;
+      }
+
+      .action-icon {
+        display: block;
+      }
+    }
+
+    &.upload .thumbnail-action {
+      color: $blue;
+    }
+
+    &.progress .thumbnail-action {
+      .action-icon {
+        @include font-size(20);
+      }
+    }
+
+    &.edit {
+      background-color: #4e4e4e;
+    }
+
+    &.edit .thumbnail-action .action-icon.edit {
+      display: none;
+    }
+
+    &.edit .thumbnail-action .edit-container {
+      background-color: $white;
+      padding: ($baseline/4);
+      border-radius: ($baseline/5);
+      margin-top: ($baseline/2);
+      display: none;
+    }
+
+    &.edit .action-text {
+      color: $white;
+    }
+
+    .thumbnail-action {
+      @include font-size(14);
+    }
+
+    .thumbnail-overlay > :not(.upload-image-input) {
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 5px;;
+      right: 5px;
+
+      @include transform(translateY(-50%));
+
+      z-index: 1;
+    }
+
+    .upload-image-input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      z-index: 6;
+      width: $thumbnail-width;
+      height: $thumbnail-height;
+    }
+
+    .video-duration {
+      position: absolute;
+      text-align: center;
+      bottom: 1px;
+
+      @include right(1px);
+
+      width: auto;
+      min-width: 25%;
+      color: white;
+      padding: ($baseline/10) ($baseline/5);
+      background-color: black;
+    }
+
+    &.focused {
+      box-shadow: 0 0 ($baseline/5) 1px $blue;
+    }
+
+    &.error {
+      box-shadow: 0 0 ($baseline/5) 1px $red;
+    }
+  }
+}

@@ -1,0 +1,398 @@
+[2017-10-03 11:00:57 +0000] [24170] [INFO] Starting gunicorn 19.7.1
+[2017-10-03 11:00:57 +0000] [24170] [INFO] Listening at: http://127.0.0.1:8130 (24170)
+[2017-10-03 11:00:57 +0000] [24170] [INFO] Using worker: gevent
+[2017-10-03 11:00:57 +0000] [24204] [INFO] Booting worker with pid: 24204
+[2017-10-03 11:00:57 +0000] [24217] [INFO] Booting worker with pid: 24217
+[2017-10-03 11:00:58 +0000] [24284] [INFO] Starting gunicorn 19.7.1
+[2017-10-03 11:00:58 +0000] [24284] [INFO] Listening at: http://127.0.0.1:8130 (24284)
+[2017-10-03 11:00:58 +0000] [24284] [INFO] Using worker: gevent
+[2017-10-03 11:00:58 +0000] [24289] [INFO] Booting worker with pid: 24289
+[2017-10-03 11:00:58 +0000] [24292] [INFO] Booting worker with pid: 24292
+[2017-10-03 11:33:14 +0000] [24284] [INFO] Handling signal: term
+[2017-10-03 11:33:14 +0000] [75719] [INFO] Starting gunicorn 19.7.1
+[2017-10-03 11:33:14 +0000] [75719] [INFO] Listening at: http://127.0.0.1:8130 (75719)
+[2017-10-03 11:33:14 +0000] [75719] [INFO] Using worker: gevent
+[2017-10-03 11:33:14 +0000] [75724] [INFO] Booting worker with pid: 75724
+[2017-10-03 11:33:14 +0000] [75727] [INFO] Booting worker with pid: 75727
+[2017-10-03 13:43:13 +0000] [75719] [INFO] Handling signal: term
+[2017-10-03 13:43:17 +0000] [45820] [INFO] Starting gunicorn 19.7.1
+[2017-10-03 13:43:17 +0000] [45820] [INFO] Listening at: http://127.0.0.1:8130 (45820)
+[2017-10-03 13:43:17 +0000] [45820] [INFO] Using worker: gevent
+[2017-10-03 13:43:17 +0000] [45861] [INFO] Booting worker with pid: 45861
+[2017-10-03 13:43:17 +0000] [45864] [INFO] Booting worker with pid: 45864
+[2017-10-03 13:45:41 +0000] [45820] [INFO] Handling signal: term
+[2017-10-03 13:45:45 +0000] [51801] [INFO] Starting gunicorn 19.7.1
+[2017-10-03 13:45:45 +0000] [51801] [INFO] Listening at: http://127.0.0.1:8130 (51801)
+[2017-10-03 13:45:45 +0000] [51801] [INFO] Using worker: gevent
+[2017-10-03 13:45:45 +0000] [51847] [INFO] Booting worker with pid: 51847
+[2017-10-03 13:45:45 +0000] [51854] [INFO] Booting worker with pid: 51854
+[2017-10-03 14:03:37 +0000] [51801] [INFO] Handling signal: term
+[2017-10-03 14:03:41 +0000] [71284] [INFO] Starting gunicorn 19.7.1
+[2017-10-03 14:03:41 +0000] [71284] [INFO] Listening at: http://127.0.0.1:8130 (71284)
+[2017-10-03 14:03:41 +0000] [71284] [INFO] Using worker: gevent
+[2017-10-03 14:03:41 +0000] [71334] [INFO] Booting worker with pid: 71334
+[2017-10-03 14:03:41 +0000] [71339] [INFO] Booting worker with pid: 71339
+[2017-10-03 14:20:34 +0000] [71284] [INFO] Handling signal: term
+[2017-10-03 14:21:14 +0000] [2055] [INFO] Starting gunicorn 19.7.1
+[2017-10-03 14:21:14 +0000] [2055] [INFO] Listening at: http://127.0.0.1:8130 (2055)
+[2017-10-03 14:21:14 +0000] [2055] [INFO] Using worker: gevent
+[2017-10-03 14:21:14 +0000] [2279] [INFO] Booting worker with pid: 2279
+[2017-10-03 14:21:14 +0000] [2290] [INFO] Booting worker with pid: 2290
+[2017-10-03 14:47:44 +0000] [2055] [INFO] Handling signal: term
+[2017-10-03 14:47:46 +0000] [25420] [INFO] Starting gunicorn 19.7.1
+[2017-10-03 14:47:46 +0000] [25420] [INFO] Listening at: http://127.0.0.1:8130 (25420)
+[2017-10-03 14:47:46 +0000] [25420] [INFO] Using worker: gevent
+[2017-10-03 14:47:46 +0000] [25465] [INFO] Booting worker with pid: 25465
+[2017-10-03 14:47:46 +0000] [25468] [INFO] Booting worker with pid: 25468
+[2017-10-06 23:59:07 +0000] [25420] [INFO] Handling signal: term
+[2017-10-07 07:43:11 +0000] [1647] [INFO] Starting gunicorn 19.7.1
+[2017-10-07 07:43:11 +0000] [1647] [INFO] Listening at: http://127.0.0.1:8130 (1647)
+[2017-10-07 07:43:11 +0000] [1647] [INFO] Using worker: gevent
+[2017-10-07 07:43:11 +0000] [1774] [INFO] Booting worker with pid: 1774
+[2017-10-07 07:43:11 +0000] [1798] [INFO] Booting worker with pid: 1798
+[2017-10-07 07:43:13 +0000] [1774] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/ggevent.py", line 190, in init_process
+    super(GeventWorker, self).init_process()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/edx/app/ecommerce/ecommerce/ecommerce/wsgi.py", line 29, in <module>
+    application = get_wsgi_application()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/utils/log.py", line 75, in configure_logging
+    logging_config_func(logging_settings)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+[2017-10-07 07:43:13 +0000] [1798] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/ggevent.py", line 190, in init_process
+    super(GeventWorker, self).init_process()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/edx/app/ecommerce/ecommerce/ecommerce/wsgi.py", line 29, in <module>
+    application = get_wsgi_application()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/utils/log.py", line 75, in configure_logging
+    logging_config_func(logging_settings)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+[2017-10-07 07:43:13 +0000] [1774] [INFO] Worker exiting (pid: 1774)
+[2017-10-07 07:43:13 +0000] [1798] [INFO] Worker exiting (pid: 1798)
+Traceback (most recent call last):
+  File "/edx/app/ecommerce/venvs/ecommerce/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 74, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 203, in run
+    super(Application, self).run()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 231, in run
+    self.halt(reason=inst.reason, exit_status=inst.exit_status)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 344, in halt
+    self.stop()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 393, in stop
+    time.sleep(0.1)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 244, in handle_chld
+    self.reap_workers()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 524, in reap_workers
+    raise HaltServer(reason, self.WORKER_BOOT_ERROR)
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2017-10-07 07:43:14 +0000] [1856] [INFO] Starting gunicorn 19.7.1
+[2017-10-07 07:43:14 +0000] [1856] [INFO] Listening at: http://127.0.0.1:8130 (1856)
+[2017-10-07 07:43:14 +0000] [1856] [INFO] Using worker: gevent
+[2017-10-07 07:43:14 +0000] [1998] [INFO] Booting worker with pid: 1998
+[2017-10-07 07:43:14 +0000] [1999] [INFO] Booting worker with pid: 1999
+[2017-10-07 07:43:15 +0000] [1998] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/ggevent.py", line 190, in init_process
+    super(GeventWorker, self).init_process()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/edx/app/ecommerce/ecommerce/ecommerce/wsgi.py", line 29, in <module>
+    application = get_wsgi_application()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/utils/log.py", line 75, in configure_logging
+    logging_config_func(logging_settings)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+[2017-10-07 07:43:15 +0000] [1998] [INFO] Worker exiting (pid: 1998)
+[2017-10-07 07:43:16 +0000] [1999] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/ggevent.py", line 190, in init_process
+    super(GeventWorker, self).init_process()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/edx/app/ecommerce/ecommerce/ecommerce/wsgi.py", line 29, in <module>
+    application = get_wsgi_application()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/utils/log.py", line 75, in configure_logging
+    logging_config_func(logging_settings)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+[2017-10-07 07:43:16 +0000] [1999] [INFO] Worker exiting (pid: 1999)
+[2017-10-07 07:43:16 +0000] [1856] [INFO] Shutting down: Master
+[2017-10-07 07:43:16 +0000] [1856] [INFO] Reason: Worker failed to boot.
+[2017-10-07 07:43:17 +0000] [2095] [INFO] Starting gunicorn 19.7.1
+[2017-10-07 07:43:17 +0000] [2095] [INFO] Listening at: http://127.0.0.1:8130 (2095)
+[2017-10-07 07:43:17 +0000] [2095] [INFO] Using worker: gevent
+[2017-10-07 07:43:17 +0000] [2155] [INFO] Booting worker with pid: 2155
+[2017-10-07 07:43:18 +0000] [2156] [INFO] Booting worker with pid: 2156
+[2017-10-11 09:30:30 +0000] [2095] [INFO] Handling signal: term
+[2017-10-11 09:30:34 +0000] [69280] [INFO] Starting gunicorn 19.7.1
+[2017-10-11 09:30:34 +0000] [69280] [INFO] Listening at: http://127.0.0.1:8130 (69280)
+[2017-10-11 09:30:34 +0000] [69280] [INFO] Using worker: gevent
+[2017-10-11 09:30:34 +0000] [69328] [INFO] Booting worker with pid: 69328
+[2017-10-11 09:30:34 +0000] [69338] [INFO] Booting worker with pid: 69338
+[2017-10-11 09:32:44 +0000] [69280] [INFO] Handling signal: term
+[2017-10-11 09:32:47 +0000] [75021] [INFO] Starting gunicorn 19.7.1
+[2017-10-11 09:32:47 +0000] [75021] [INFO] Listening at: http://127.0.0.1:8130 (75021)
+[2017-10-11 09:32:47 +0000] [75021] [INFO] Using worker: gevent
+[2017-10-11 09:32:47 +0000] [75061] [INFO] Booting worker with pid: 75061
+[2017-10-11 09:32:48 +0000] [75073] [INFO] Booting worker with pid: 75073
+[2017-10-29 15:05:00 +0000] [1666] [INFO] Starting gunicorn 19.7.1
+[2017-10-29 15:05:00 +0000] [1666] [INFO] Listening at: http://127.0.0.1:8130 (1666)
+[2017-10-29 15:05:00 +0000] [1666] [INFO] Using worker: gevent
+[2017-10-29 15:05:00 +0000] [1839] [INFO] Booting worker with pid: 1839
+[2017-10-29 15:05:00 +0000] [1840] [INFO] Booting worker with pid: 1840
+[2017-11-18 15:25:17 +0000] [2064] [INFO] Starting gunicorn 19.7.1
+[2017-11-18 15:25:17 +0000] [2064] [INFO] Listening at: http://127.0.0.1:8130 (2064)
+[2017-11-18 15:25:17 +0000] [2064] [INFO] Using worker: gevent
+[2017-11-18 15:25:17 +0000] [2368] [INFO] Booting worker with pid: 2368
+[2017-11-18 15:25:17 +0000] [2373] [INFO] Booting worker with pid: 2373
+[2017-11-19 14:35:18 +0000] [2064] [INFO] Handling signal: term
+[2017-11-19 14:35:44 +0000] [2082] [INFO] Starting gunicorn 19.7.1
+[2017-11-19 14:35:44 +0000] [2082] [INFO] Listening at: http://127.0.0.1:8130 (2082)
+[2017-11-19 14:35:44 +0000] [2082] [INFO] Using worker: gevent
+[2017-11-19 14:35:44 +0000] [2322] [INFO] Booting worker with pid: 2322
+[2017-11-19 14:35:44 +0000] [2327] [INFO] Booting worker with pid: 2327
+[2017-11-19 15:06:29 +0000] [2082] [INFO] Handling signal: term
+[2017-11-19 15:06:33 +0000] [29662] [INFO] Starting gunicorn 19.7.1
+[2017-11-19 15:06:33 +0000] [29662] [INFO] Listening at: http://127.0.0.1:8130 (29662)
+[2017-11-19 15:06:33 +0000] [29662] [INFO] Using worker: gevent
+[2017-11-19 15:06:33 +0000] [29695] [INFO] Booting worker with pid: 29695
+[2017-11-19 15:06:33 +0000] [29707] [INFO] Booting worker with pid: 29707
+[2017-11-19 15:08:35 +0000] [29662] [INFO] Handling signal: term
+[2017-11-19 15:08:39 +0000] [35444] [INFO] Starting gunicorn 19.7.1
+[2017-11-19 15:08:39 +0000] [35444] [INFO] Listening at: http://127.0.0.1:8130 (35444)
+[2017-11-19 15:08:39 +0000] [35444] [INFO] Using worker: gevent
+[2017-11-19 15:08:39 +0000] [35481] [INFO] Booting worker with pid: 35481
+[2017-11-19 15:08:39 +0000] [35494] [INFO] Booting worker with pid: 35494
+[2017-11-20 09:22:26 +0000] [35444] [INFO] Handling signal: term
+[2017-11-20 09:22:30 +0000] [3300] [INFO] Starting gunicorn 19.7.1
+[2017-11-20 09:22:30 +0000] [3300] [INFO] Listening at: http://127.0.0.1:8130 (3300)
+[2017-11-20 09:22:30 +0000] [3300] [INFO] Using worker: gevent
+[2017-11-20 09:22:30 +0000] [3355] [INFO] Booting worker with pid: 3355
+[2017-11-20 09:22:30 +0000] [3356] [INFO] Booting worker with pid: 3356
+[2017-11-20 14:14:32 +0000] [47406] [INFO] Starting gunicorn 19.7.1
+[2017-11-20 14:14:32 +0000] [47406] [INFO] Listening at: http://127.0.0.1:8130 (47406)
+[2017-11-20 14:14:32 +0000] [47406] [INFO] Using worker: gevent
+[2017-11-20 14:14:32 +0000] [47446] [INFO] Booting worker with pid: 47446
+[2017-11-20 14:14:32 +0000] [47447] [INFO] Booting worker with pid: 47447
+[2017-11-20 15:27:14 +0000] [47406] [INFO] Handling signal: term
+[2017-11-20 15:27:18 +0000] [51218] [INFO] Starting gunicorn 19.7.1
+[2017-11-20 15:27:18 +0000] [51218] [INFO] Listening at: http://127.0.0.1:8130 (51218)
+[2017-11-20 15:27:18 +0000] [51218] [INFO] Using worker: gevent
+[2017-11-20 15:27:18 +0000] [51262] [INFO] Booting worker with pid: 51262
+[2017-11-20 15:27:18 +0000] [51266] [INFO] Booting worker with pid: 51266
+[2017-11-20 15:29:14 +0000] [51218] [INFO] Handling signal: term
+[2017-11-20 15:29:18 +0000] [57136] [INFO] Starting gunicorn 19.7.1
+[2017-11-20 15:29:18 +0000] [57136] [INFO] Listening at: http://127.0.0.1:8130 (57136)
+[2017-11-20 15:29:18 +0000] [57136] [INFO] Using worker: gevent
+[2017-11-20 15:29:18 +0000] [57187] [INFO] Booting worker with pid: 57187
+[2017-11-20 15:29:18 +0000] [57189] [INFO] Booting worker with pid: 57189
+[2017-11-24 09:42:43 +0000] [57136] [INFO] Handling signal: term
+[2017-12-19 10:09:20 +0000] [1702] [INFO] Starting gunicorn 19.7.1
+[2017-12-19 10:09:20 +0000] [1702] [INFO] Listening at: http://127.0.0.1:8130 (1702)
+[2017-12-19 10:09:20 +0000] [1702] [INFO] Using worker: gevent
+[2017-12-19 10:09:20 +0000] [2173] [INFO] Booting worker with pid: 2173
+[2017-12-19 10:09:20 +0000] [2202] [INFO] Booting worker with pid: 2202
+[2017-12-19 11:15:04 +0000] [58610] [INFO] Starting gunicorn 19.7.1
+[2017-12-19 11:15:04 +0000] [58610] [INFO] Listening at: http://127.0.0.1:8130 (58610)
+[2017-12-19 11:15:04 +0000] [58610] [INFO] Using worker: gevent
+[2017-12-19 11:15:04 +0000] [58651] [INFO] Booting worker with pid: 58651
+[2017-12-19 11:15:04 +0000] [58655] [INFO] Booting worker with pid: 58655
+[2017-12-19 12:50:16 +0000] [58610] [INFO] Handling signal: term
+[2017-12-19 12:50:20 +0000] [4842] [INFO] Starting gunicorn 19.7.1
+[2017-12-19 12:50:20 +0000] [4842] [INFO] Listening at: http://127.0.0.1:8130 (4842)
+[2017-12-19 12:50:20 +0000] [4842] [INFO] Using worker: gevent
+[2017-12-19 12:50:20 +0000] [4895] [INFO] Booting worker with pid: 4895
+[2017-12-19 12:50:20 +0000] [4894] [INFO] Booting worker with pid: 4894
+[2017-12-19 13:16:49 +0000] [4842] [INFO] Handling signal: term
+[2017-12-19 13:16:53 +0000] [29661] [INFO] Starting gunicorn 19.7.1
+[2017-12-19 13:16:53 +0000] [29661] [INFO] Listening at: http://127.0.0.1:8130 (29661)
+[2017-12-19 13:16:53 +0000] [29661] [INFO] Using worker: gevent
+[2017-12-19 13:16:53 +0000] [29703] [INFO] Booting worker with pid: 29703
+[2017-12-19 13:16:53 +0000] [29704] [INFO] Booting worker with pid: 29704
+[2017-12-20 18:24:09 +0000] [29661] [INFO] Handling signal: term
+[2017-12-20 18:24:13 +0000] [8039] [INFO] Starting gunicorn 19.7.1
+[2017-12-20 18:24:13 +0000] [8039] [INFO] Listening at: http://127.0.0.1:8130 (8039)
+[2017-12-20 18:24:13 +0000] [8039] [INFO] Using worker: gevent
+[2017-12-20 18:24:13 +0000] [8078] [INFO] Booting worker with pid: 8078
+[2017-12-20 18:24:13 +0000] [8081] [INFO] Booting worker with pid: 8081
+[2017-12-25 10:51:36 +0000] [8039] [INFO] Handling signal: term
+[2017-12-25 10:51:36 +0000] [8078] [INFO] Worker exiting (pid: 8078)
+[2017-12-25 10:51:40 +0000] [20958] [INFO] Starting gunicorn 19.7.1
+[2017-12-25 10:51:40 +0000] [20958] [INFO] Listening at: http://127.0.0.1:8130 (20958)
+[2017-12-25 10:51:40 +0000] [20958] [INFO] Using worker: gevent
+[2017-12-25 10:51:40 +0000] [21002] [INFO] Booting worker with pid: 21002
+[2017-12-25 10:51:40 +0000] [21004] [INFO] Booting worker with pid: 21004
+[2017-12-25 12:07:26 +0000] [81838] [INFO] Starting gunicorn 19.7.1
+[2017-12-25 12:07:26 +0000] [81838] [INFO] Listening at: http://127.0.0.1:8130 (81838)
+[2017-12-25 12:07:26 +0000] [81838] [INFO] Using worker: gevent
+[2017-12-25 12:07:26 +0000] [81891] [INFO] Booting worker with pid: 81891
+[2017-12-25 12:07:26 +0000] [81892] [INFO] Booting worker with pid: 81892
+[2017-12-25 15:24:19 +0000] [1629] [INFO] Starting gunicorn 19.7.1
+[2017-12-25 15:24:19 +0000] [1629] [INFO] Listening at: http://127.0.0.1:8130 (1629)
+[2017-12-25 15:24:19 +0000] [1629] [INFO] Using worker: gevent
+[2017-12-25 15:24:19 +0000] [1744] [INFO] Booting worker with pid: 1744
+[2017-12-25 15:24:19 +0000] [1752] [INFO] Booting worker with pid: 1752
+[2017-12-25 15:24:20 +0000] [1752] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/ggevent.py", line 190, in init_process
+    super(GeventWorker, self).init_process()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/edx/app/ecommerce/ecommerce/ecommerce/wsgi.py", line 29, in <module>
+    application = get_wsgi_application()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/utils/log.py", line 75, in configure_logging
+    logging_config_func(logging_settings)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+[2017-12-25 15:24:20 +0000] [1752] [INFO] Worker exiting (pid: 1752)
+[2017-12-25 15:24:20 +0000] [1744] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/ggevent.py", line 190, in init_process
+    super(GeventWorker, self).init_process()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/edx/app/ecommerce/ecommerce/ecommerce/wsgi.py", line 29, in <module>
+    application = get_wsgi_application()
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/edx/app/ecommerce/venvs/ecommerce/local/lib/python2.7/site-packages/django/utils/log.py", line 75, in configure_logging
+    logging_config_func(logging_settings)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+[2017-12-25 15:24:20 +0000] [1744] [INFO] Worker exiting (pid: 1744)
+[2017-12-25 15:24:21 +0000] [1629] [INFO] Shutting down: Master
+[2017-12-25 15:24:21 +0000] [1629] [INFO] Reason: Worker failed to boot.
+[2017-12-25 15:24:24 +0000] [1817] [INFO] Starting gunicorn 19.7.1
+[2017-12-25 15:24:24 +0000] [1817] [INFO] Listening at: http://127.0.0.1:8130 (1817)
+[2017-12-25 15:24:24 +0000] [1817] [INFO] Using worker: gevent
+[2017-12-25 15:24:24 +0000] [2256] [INFO] Booting worker with pid: 2256
+[2017-12-25 15:24:24 +0000] [2248] [INFO] Booting worker with pid: 2248
+[2017-12-26 14:25:40 +0000] [1817] [INFO] Handling signal: term
+[2017-12-26 14:25:44 +0000] [60086] [INFO] Starting gunicorn 19.7.1
+[2017-12-26 14:25:44 +0000] [60086] [INFO] Listening at: http://127.0.0.1:8130 (60086)
+[2017-12-26 14:25:44 +0000] [60086] [INFO] Using worker: gevent
+[2017-12-26 14:25:44 +0000] [60111] [INFO] Booting worker with pid: 60111
+[2017-12-26 14:25:44 +0000] [60112] [INFO] Booting worker with pid: 60112

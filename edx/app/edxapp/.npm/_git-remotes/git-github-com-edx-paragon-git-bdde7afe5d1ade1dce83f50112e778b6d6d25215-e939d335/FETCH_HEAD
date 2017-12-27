@@ -1,0 +1,284 @@
+dde0cc24e86edab6bbb05779cb6daa3654e6b576	not-for-merge	branch 'ari/dropdown' of git://github.com/edx/paragon
+6a7e85cc3418e70110c3b56d1e1483c95d89c54d	not-for-merge	branch 'ari/lerna' of git://github.com/edx/paragon
+4520781997eee27840c9571594f1756edbf9e9d1	not-for-merge	branch 'ari/npm' of git://github.com/edx/paragon
+0a2a6cf5ddbfed54a7d186571964ddbbc23442ad	not-for-merge	branch 'e0d/doc-fix' of git://github.com/edx/paragon
+b85b0025232e059c7f2b251408963862ba8c7b7e	not-for-merge	branch 'gh-pages' of git://github.com/edx/paragon
+f4a0be22fc9bfc6930111580f0981de17b57b11a	not-for-merge	branch 'greenkeeper/@storybook/react-3.2.10' of git://github.com/edx/paragon
+f7c6989d1e8fcdfbf930e26e2aeefc438c1db37b	not-for-merge	branch 'greenkeeper/@storybook/react-3.2.11' of git://github.com/edx/paragon
+71dcf46632772aa27b2734e1362d4ff5d20cc04e	not-for-merge	branch 'greenkeeper/@storybook/react-3.3.0-alpha.1' of git://github.com/edx/paragon
+d9c340fd0babd557b32a09969d85582741bf9d2f	not-for-merge	branch 'greenkeeper/coveralls-3.0.0' of git://github.com/edx/paragon
+ca545a7f0c4f613f5745cadf32a179b949d41002	not-for-merge	branch 'greenkeeper/enzyme-3.0.0' of git://github.com/edx/paragon
+d1f5a8788c5baada4254c0a8fbf1c6e0066a52f9	not-for-merge	branch 'greenkeeper/enzyme-3.1.0' of git://github.com/edx/paragon
+884d5fdc12a18d2811a0906917b62f126ad0dae3	not-for-merge	branch 'greenkeeper/react-16.0.0' of git://github.com/edx/paragon
+9520d785fb6b05a0332e400aab3ad9de1f89300e	not-for-merge	branch 'greenkeeper/react-dom-16.0.0' of git://github.com/edx/paragon
+535fb0aa7ab0c04ad32e9d4ea3a61012076021a0	not-for-merge	branch 'greenkeeper/react-test-renderer-16.0.0' of git://github.com/edx/paragon
+35d2bf83e66a1fee0c3a3956fb164acda0466b08	not-for-merge	branch 'master' of git://github.com/edx/paragon
+8dce90f181d2ad86cc784a72b6b9293d23a32a12	not-for-merge	branch 'mroytman/modal-component' of git://github.com/edx/paragon
+e15b0282544bd5c8875305ff8240338bcd9f14a1	not-for-merge	branch 'sarahkf/checkbox-details' of git://github.com/edx/paragon
+14f574761e2a59aa3d0e32c996910a1fc6d2530e	not-for-merge	'refs/pull/1/head' of git://github.com/edx/paragon
+0a2a6cf5ddbfed54a7d186571964ddbbc23442ad	not-for-merge	'refs/pull/10/head' of git://github.com/edx/paragon
+f9e9a541b42516bb27df8d4241a9ef8d07b3cddb	not-for-merge	'refs/pull/11/head' of git://github.com/edx/paragon
+a8bcde2bd2089d8722faac64bf234465f588b9b3	not-for-merge	'refs/pull/11/merge' of git://github.com/edx/paragon
+e48cf63783e8826b22daa6ff9b8e29d4db6bc96a	not-for-merge	'refs/pull/12/head' of git://github.com/edx/paragon
+6187729ae27395f22eb3796631e3b032d622e068	not-for-merge	'refs/pull/13/head' of git://github.com/edx/paragon
+3db31b5c52c0713832ac6dfbaa6639e08093a435	not-for-merge	'refs/pull/13/merge' of git://github.com/edx/paragon
+afe06b156760cea4028e6b93fba6d949cc140e63	not-for-merge	'refs/pull/14/head' of git://github.com/edx/paragon
+10dc6e7d0ca64135b4920bff8c145a3dff5324a0	not-for-merge	'refs/pull/15/head' of git://github.com/edx/paragon
+acf5594184e6b211d56fbffe8a3c1e0b8fbcb90d	not-for-merge	'refs/pull/16/head' of git://github.com/edx/paragon
+a1bdfe9a45f7abee46f9240aefd934bcb3208a6f	not-for-merge	'refs/pull/16/merge' of git://github.com/edx/paragon
+2903ef268c2505e382a47b379bd723c43c451aa5	not-for-merge	'refs/pull/17/head' of git://github.com/edx/paragon
+f389b689e13318f4ade2379e4e34d7e0f0a0ee8d	not-for-merge	'refs/pull/18/head' of git://github.com/edx/paragon
+dde0cc24e86edab6bbb05779cb6daa3654e6b576	not-for-merge	'refs/pull/2/head' of git://github.com/edx/paragon
+4520781997eee27840c9571594f1756edbf9e9d1	not-for-merge	'refs/pull/20/head' of git://github.com/edx/paragon
+a76f2239653bf4fa602787e87f9a6cac4e851d24	not-for-merge	'refs/pull/20/merge' of git://github.com/edx/paragon
+6a7e85cc3418e70110c3b56d1e1483c95d89c54d	not-for-merge	'refs/pull/21/head' of git://github.com/edx/paragon
+68083343d94941ce6bfd13154c0a14c7db5aee5a	not-for-merge	'refs/pull/21/merge' of git://github.com/edx/paragon
+98ba90c4899152b1e97ac7ebf4bb08733e714335	not-for-merge	'refs/pull/22/head' of git://github.com/edx/paragon
+cb1993f650be28f26da8589c92bb633f1c24b746	not-for-merge	'refs/pull/24/head' of git://github.com/edx/paragon
+1847660e98ce6cfeff7605da54665f346374c0ec	not-for-merge	'refs/pull/25/head' of git://github.com/edx/paragon
+5454303ee109d9eb6a307088f90aa06a0cc0a2b7	not-for-merge	'refs/pull/26/head' of git://github.com/edx/paragon
+0bd07b77bae52bcc18aede94f08ebcb1dad7d04c	not-for-merge	'refs/pull/27/head' of git://github.com/edx/paragon
+a0dfba19f3e56c90f54418b568497edb5c1abad2	not-for-merge	'refs/pull/28/head' of git://github.com/edx/paragon
+638e1631bbc8f099e5ebf12911e70acd1c095251	not-for-merge	'refs/pull/28/merge' of git://github.com/edx/paragon
+29efb9d34c0eb2643c47549e3e77628285932d01	not-for-merge	'refs/pull/29/head' of git://github.com/edx/paragon
+44e66936cae58cbcf010dcc2b414f7caf65edd9d	not-for-merge	'refs/pull/3/head' of git://github.com/edx/paragon
+a1254e3c34513c3fec658a7f5d74d6fa70d0939b	not-for-merge	'refs/pull/30/head' of git://github.com/edx/paragon
+8c5b2796e95e418ca60fcbc9a19ec56d13bdd712	not-for-merge	'refs/pull/31/head' of git://github.com/edx/paragon
+f62b767c6f934958ac9a13cc94cc7b8009d34937	not-for-merge	'refs/pull/32/head' of git://github.com/edx/paragon
+e68a5c837354834898f16e02b0c70da589beaf66	not-for-merge	'refs/pull/33/head' of git://github.com/edx/paragon
+8dce90f181d2ad86cc784a72b6b9293d23a32a12	not-for-merge	'refs/pull/34/head' of git://github.com/edx/paragon
+574f3b67c741a131a24f5c36ce1bbb8ad03ca1f1	not-for-merge	'refs/pull/34/merge' of git://github.com/edx/paragon
+f4a0be22fc9bfc6930111580f0981de17b57b11a	not-for-merge	'refs/pull/35/head' of git://github.com/edx/paragon
+35e0e8ab669b5fc3b668407846b074fe1c17c39b	not-for-merge	'refs/pull/35/merge' of git://github.com/edx/paragon
+ca545a7f0c4f613f5745cadf32a179b949d41002	not-for-merge	'refs/pull/36/head' of git://github.com/edx/paragon
+ecbceb40fba28c9fdf5ffbad9577cf7c42fdb340	not-for-merge	'refs/pull/36/merge' of git://github.com/edx/paragon
+884d5fdc12a18d2811a0906917b62f126ad0dae3	not-for-merge	'refs/pull/37/head' of git://github.com/edx/paragon
+81cabcf2570122d1eebc78be35600acfe83422f0	not-for-merge	'refs/pull/37/merge' of git://github.com/edx/paragon
+9520d785fb6b05a0332e400aab3ad9de1f89300e	not-for-merge	'refs/pull/38/head' of git://github.com/edx/paragon
+84ebab8f973799a30319df4cbf8c0f7dbddd74d7	not-for-merge	'refs/pull/38/merge' of git://github.com/edx/paragon
+535fb0aa7ab0c04ad32e9d4ea3a61012076021a0	not-for-merge	'refs/pull/39/head' of git://github.com/edx/paragon
+d1266c75341a0757b4a8f49fcbe48c95bd4852ce	not-for-merge	'refs/pull/39/merge' of git://github.com/edx/paragon
+38ddc861880ba858f3dfbc23dcf66032f00ff46e	not-for-merge	'refs/pull/4/head' of git://github.com/edx/paragon
+d9c340fd0babd557b32a09969d85582741bf9d2f	not-for-merge	'refs/pull/40/head' of git://github.com/edx/paragon
+e2d6d9458f1159b77cdcdaca8808fc53662dcdad	not-for-merge	'refs/pull/40/merge' of git://github.com/edx/paragon
+e15b0282544bd5c8875305ff8240338bcd9f14a1	not-for-merge	'refs/pull/5/head' of git://github.com/edx/paragon
+a3818d986369afeda94a62ae4d5591712ad3c4e6	not-for-merge	'refs/pull/5/merge' of git://github.com/edx/paragon
+dc0354e38ccfc0043be6d75de1bfbd5f8c73e742	not-for-merge	'refs/pull/6/head' of git://github.com/edx/paragon
+d3cf4def11d1c408f94f0180a46758cf6dd72af9	not-for-merge	'refs/pull/7/head' of git://github.com/edx/paragon
+eaa10656a5d629d380a955c74c03db76d3626086	not-for-merge	'refs/pull/8/head' of git://github.com/edx/paragon
+41ea95694f0dcc7b1dd92dd15c85b5f48d8c58a7	not-for-merge	'refs/pull/9/head' of git://github.com/edx/paragon
+14fda831df85753ace311ddbaf6a972684572a2d	not-for-merge	tag '@arizzitano/button@0.0.2' of git://github.com/edx/paragon
+c7f1a027dee7890b4be9e2fc0f2b9c209389ed4a	not-for-merge	tag '@arizzitano/dropdown@0.0.2' of git://github.com/edx/paragon
+dde0cc24e86edab6bbb05779cb6daa3654e6b576	not-for-merge	branch 'ari/dropdown' of git://github.com/edx/paragon
+6a7e85cc3418e70110c3b56d1e1483c95d89c54d	not-for-merge	branch 'ari/lerna' of git://github.com/edx/paragon
+4520781997eee27840c9571594f1756edbf9e9d1	not-for-merge	branch 'ari/npm' of git://github.com/edx/paragon
+0a2a6cf5ddbfed54a7d186571964ddbbc23442ad	not-for-merge	branch 'e0d/doc-fix' of git://github.com/edx/paragon
+b85b0025232e059c7f2b251408963862ba8c7b7e	not-for-merge	branch 'gh-pages' of git://github.com/edx/paragon
+f4a0be22fc9bfc6930111580f0981de17b57b11a	not-for-merge	branch 'greenkeeper/@storybook/react-3.2.10' of git://github.com/edx/paragon
+f7c6989d1e8fcdfbf930e26e2aeefc438c1db37b	not-for-merge	branch 'greenkeeper/@storybook/react-3.2.11' of git://github.com/edx/paragon
+71dcf46632772aa27b2734e1362d4ff5d20cc04e	not-for-merge	branch 'greenkeeper/@storybook/react-3.3.0-alpha.1' of git://github.com/edx/paragon
+d9c340fd0babd557b32a09969d85582741bf9d2f	not-for-merge	branch 'greenkeeper/coveralls-3.0.0' of git://github.com/edx/paragon
+ca545a7f0c4f613f5745cadf32a179b949d41002	not-for-merge	branch 'greenkeeper/enzyme-3.0.0' of git://github.com/edx/paragon
+d1f5a8788c5baada4254c0a8fbf1c6e0066a52f9	not-for-merge	branch 'greenkeeper/enzyme-3.1.0' of git://github.com/edx/paragon
+884d5fdc12a18d2811a0906917b62f126ad0dae3	not-for-merge	branch 'greenkeeper/react-16.0.0' of git://github.com/edx/paragon
+9520d785fb6b05a0332e400aab3ad9de1f89300e	not-for-merge	branch 'greenkeeper/react-dom-16.0.0' of git://github.com/edx/paragon
+535fb0aa7ab0c04ad32e9d4ea3a61012076021a0	not-for-merge	branch 'greenkeeper/react-test-renderer-16.0.0' of git://github.com/edx/paragon
+35d2bf83e66a1fee0c3a3956fb164acda0466b08	not-for-merge	branch 'master' of git://github.com/edx/paragon
+8dce90f181d2ad86cc784a72b6b9293d23a32a12	not-for-merge	branch 'mroytman/modal-component' of git://github.com/edx/paragon
+e15b0282544bd5c8875305ff8240338bcd9f14a1	not-for-merge	branch 'sarahkf/checkbox-details' of git://github.com/edx/paragon
+14f574761e2a59aa3d0e32c996910a1fc6d2530e	not-for-merge	'refs/pull/1/head' of git://github.com/edx/paragon
+0a2a6cf5ddbfed54a7d186571964ddbbc23442ad	not-for-merge	'refs/pull/10/head' of git://github.com/edx/paragon
+f9e9a541b42516bb27df8d4241a9ef8d07b3cddb	not-for-merge	'refs/pull/11/head' of git://github.com/edx/paragon
+a8bcde2bd2089d8722faac64bf234465f588b9b3	not-for-merge	'refs/pull/11/merge' of git://github.com/edx/paragon
+e48cf63783e8826b22daa6ff9b8e29d4db6bc96a	not-for-merge	'refs/pull/12/head' of git://github.com/edx/paragon
+6187729ae27395f22eb3796631e3b032d622e068	not-for-merge	'refs/pull/13/head' of git://github.com/edx/paragon
+3db31b5c52c0713832ac6dfbaa6639e08093a435	not-for-merge	'refs/pull/13/merge' of git://github.com/edx/paragon
+afe06b156760cea4028e6b93fba6d949cc140e63	not-for-merge	'refs/pull/14/head' of git://github.com/edx/paragon
+10dc6e7d0ca64135b4920bff8c145a3dff5324a0	not-for-merge	'refs/pull/15/head' of git://github.com/edx/paragon
+acf5594184e6b211d56fbffe8a3c1e0b8fbcb90d	not-for-merge	'refs/pull/16/head' of git://github.com/edx/paragon
+a1bdfe9a45f7abee46f9240aefd934bcb3208a6f	not-for-merge	'refs/pull/16/merge' of git://github.com/edx/paragon
+2903ef268c2505e382a47b379bd723c43c451aa5	not-for-merge	'refs/pull/17/head' of git://github.com/edx/paragon
+f389b689e13318f4ade2379e4e34d7e0f0a0ee8d	not-for-merge	'refs/pull/18/head' of git://github.com/edx/paragon
+dde0cc24e86edab6bbb05779cb6daa3654e6b576	not-for-merge	'refs/pull/2/head' of git://github.com/edx/paragon
+4520781997eee27840c9571594f1756edbf9e9d1	not-for-merge	'refs/pull/20/head' of git://github.com/edx/paragon
+a76f2239653bf4fa602787e87f9a6cac4e851d24	not-for-merge	'refs/pull/20/merge' of git://github.com/edx/paragon
+6a7e85cc3418e70110c3b56d1e1483c95d89c54d	not-for-merge	'refs/pull/21/head' of git://github.com/edx/paragon
+68083343d94941ce6bfd13154c0a14c7db5aee5a	not-for-merge	'refs/pull/21/merge' of git://github.com/edx/paragon
+98ba90c4899152b1e97ac7ebf4bb08733e714335	not-for-merge	'refs/pull/22/head' of git://github.com/edx/paragon
+cb1993f650be28f26da8589c92bb633f1c24b746	not-for-merge	'refs/pull/24/head' of git://github.com/edx/paragon
+1847660e98ce6cfeff7605da54665f346374c0ec	not-for-merge	'refs/pull/25/head' of git://github.com/edx/paragon
+5454303ee109d9eb6a307088f90aa06a0cc0a2b7	not-for-merge	'refs/pull/26/head' of git://github.com/edx/paragon
+0bd07b77bae52bcc18aede94f08ebcb1dad7d04c	not-for-merge	'refs/pull/27/head' of git://github.com/edx/paragon
+a0dfba19f3e56c90f54418b568497edb5c1abad2	not-for-merge	'refs/pull/28/head' of git://github.com/edx/paragon
+638e1631bbc8f099e5ebf12911e70acd1c095251	not-for-merge	'refs/pull/28/merge' of git://github.com/edx/paragon
+29efb9d34c0eb2643c47549e3e77628285932d01	not-for-merge	'refs/pull/29/head' of git://github.com/edx/paragon
+44e66936cae58cbcf010dcc2b414f7caf65edd9d	not-for-merge	'refs/pull/3/head' of git://github.com/edx/paragon
+a1254e3c34513c3fec658a7f5d74d6fa70d0939b	not-for-merge	'refs/pull/30/head' of git://github.com/edx/paragon
+8c5b2796e95e418ca60fcbc9a19ec56d13bdd712	not-for-merge	'refs/pull/31/head' of git://github.com/edx/paragon
+f62b767c6f934958ac9a13cc94cc7b8009d34937	not-for-merge	'refs/pull/32/head' of git://github.com/edx/paragon
+e68a5c837354834898f16e02b0c70da589beaf66	not-for-merge	'refs/pull/33/head' of git://github.com/edx/paragon
+8dce90f181d2ad86cc784a72b6b9293d23a32a12	not-for-merge	'refs/pull/34/head' of git://github.com/edx/paragon
+574f3b67c741a131a24f5c36ce1bbb8ad03ca1f1	not-for-merge	'refs/pull/34/merge' of git://github.com/edx/paragon
+f4a0be22fc9bfc6930111580f0981de17b57b11a	not-for-merge	'refs/pull/35/head' of git://github.com/edx/paragon
+35e0e8ab669b5fc3b668407846b074fe1c17c39b	not-for-merge	'refs/pull/35/merge' of git://github.com/edx/paragon
+ca545a7f0c4f613f5745cadf32a179b949d41002	not-for-merge	'refs/pull/36/head' of git://github.com/edx/paragon
+ecbceb40fba28c9fdf5ffbad9577cf7c42fdb340	not-for-merge	'refs/pull/36/merge' of git://github.com/edx/paragon
+884d5fdc12a18d2811a0906917b62f126ad0dae3	not-for-merge	'refs/pull/37/head' of git://github.com/edx/paragon
+81cabcf2570122d1eebc78be35600acfe83422f0	not-for-merge	'refs/pull/37/merge' of git://github.com/edx/paragon
+9520d785fb6b05a0332e400aab3ad9de1f89300e	not-for-merge	'refs/pull/38/head' of git://github.com/edx/paragon
+84ebab8f973799a30319df4cbf8c0f7dbddd74d7	not-for-merge	'refs/pull/38/merge' of git://github.com/edx/paragon
+535fb0aa7ab0c04ad32e9d4ea3a61012076021a0	not-for-merge	'refs/pull/39/head' of git://github.com/edx/paragon
+d1266c75341a0757b4a8f49fcbe48c95bd4852ce	not-for-merge	'refs/pull/39/merge' of git://github.com/edx/paragon
+38ddc861880ba858f3dfbc23dcf66032f00ff46e	not-for-merge	'refs/pull/4/head' of git://github.com/edx/paragon
+d9c340fd0babd557b32a09969d85582741bf9d2f	not-for-merge	'refs/pull/40/head' of git://github.com/edx/paragon
+e2d6d9458f1159b77cdcdaca8808fc53662dcdad	not-for-merge	'refs/pull/40/merge' of git://github.com/edx/paragon
+e15b0282544bd5c8875305ff8240338bcd9f14a1	not-for-merge	'refs/pull/5/head' of git://github.com/edx/paragon
+a3818d986369afeda94a62ae4d5591712ad3c4e6	not-for-merge	'refs/pull/5/merge' of git://github.com/edx/paragon
+dc0354e38ccfc0043be6d75de1bfbd5f8c73e742	not-for-merge	'refs/pull/6/head' of git://github.com/edx/paragon
+d3cf4def11d1c408f94f0180a46758cf6dd72af9	not-for-merge	'refs/pull/7/head' of git://github.com/edx/paragon
+eaa10656a5d629d380a955c74c03db76d3626086	not-for-merge	'refs/pull/8/head' of git://github.com/edx/paragon
+41ea95694f0dcc7b1dd92dd15c85b5f48d8c58a7	not-for-merge	'refs/pull/9/head' of git://github.com/edx/paragon
+14fda831df85753ace311ddbaf6a972684572a2d	not-for-merge	tag '@arizzitano/button@0.0.2' of git://github.com/edx/paragon
+c7f1a027dee7890b4be9e2fc0f2b9c209389ed4a	not-for-merge	tag '@arizzitano/dropdown@0.0.2' of git://github.com/edx/paragon
+dde0cc24e86edab6bbb05779cb6daa3654e6b576	not-for-merge	branch 'ari/dropdown' of git://github.com/edx/paragon
+6a7e85cc3418e70110c3b56d1e1483c95d89c54d	not-for-merge	branch 'ari/lerna' of git://github.com/edx/paragon
+4520781997eee27840c9571594f1756edbf9e9d1	not-for-merge	branch 'ari/npm' of git://github.com/edx/paragon
+0a2a6cf5ddbfed54a7d186571964ddbbc23442ad	not-for-merge	branch 'e0d/doc-fix' of git://github.com/edx/paragon
+b85b0025232e059c7f2b251408963862ba8c7b7e	not-for-merge	branch 'gh-pages' of git://github.com/edx/paragon
+f4a0be22fc9bfc6930111580f0981de17b57b11a	not-for-merge	branch 'greenkeeper/@storybook/react-3.2.10' of git://github.com/edx/paragon
+f7c6989d1e8fcdfbf930e26e2aeefc438c1db37b	not-for-merge	branch 'greenkeeper/@storybook/react-3.2.11' of git://github.com/edx/paragon
+71dcf46632772aa27b2734e1362d4ff5d20cc04e	not-for-merge	branch 'greenkeeper/@storybook/react-3.3.0-alpha.1' of git://github.com/edx/paragon
+d9c340fd0babd557b32a09969d85582741bf9d2f	not-for-merge	branch 'greenkeeper/coveralls-3.0.0' of git://github.com/edx/paragon
+ca545a7f0c4f613f5745cadf32a179b949d41002	not-for-merge	branch 'greenkeeper/enzyme-3.0.0' of git://github.com/edx/paragon
+d1f5a8788c5baada4254c0a8fbf1c6e0066a52f9	not-for-merge	branch 'greenkeeper/enzyme-3.1.0' of git://github.com/edx/paragon
+884d5fdc12a18d2811a0906917b62f126ad0dae3	not-for-merge	branch 'greenkeeper/react-16.0.0' of git://github.com/edx/paragon
+9520d785fb6b05a0332e400aab3ad9de1f89300e	not-for-merge	branch 'greenkeeper/react-dom-16.0.0' of git://github.com/edx/paragon
+535fb0aa7ab0c04ad32e9d4ea3a61012076021a0	not-for-merge	branch 'greenkeeper/react-test-renderer-16.0.0' of git://github.com/edx/paragon
+35d2bf83e66a1fee0c3a3956fb164acda0466b08	not-for-merge	branch 'master' of git://github.com/edx/paragon
+8dce90f181d2ad86cc784a72b6b9293d23a32a12	not-for-merge	branch 'mroytman/modal-component' of git://github.com/edx/paragon
+e15b0282544bd5c8875305ff8240338bcd9f14a1	not-for-merge	branch 'sarahkf/checkbox-details' of git://github.com/edx/paragon
+14f574761e2a59aa3d0e32c996910a1fc6d2530e	not-for-merge	'refs/pull/1/head' of git://github.com/edx/paragon
+0a2a6cf5ddbfed54a7d186571964ddbbc23442ad	not-for-merge	'refs/pull/10/head' of git://github.com/edx/paragon
+f9e9a541b42516bb27df8d4241a9ef8d07b3cddb	not-for-merge	'refs/pull/11/head' of git://github.com/edx/paragon
+a8bcde2bd2089d8722faac64bf234465f588b9b3	not-for-merge	'refs/pull/11/merge' of git://github.com/edx/paragon
+e48cf63783e8826b22daa6ff9b8e29d4db6bc96a	not-for-merge	'refs/pull/12/head' of git://github.com/edx/paragon
+6187729ae27395f22eb3796631e3b032d622e068	not-for-merge	'refs/pull/13/head' of git://github.com/edx/paragon
+3db31b5c52c0713832ac6dfbaa6639e08093a435	not-for-merge	'refs/pull/13/merge' of git://github.com/edx/paragon
+afe06b156760cea4028e6b93fba6d949cc140e63	not-for-merge	'refs/pull/14/head' of git://github.com/edx/paragon
+10dc6e7d0ca64135b4920bff8c145a3dff5324a0	not-for-merge	'refs/pull/15/head' of git://github.com/edx/paragon
+acf5594184e6b211d56fbffe8a3c1e0b8fbcb90d	not-for-merge	'refs/pull/16/head' of git://github.com/edx/paragon
+a1bdfe9a45f7abee46f9240aefd934bcb3208a6f	not-for-merge	'refs/pull/16/merge' of git://github.com/edx/paragon
+2903ef268c2505e382a47b379bd723c43c451aa5	not-for-merge	'refs/pull/17/head' of git://github.com/edx/paragon
+f389b689e13318f4ade2379e4e34d7e0f0a0ee8d	not-for-merge	'refs/pull/18/head' of git://github.com/edx/paragon
+dde0cc24e86edab6bbb05779cb6daa3654e6b576	not-for-merge	'refs/pull/2/head' of git://github.com/edx/paragon
+4520781997eee27840c9571594f1756edbf9e9d1	not-for-merge	'refs/pull/20/head' of git://github.com/edx/paragon
+a76f2239653bf4fa602787e87f9a6cac4e851d24	not-for-merge	'refs/pull/20/merge' of git://github.com/edx/paragon
+6a7e85cc3418e70110c3b56d1e1483c95d89c54d	not-for-merge	'refs/pull/21/head' of git://github.com/edx/paragon
+68083343d94941ce6bfd13154c0a14c7db5aee5a	not-for-merge	'refs/pull/21/merge' of git://github.com/edx/paragon
+98ba90c4899152b1e97ac7ebf4bb08733e714335	not-for-merge	'refs/pull/22/head' of git://github.com/edx/paragon
+cb1993f650be28f26da8589c92bb633f1c24b746	not-for-merge	'refs/pull/24/head' of git://github.com/edx/paragon
+1847660e98ce6cfeff7605da54665f346374c0ec	not-for-merge	'refs/pull/25/head' of git://github.com/edx/paragon
+5454303ee109d9eb6a307088f90aa06a0cc0a2b7	not-for-merge	'refs/pull/26/head' of git://github.com/edx/paragon
+0bd07b77bae52bcc18aede94f08ebcb1dad7d04c	not-for-merge	'refs/pull/27/head' of git://github.com/edx/paragon
+a0dfba19f3e56c90f54418b568497edb5c1abad2	not-for-merge	'refs/pull/28/head' of git://github.com/edx/paragon
+638e1631bbc8f099e5ebf12911e70acd1c095251	not-for-merge	'refs/pull/28/merge' of git://github.com/edx/paragon
+29efb9d34c0eb2643c47549e3e77628285932d01	not-for-merge	'refs/pull/29/head' of git://github.com/edx/paragon
+44e66936cae58cbcf010dcc2b414f7caf65edd9d	not-for-merge	'refs/pull/3/head' of git://github.com/edx/paragon
+a1254e3c34513c3fec658a7f5d74d6fa70d0939b	not-for-merge	'refs/pull/30/head' of git://github.com/edx/paragon
+8c5b2796e95e418ca60fcbc9a19ec56d13bdd712	not-for-merge	'refs/pull/31/head' of git://github.com/edx/paragon
+f62b767c6f934958ac9a13cc94cc7b8009d34937	not-for-merge	'refs/pull/32/head' of git://github.com/edx/paragon
+e68a5c837354834898f16e02b0c70da589beaf66	not-for-merge	'refs/pull/33/head' of git://github.com/edx/paragon
+8dce90f181d2ad86cc784a72b6b9293d23a32a12	not-for-merge	'refs/pull/34/head' of git://github.com/edx/paragon
+574f3b67c741a131a24f5c36ce1bbb8ad03ca1f1	not-for-merge	'refs/pull/34/merge' of git://github.com/edx/paragon
+f4a0be22fc9bfc6930111580f0981de17b57b11a	not-for-merge	'refs/pull/35/head' of git://github.com/edx/paragon
+35e0e8ab669b5fc3b668407846b074fe1c17c39b	not-for-merge	'refs/pull/35/merge' of git://github.com/edx/paragon
+ca545a7f0c4f613f5745cadf32a179b949d41002	not-for-merge	'refs/pull/36/head' of git://github.com/edx/paragon
+ecbceb40fba28c9fdf5ffbad9577cf7c42fdb340	not-for-merge	'refs/pull/36/merge' of git://github.com/edx/paragon
+884d5fdc12a18d2811a0906917b62f126ad0dae3	not-for-merge	'refs/pull/37/head' of git://github.com/edx/paragon
+81cabcf2570122d1eebc78be35600acfe83422f0	not-for-merge	'refs/pull/37/merge' of git://github.com/edx/paragon
+9520d785fb6b05a0332e400aab3ad9de1f89300e	not-for-merge	'refs/pull/38/head' of git://github.com/edx/paragon
+84ebab8f973799a30319df4cbf8c0f7dbddd74d7	not-for-merge	'refs/pull/38/merge' of git://github.com/edx/paragon
+535fb0aa7ab0c04ad32e9d4ea3a61012076021a0	not-for-merge	'refs/pull/39/head' of git://github.com/edx/paragon
+d1266c75341a0757b4a8f49fcbe48c95bd4852ce	not-for-merge	'refs/pull/39/merge' of git://github.com/edx/paragon
+38ddc861880ba858f3dfbc23dcf66032f00ff46e	not-for-merge	'refs/pull/4/head' of git://github.com/edx/paragon
+d9c340fd0babd557b32a09969d85582741bf9d2f	not-for-merge	'refs/pull/40/head' of git://github.com/edx/paragon
+e2d6d9458f1159b77cdcdaca8808fc53662dcdad	not-for-merge	'refs/pull/40/merge' of git://github.com/edx/paragon
+e15b0282544bd5c8875305ff8240338bcd9f14a1	not-for-merge	'refs/pull/5/head' of git://github.com/edx/paragon
+a3818d986369afeda94a62ae4d5591712ad3c4e6	not-for-merge	'refs/pull/5/merge' of git://github.com/edx/paragon
+dc0354e38ccfc0043be6d75de1bfbd5f8c73e742	not-for-merge	'refs/pull/6/head' of git://github.com/edx/paragon
+d3cf4def11d1c408f94f0180a46758cf6dd72af9	not-for-merge	'refs/pull/7/head' of git://github.com/edx/paragon
+eaa10656a5d629d380a955c74c03db76d3626086	not-for-merge	'refs/pull/8/head' of git://github.com/edx/paragon
+41ea95694f0dcc7b1dd92dd15c85b5f48d8c58a7	not-for-merge	'refs/pull/9/head' of git://github.com/edx/paragon
+14fda831df85753ace311ddbaf6a972684572a2d	not-for-merge	tag '@arizzitano/button@0.0.2' of git://github.com/edx/paragon
+c7f1a027dee7890b4be9e2fc0f2b9c209389ed4a	not-for-merge	tag '@arizzitano/dropdown@0.0.2' of git://github.com/edx/paragon
+dde0cc24e86edab6bbb05779cb6daa3654e6b576	not-for-merge	branch 'ari/dropdown' of git://github.com/edx/paragon
+6a7e85cc3418e70110c3b56d1e1483c95d89c54d	not-for-merge	branch 'ari/lerna' of git://github.com/edx/paragon
+4520781997eee27840c9571594f1756edbf9e9d1	not-for-merge	branch 'ari/npm' of git://github.com/edx/paragon
+0a2a6cf5ddbfed54a7d186571964ddbbc23442ad	not-for-merge	branch 'e0d/doc-fix' of git://github.com/edx/paragon
+b85b0025232e059c7f2b251408963862ba8c7b7e	not-for-merge	branch 'gh-pages' of git://github.com/edx/paragon
+f4a0be22fc9bfc6930111580f0981de17b57b11a	not-for-merge	branch 'greenkeeper/@storybook/react-3.2.10' of git://github.com/edx/paragon
+f7c6989d1e8fcdfbf930e26e2aeefc438c1db37b	not-for-merge	branch 'greenkeeper/@storybook/react-3.2.11' of git://github.com/edx/paragon
+71dcf46632772aa27b2734e1362d4ff5d20cc04e	not-for-merge	branch 'greenkeeper/@storybook/react-3.3.0-alpha.1' of git://github.com/edx/paragon
+d9c340fd0babd557b32a09969d85582741bf9d2f	not-for-merge	branch 'greenkeeper/coveralls-3.0.0' of git://github.com/edx/paragon
+ca545a7f0c4f613f5745cadf32a179b949d41002	not-for-merge	branch 'greenkeeper/enzyme-3.0.0' of git://github.com/edx/paragon
+d1f5a8788c5baada4254c0a8fbf1c6e0066a52f9	not-for-merge	branch 'greenkeeper/enzyme-3.1.0' of git://github.com/edx/paragon
+884d5fdc12a18d2811a0906917b62f126ad0dae3	not-for-merge	branch 'greenkeeper/react-16.0.0' of git://github.com/edx/paragon
+9520d785fb6b05a0332e400aab3ad9de1f89300e	not-for-merge	branch 'greenkeeper/react-dom-16.0.0' of git://github.com/edx/paragon
+535fb0aa7ab0c04ad32e9d4ea3a61012076021a0	not-for-merge	branch 'greenkeeper/react-test-renderer-16.0.0' of git://github.com/edx/paragon
+35d2bf83e66a1fee0c3a3956fb164acda0466b08	not-for-merge	branch 'master' of git://github.com/edx/paragon
+8dce90f181d2ad86cc784a72b6b9293d23a32a12	not-for-merge	branch 'mroytman/modal-component' of git://github.com/edx/paragon
+e15b0282544bd5c8875305ff8240338bcd9f14a1	not-for-merge	branch 'sarahkf/checkbox-details' of git://github.com/edx/paragon
+14f574761e2a59aa3d0e32c996910a1fc6d2530e	not-for-merge	'refs/pull/1/head' of git://github.com/edx/paragon
+0a2a6cf5ddbfed54a7d186571964ddbbc23442ad	not-for-merge	'refs/pull/10/head' of git://github.com/edx/paragon
+f9e9a541b42516bb27df8d4241a9ef8d07b3cddb	not-for-merge	'refs/pull/11/head' of git://github.com/edx/paragon
+a8bcde2bd2089d8722faac64bf234465f588b9b3	not-for-merge	'refs/pull/11/merge' of git://github.com/edx/paragon
+e48cf63783e8826b22daa6ff9b8e29d4db6bc96a	not-for-merge	'refs/pull/12/head' of git://github.com/edx/paragon
+6187729ae27395f22eb3796631e3b032d622e068	not-for-merge	'refs/pull/13/head' of git://github.com/edx/paragon
+3db31b5c52c0713832ac6dfbaa6639e08093a435	not-for-merge	'refs/pull/13/merge' of git://github.com/edx/paragon
+afe06b156760cea4028e6b93fba6d949cc140e63	not-for-merge	'refs/pull/14/head' of git://github.com/edx/paragon
+10dc6e7d0ca64135b4920bff8c145a3dff5324a0	not-for-merge	'refs/pull/15/head' of git://github.com/edx/paragon
+acf5594184e6b211d56fbffe8a3c1e0b8fbcb90d	not-for-merge	'refs/pull/16/head' of git://github.com/edx/paragon
+a1bdfe9a45f7abee46f9240aefd934bcb3208a6f	not-for-merge	'refs/pull/16/merge' of git://github.com/edx/paragon
+2903ef268c2505e382a47b379bd723c43c451aa5	not-for-merge	'refs/pull/17/head' of git://github.com/edx/paragon
+f389b689e13318f4ade2379e4e34d7e0f0a0ee8d	not-for-merge	'refs/pull/18/head' of git://github.com/edx/paragon
+dde0cc24e86edab6bbb05779cb6daa3654e6b576	not-for-merge	'refs/pull/2/head' of git://github.com/edx/paragon
+4520781997eee27840c9571594f1756edbf9e9d1	not-for-merge	'refs/pull/20/head' of git://github.com/edx/paragon
+a76f2239653bf4fa602787e87f9a6cac4e851d24	not-for-merge	'refs/pull/20/merge' of git://github.com/edx/paragon
+6a7e85cc3418e70110c3b56d1e1483c95d89c54d	not-for-merge	'refs/pull/21/head' of git://github.com/edx/paragon
+68083343d94941ce6bfd13154c0a14c7db5aee5a	not-for-merge	'refs/pull/21/merge' of git://github.com/edx/paragon
+98ba90c4899152b1e97ac7ebf4bb08733e714335	not-for-merge	'refs/pull/22/head' of git://github.com/edx/paragon
+cb1993f650be28f26da8589c92bb633f1c24b746	not-for-merge	'refs/pull/24/head' of git://github.com/edx/paragon
+1847660e98ce6cfeff7605da54665f346374c0ec	not-for-merge	'refs/pull/25/head' of git://github.com/edx/paragon
+5454303ee109d9eb6a307088f90aa06a0cc0a2b7	not-for-merge	'refs/pull/26/head' of git://github.com/edx/paragon
+0bd07b77bae52bcc18aede94f08ebcb1dad7d04c	not-for-merge	'refs/pull/27/head' of git://github.com/edx/paragon
+a0dfba19f3e56c90f54418b568497edb5c1abad2	not-for-merge	'refs/pull/28/head' of git://github.com/edx/paragon
+638e1631bbc8f099e5ebf12911e70acd1c095251	not-for-merge	'refs/pull/28/merge' of git://github.com/edx/paragon
+29efb9d34c0eb2643c47549e3e77628285932d01	not-for-merge	'refs/pull/29/head' of git://github.com/edx/paragon
+44e66936cae58cbcf010dcc2b414f7caf65edd9d	not-for-merge	'refs/pull/3/head' of git://github.com/edx/paragon
+a1254e3c34513c3fec658a7f5d74d6fa70d0939b	not-for-merge	'refs/pull/30/head' of git://github.com/edx/paragon
+8c5b2796e95e418ca60fcbc9a19ec56d13bdd712	not-for-merge	'refs/pull/31/head' of git://github.com/edx/paragon
+f62b767c6f934958ac9a13cc94cc7b8009d34937	not-for-merge	'refs/pull/32/head' of git://github.com/edx/paragon
+e68a5c837354834898f16e02b0c70da589beaf66	not-for-merge	'refs/pull/33/head' of git://github.com/edx/paragon
+8dce90f181d2ad86cc784a72b6b9293d23a32a12	not-for-merge	'refs/pull/34/head' of git://github.com/edx/paragon
+574f3b67c741a131a24f5c36ce1bbb8ad03ca1f1	not-for-merge	'refs/pull/34/merge' of git://github.com/edx/paragon
+f4a0be22fc9bfc6930111580f0981de17b57b11a	not-for-merge	'refs/pull/35/head' of git://github.com/edx/paragon
+35e0e8ab669b5fc3b668407846b074fe1c17c39b	not-for-merge	'refs/pull/35/merge' of git://github.com/edx/paragon
+ca545a7f0c4f613f5745cadf32a179b949d41002	not-for-merge	'refs/pull/36/head' of git://github.com/edx/paragon
+ecbceb40fba28c9fdf5ffbad9577cf7c42fdb340	not-for-merge	'refs/pull/36/merge' of git://github.com/edx/paragon
+884d5fdc12a18d2811a0906917b62f126ad0dae3	not-for-merge	'refs/pull/37/head' of git://github.com/edx/paragon
+81cabcf2570122d1eebc78be35600acfe83422f0	not-for-merge	'refs/pull/37/merge' of git://github.com/edx/paragon
+9520d785fb6b05a0332e400aab3ad9de1f89300e	not-for-merge	'refs/pull/38/head' of git://github.com/edx/paragon
+84ebab8f973799a30319df4cbf8c0f7dbddd74d7	not-for-merge	'refs/pull/38/merge' of git://github.com/edx/paragon
+535fb0aa7ab0c04ad32e9d4ea3a61012076021a0	not-for-merge	'refs/pull/39/head' of git://github.com/edx/paragon
+d1266c75341a0757b4a8f49fcbe48c95bd4852ce	not-for-merge	'refs/pull/39/merge' of git://github.com/edx/paragon
+38ddc861880ba858f3dfbc23dcf66032f00ff46e	not-for-merge	'refs/pull/4/head' of git://github.com/edx/paragon
+d9c340fd0babd557b32a09969d85582741bf9d2f	not-for-merge	'refs/pull/40/head' of git://github.com/edx/paragon
+e2d6d9458f1159b77cdcdaca8808fc53662dcdad	not-for-merge	'refs/pull/40/merge' of git://github.com/edx/paragon
+e15b0282544bd5c8875305ff8240338bcd9f14a1	not-for-merge	'refs/pull/5/head' of git://github.com/edx/paragon
+a3818d986369afeda94a62ae4d5591712ad3c4e6	not-for-merge	'refs/pull/5/merge' of git://github.com/edx/paragon
+dc0354e38ccfc0043be6d75de1bfbd5f8c73e742	not-for-merge	'refs/pull/6/head' of git://github.com/edx/paragon
+d3cf4def11d1c408f94f0180a46758cf6dd72af9	not-for-merge	'refs/pull/7/head' of git://github.com/edx/paragon
+eaa10656a5d629d380a955c74c03db76d3626086	not-for-merge	'refs/pull/8/head' of git://github.com/edx/paragon
+41ea95694f0dcc7b1dd92dd15c85b5f48d8c58a7	not-for-merge	'refs/pull/9/head' of git://github.com/edx/paragon
+14fda831df85753ace311ddbaf6a972684572a2d	not-for-merge	tag '@arizzitano/button@0.0.2' of git://github.com/edx/paragon
+c7f1a027dee7890b4be9e2fc0f2b9c209389ed4a	not-for-merge	tag '@arizzitano/dropdown@0.0.2' of git://github.com/edx/paragon

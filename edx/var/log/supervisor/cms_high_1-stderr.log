@@ -1,0 +1,1677 @@
+2017-10-03 06:29:15,579 WARNING 98706 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-10-03 06:29:15,580 WARNING 98706 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-10-03 06:29:17,901 WARNING 98706 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-10-03 06:29:17,909 WARNING 98706 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-10-03 06:29:19,373 INFO 98706 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-10-03 06:29:19,793: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-10-03 06:29:19,810: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-03 06:29:19,830: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-03 06:29:20,841: INFO/MainProcess] mingle: sync with 2 nodes
+[2017-10-03 06:29:20,842: INFO/MainProcess] mingle: sync complete
+[2017-10-03 06:29:20,884: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 06:45:13,715 WARNING 114624 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-10-03 06:45:13,716 WARNING 114624 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-10-03 06:45:14,694 WARNING 114624 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-10-03 06:45:14,696 WARNING 114624 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-10-03 06:45:15,406 INFO 114624 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-10-03 06:45:15,826: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-10-03 06:45:15,842: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-03 06:45:15,852: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-03 06:45:16,870: INFO/MainProcess] mingle: sync with 4 nodes
+[2017-10-03 06:45:16,872: INFO/MainProcess] mingle: sync complete
+[2017-10-03 06:45:16,893: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-10-03 06:45:18,952: INFO/MainProcess] sync with celery@edx.cms.core.low.tatweer02
+[2017-10-03 06:45:21,686: INFO/MainProcess] sync with celery@edx.lms.core.default.tatweer02
+[2017-10-03 06:45:24,965: INFO/MainProcess] sync with celery@edx.lms.core.high.tatweer02
+[2017-10-03 06:45:27,903: INFO/MainProcess] sync with celery@edx.lms.core.high_mem.tatweer02
+[2017-10-03 06:45:31,211: INFO/MainProcess] sync with celery@edx.lms.core.low.tatweer02
+[2017-10-03 07:01:22,631: INFO/MainProcess] sync with celery@tatweer02
+[2017-10-03 07:01:23,145: INFO/MainProcess] sync with celery@tatweer02
+[2017-10-03 07:01:23,399: INFO/MainProcess] sync with celery@tatweer02
+[2017-10-03 07:01:24,356: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 07:01:24.356828 recv: 2017-10-03 11:01:24.354795]
+
+[2017-10-03 07:01:24,507: INFO/MainProcess] sync with celery@tatweer02
+[2017-10-03 07:20:28,782: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+[2017-10-03 07:20:28,807: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2017-10-03 07:20:30,814: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2017-10-03 07:20:34,822: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+[2017-10-03 07:20:40,839: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-03 07:20:40,886: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-03 07:20:42,075: INFO/MainProcess] mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 07:23:22,071 WARNING 56766 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-10-03 07:23:22,072 WARNING 56766 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-10-03 07:23:23,142 WARNING 56766 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-10-03 07:23:23,143 WARNING 56766 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-10-03 07:23:23,882 INFO 56766 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-10-03 07:23:24,281: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-10-03 07:23:24,297: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-03 07:23:24,306: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-03 07:23:25,320: INFO/MainProcess] mingle: sync with 5 nodes
+[2017-10-03 07:23:25,321: INFO/MainProcess] mingle: sync complete
+[2017-10-03 07:23:25,333: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-10-03 07:23:26,142: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 07:23:26.142428 recv: 2017-10-03 11:23:26.140321]
+
+[2017-10-03 07:23:27,387: INFO/MainProcess] sync with celery@edx.cms.core.low.tatweer02
+[2017-10-03 07:23:30,288: INFO/MainProcess] sync with celery@edx.lms.core.default.tatweer02
+[2017-10-03 07:23:33,403: INFO/MainProcess] sync with celery@edx.lms.core.high.tatweer02
+[2017-10-03 07:23:36,295: INFO/MainProcess] sync with celery@edx.lms.core.high_mem.tatweer02
+[2017-10-03 07:23:39,392: INFO/MainProcess] sync with celery@edx.lms.core.low.tatweer02
+[2017-10-03 07:33:25,420: INFO/MainProcess] sync with celery@tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 09:43:36,605 WARNING 45821 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-10-03 09:43:36,625 WARNING 45821 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-10-03 09:43:44,646 WARNING 45821 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-10-03 09:43:44,670 WARNING 45821 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-10-03 09:43:50,263 INFO 45821 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-10-03 09:43:52,657: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-10-03 09:43:52,700: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-03 09:43:52,728: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-03 09:43:53,753: INFO/MainProcess] mingle: sync with 3 nodes
+[2017-10-03 09:43:53,755: INFO/MainProcess] mingle: sync complete
+[2017-10-03 09:43:53,768: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-10-03 09:43:54,050: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 09:43:54.050311 recv: 2017-10-03 13:43:54.049086]
+
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 09:46:05,037 WARNING 51803 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-10-03 09:46:05,043 WARNING 51803 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-10-03 09:46:13,398 WARNING 51803 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-10-03 09:46:13,423 WARNING 51803 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-10-03 09:46:19,452 INFO 51803 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-10-03 09:46:21,301: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-10-03 09:46:21,322: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-03 09:46:21,337: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-03 09:46:22,351: INFO/MainProcess] mingle: sync with 2 nodes
+[2017-10-03 09:46:22,352: INFO/MainProcess] mingle: sync complete
+[2017-10-03 09:46:22,366: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-10-03 09:46:23,029: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 09:46:23.028959 recv: 2017-10-03 13:46:23.027190]
+
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 10:04:01,396 WARNING 71279 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-10-03 10:04:01,416 WARNING 71279 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-10-03 10:04:11,616 WARNING 71279 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-10-03 10:04:11,624 WARNING 71279 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-10-03 10:04:19,036 INFO 71279 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-10-03 10:04:20,062: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-10-03 10:04:20,080: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-03 10:04:20,088: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-03 10:04:21,105: INFO/MainProcess] mingle: sync with 4 nodes
+[2017-10-03 10:04:21,107: INFO/MainProcess] mingle: sync complete
+[2017-10-03 10:04:21,124: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-10-03 10:04:21,458: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 10:04:21.458067 recv: 2017-10-03 14:04:21.454022]
+
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 10:21:34,077 WARNING 2054 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-10-03 10:21:34,079 WARNING 2054 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-10-03 10:21:42,009 WARNING 2054 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-10-03 10:21:42,011 WARNING 2054 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-10-03 10:21:48,694 INFO 2054 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-10-03 10:21:50,049: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-10-03 10:21:50,311: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-03 10:21:50,322: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-03 10:21:51,333: INFO/MainProcess] mingle: sync with 3 nodes
+[2017-10-03 10:21:51,334: INFO/MainProcess] mingle: sync complete
+[2017-10-03 10:21:51,349: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-10-03 10:21:52,128: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 10:21:52.128687 recv: 2017-10-03 14:21:52.127527]
+
+
+worker: Warm shutdown (MainProcess)
+2017-10-03 10:48:06,102 WARNING 25416 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-10-03 10:48:06,103 WARNING 25416 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-10-03 10:48:12,843 WARNING 25416 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-10-03 10:48:12,845 WARNING 25416 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-10-03 10:48:16,324 INFO 25416 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-10-03 10:48:19,436: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-10-03 10:48:19,562: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-03 10:48:19,621: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-03 10:48:20,649: INFO/MainProcess] mingle: sync with 1 nodes
+[2017-10-03 10:48:20,650: INFO/MainProcess] mingle: sync complete
+[2017-10-03 10:48:20,673: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-10-03 10:48:21,296: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-03 10:48:21.296312 recv: 2017-10-03 14:48:21.294837]
+
+[2017-10-03 10:48:21,495: INFO/MainProcess] sync with celery@edx.lms.core.default.tatweer02
+[2017-10-03 10:48:22,244: INFO/MainProcess] sync with celery@edx.lms.core.low.tatweer02
+[2017-10-03 10:48:22,332: INFO/MainProcess] sync with celery@edx.lms.core.high_mem.tatweer02
+[2017-10-03 10:48:22,554: INFO/MainProcess] sync with celery@edx.lms.core.high.tatweer02
+[2017-10-03 10:48:22,563: INFO/MainProcess] sync with celery@edx.cms.core.default.tatweer02
+[2017-10-03 10:48:22,612: INFO/MainProcess] sync with celery@edx.cms.core.low.tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-10-07 03:43:35,947 WARNING 1642 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-10-07 03:43:35,953 WARNING 1642 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-10-07 03:43:44,388 WARNING 1642 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-10-07 03:43:44,422 WARNING 1642 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-10-07 03:43:50,267 INFO 1642 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-10-07 03:43:51,035: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-10-07 03:43:51,052: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-07 03:43:51,085: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-07 03:43:52,094: INFO/MainProcess] mingle: sync with 1 nodes
+[2017-10-07 03:43:52,095: INFO/MainProcess] mingle: sync complete
+[2017-10-07 03:43:52,107: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-10-07 03:43:52,627: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-07 03:43:52.627250 recv: 2017-10-07 07:43:52.625121]
+
+[2017-10-07 03:54:02,985: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+[2017-10-07 03:54:03,017: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2017-10-07 03:54:05,024: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2017-10-07 03:54:09,033: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+[2017-10-07 03:54:15,064: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-07 03:54:15,108: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-07 03:54:16,781: INFO/MainProcess] mingle: all alone
+[2017-10-07 04:05:02,538: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 530, in _close
+    (class_id, method_id), ConnectionError)
+ConnectionForced: (0, 0): (320) CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'
+[2017-10-07 04:05:02,565: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2017-10-07 04:05:04,572: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2017-10-07 04:05:08,581: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+[2017-10-07 04:05:14,629: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-07 04:05:14,647: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-07 04:05:15,835: INFO/MainProcess] mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+2017-10-11 05:30:55,296 WARNING 69274 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-10-11 05:30:55,297 WARNING 69274 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-10-11 05:31:04,983 WARNING 69274 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-10-11 05:31:04,987 WARNING 69274 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-10-11 05:31:10,403 INFO 69274 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-10-11 05:31:10,870: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-10-11 05:31:10,884: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-11 05:31:10,893: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-11 05:31:11,903: INFO/MainProcess] mingle: sync with 3 nodes
+[2017-10-11 05:31:11,904: INFO/MainProcess] mingle: sync complete
+[2017-10-11 05:31:11,915: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-10-11 05:31:12,165: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-11 05:31:12.164883 recv: 2017-10-11 09:31:12.161484]
+
+
+worker: Warm shutdown (MainProcess)
+2017-10-11 05:33:08,103 WARNING 75015 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-10-11 05:33:08,104 WARNING 75015 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-10-11 05:33:17,737 WARNING 75015 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-10-11 05:33:17,765 WARNING 75015 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-10-11 05:33:23,464 INFO 75015 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-10-11 05:33:24,159: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-10-11 05:33:24,174: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-11 05:33:24,184: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-11 05:33:25,195: INFO/MainProcess] mingle: sync with 1 nodes
+[2017-10-11 05:33:25,196: INFO/MainProcess] mingle: sync complete
+[2017-10-11 05:33:25,209: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-10-11 05:33:25,437: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-11 05:33:25.437671 recv: 2017-10-11 09:33:25.434503]
+
+[2017-10-14 10:25:14,881: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 530, in _close
+    (class_id, method_id), ConnectionError)
+ConnectionForced: (0, 0): (320) CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'
+[2017-10-14 10:25:14,898: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2017-10-14 10:25:16,904: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2017-10-14 10:25:20,913: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+[2017-10-14 10:25:26,928: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-14 10:25:26,973: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-14 10:25:28,573: INFO/MainProcess] mingle: all alone
+[2017-10-14 10:41:59,750: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 530, in _close
+    (class_id, method_id), ConnectionError)
+ConnectionForced: (0, 0): (320) CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'
+[2017-10-14 10:41:59,793: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2017-10-14 10:42:01,799: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2017-10-14 10:42:05,813: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+[2017-10-14 10:42:11,860: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-14 10:42:11,902: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-14 10:42:12,923: INFO/MainProcess] mingle: all alone
+[2017-10-14 10:42:13,012: INFO/MainProcess] sync with celery@tatweer02
+
+worker: Warm shutdown (MainProcess)
+2017-10-29 11:05:23,296 WARNING 1661 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-10-29 11:05:23,297 WARNING 1661 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-10-29 11:05:31,528 WARNING 1661 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-10-29 11:05:31,529 WARNING 1661 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-10-29 11:05:37,641 INFO 1661 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-10-29 11:05:38,468: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-10-29 11:05:38,483: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-10-29 11:05:38,512: INFO/MainProcess] mingle: searching for neighbors
+[2017-10-29 11:05:39,523: INFO/MainProcess] mingle: sync with 1 nodes
+[2017-10-29 11:05:39,524: INFO/MainProcess] mingle: sync complete
+[2017-10-29 11:05:39,536: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-10-29 11:05:41,397: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-10-29 11:05:41.397497 recv: 2017-10-29 15:05:41.396657]
+
+[2017-11-18 08:53:44,067: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+[2017-11-18 08:53:44,097: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2017-11-18 08:53:46,104: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2017-11-18 08:53:50,113: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+[2017-11-18 08:53:56,126: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-11-18 08:53:56,135: INFO/MainProcess] mingle: searching for neighbors
+[2017-11-18 08:53:57,217: INFO/MainProcess] mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+2017-11-18 10:25:38,603 WARNING 2055 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-11-18 10:25:38,605 WARNING 2055 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-11-18 10:25:47,402 WARNING 2055 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-11-18 10:25:47,420 WARNING 2055 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-11-18 10:25:53,709 INFO 2055 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-11-18 10:25:54,362: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-11-18 10:25:54,378: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-11-18 10:25:54,388: INFO/MainProcess] mingle: searching for neighbors
+[2017-11-18 10:25:55,398: INFO/MainProcess] mingle: sync with 1 nodes
+[2017-11-18 10:25:55,399: INFO/MainProcess] mingle: sync complete
+[2017-11-18 10:25:55,410: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-11-18 10:25:57,304: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-18 10:25:57.303967 recv: 2017-11-18 14:25:57.302400]
+
+[2017-11-18 10:29:48,101: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+[2017-11-18 10:29:48,124: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2017-11-18 10:29:50,132: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2017-11-18 10:29:54,141: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+[2017-11-18 10:30:00,158: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-11-18 10:30:00,216: INFO/MainProcess] mingle: searching for neighbors
+[2017-11-18 10:30:01,522: INFO/MainProcess] mingle: all alone
+[2017-11-19 04:15:12,655: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 530, in _close
+    (class_id, method_id), ConnectionError)
+ConnectionForced: (0, 0): (320) CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'
+[2017-11-19 04:15:12,673: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2017-11-19 04:15:14,681: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2017-11-19 04:15:18,690: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+[2017-11-19 04:15:24,710: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-11-19 04:15:24,750: INFO/MainProcess] mingle: searching for neighbors
+[2017-11-19 04:15:26,012: INFO/MainProcess] mingle: all alone
+[2017-11-19 08:19:36,258: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 530, in _close
+    (class_id, method_id), ConnectionError)
+ConnectionForced: (0, 0): (320) CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'
+[2017-11-19 08:19:36,278: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2017-11-19 08:19:38,285: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2017-11-19 08:19:42,294: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+[2017-11-19 08:19:48,307: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-11-19 08:19:48,323: INFO/MainProcess] mingle: searching for neighbors
+[2017-11-19 08:19:49,533: INFO/MainProcess] mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+2017-11-19 09:36:05,838 WARNING 2078 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-11-19 09:36:05,850 WARNING 2078 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-11-19 09:36:14,629 WARNING 2078 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-11-19 09:36:14,716 WARNING 2078 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-11-19 09:36:20,885 INFO 2078 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-11-19 09:36:21,558: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-11-19 09:36:21,573: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-11-19 09:36:21,583: INFO/MainProcess] mingle: searching for neighbors
+[2017-11-19 09:36:22,605: INFO/MainProcess] mingle: sync with 3 nodes
+[2017-11-19 09:36:22,606: INFO/MainProcess] mingle: sync complete
+[2017-11-19 09:36:22,619: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-11-19 09:36:23,775: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-19 09:36:23.775201 recv: 2017-11-19 13:36:23.773589]
+
+
+worker: Warm shutdown (MainProcess)
+2017-11-19 10:06:52,594 WARNING 29655 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-11-19 10:06:52,620 WARNING 29655 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-11-19 10:07:01,579 WARNING 29655 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-11-19 10:07:01,615 WARNING 29655 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-11-19 10:07:08,165 INFO 29655 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-11-19 10:07:09,584: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-11-19 10:07:09,618: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-11-19 10:07:09,632: INFO/MainProcess] mingle: searching for neighbors
+[2017-11-19 10:07:10,652: INFO/MainProcess] mingle: sync with 3 nodes
+[2017-11-19 10:07:10,653: INFO/MainProcess] mingle: sync complete
+[2017-11-19 10:07:10,665: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-11-19 10:07:12,611: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-19 10:07:12.611417 recv: 2017-11-19 14:07:12.610259]
+
+
+worker: Warm shutdown (MainProcess)
+2017-11-19 10:08:59,363 WARNING 35436 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-11-19 10:08:59,389 WARNING 35436 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-11-19 10:09:08,776 WARNING 35436 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-11-19 10:09:08,785 WARNING 35436 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-11-19 10:09:15,368 INFO 35436 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-11-19 10:09:16,259: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-11-19 10:09:16,275: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-11-19 10:09:16,295: INFO/MainProcess] mingle: searching for neighbors
+[2017-11-19 10:09:17,305: INFO/MainProcess] mingle: sync with 2 nodes
+[2017-11-19 10:09:17,306: INFO/MainProcess] mingle: sync complete
+[2017-11-19 10:09:17,318: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-11-19 10:09:18,513: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-19 10:09:18.513582 recv: 2017-11-19 14:09:18.512249]
+
+
+worker: Warm shutdown (MainProcess)
+2017-11-20 04:22:50,524 WARNING 3299 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-11-20 04:22:50,532 WARNING 3299 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-11-20 04:22:58,937 WARNING 3299 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-11-20 04:22:58,942 WARNING 3299 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-11-20 04:23:05,779 INFO 3299 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-11-20 04:23:07,238: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-11-20 04:23:07,252: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-11-20 04:23:07,260: INFO/MainProcess] mingle: searching for neighbors
+[2017-11-20 04:23:08,270: INFO/MainProcess] mingle: sync with 3 nodes
+[2017-11-20 04:23:08,271: INFO/MainProcess] mingle: sync complete
+[2017-11-20 04:23:08,291: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-11-20 04:23:09,342: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-20 04:23:09.341925 recv: 2017-11-20 08:23:09.341080]
+
+[2017-11-20 05:01:25,701: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 530, in _close
+    (class_id, method_id), ConnectionError)
+ConnectionForced: (0, 0): (320) CONNECTION_FORCED - broker forced connection closure with reason 'shutdown'
+[2017-11-20 05:01:25,734: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2017-11-20 05:01:27,740: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2017-11-20 05:01:31,748: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+[2017-11-20 05:01:37,759: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-11-20 05:01:37,847: INFO/MainProcess] mingle: searching for neighbors
+[2017-11-20 05:01:38,861: INFO/MainProcess] mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+2017-11-20 09:14:52,639 WARNING 47400 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-11-20 09:14:52,640 WARNING 47400 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-11-20 09:15:04,465 WARNING 47400 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-11-20 09:15:04,468 WARNING 47400 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-11-20 09:15:12,557 INFO 47400 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-11-20 09:15:14,132: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-11-20 09:15:14,160: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-11-20 09:15:14,177: INFO/MainProcess] mingle: searching for neighbors
+[2017-11-20 09:15:15,194: INFO/MainProcess] mingle: sync with 2 nodes
+[2017-11-20 09:15:15,195: INFO/MainProcess] mingle: sync complete
+[2017-11-20 09:15:15,215: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-11-20 09:15:15,552: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-20 09:15:15.552016 recv: 2017-11-20 13:15:15.549462]
+
+[2017-11-20 10:01:58,813: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/worker/loops.py", line 70, in asynloop
+    next(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 164, in on_readable
+    reader(loop)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/kombu/transport/base.py", line 146, in _read
+    drain_events(timeout=0)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 324, in drain_events
+    return amqp_method(channel, args)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 527, in _close
+    self._x_close_ok()
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/connection.py", line 555, in _x_close_ok
+    self._send_method((10, 51))
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/abstract_channel.py", line 56, in _send_method
+    self.channel_id, method_sig, args, content,
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/method_framing.py", line 221, in write_method
+    write_frame(1, channel, payload)
+  File "/edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/amqp/transport.py", line 182, in write_frame
+    frame_type, channel, size, payload, 0xce,
+  File "/usr/lib/python2.7/socket.py", line 228, in meth
+    return getattr(self._sock,name)(*args)
+error: [Errno 104] Connection reset by peer
+[2017-11-20 10:01:58,844: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 2.00 seconds...
+
+[2017-11-20 10:02:00,850: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 4.00 seconds...
+
+[2017-11-20 10:02:04,857: ERROR/MainProcess] consumer: Cannot connect to amqp://celery:**@127.0.0.1:5672//: [Errno 111] Connection refused.
+Trying again in 6.00 seconds...
+
+[2017-11-20 10:02:10,880: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-11-20 10:02:10,923: INFO/MainProcess] mingle: searching for neighbors
+[2017-11-20 10:02:12,239: INFO/MainProcess] mingle: all alone
+
+worker: Warm shutdown (MainProcess)
+2017-11-20 10:27:38,084 WARNING 51214 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-11-20 10:27:38,085 WARNING 51214 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-11-20 10:27:46,706 WARNING 51214 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-11-20 10:27:46,707 WARNING 51214 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-11-20 10:27:53,224 INFO 51214 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-11-20 10:27:54,078: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-11-20 10:27:54,093: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-11-20 10:27:54,102: INFO/MainProcess] mingle: searching for neighbors
+[2017-11-20 10:27:55,123: INFO/MainProcess] mingle: sync with 2 nodes
+[2017-11-20 10:27:55,124: INFO/MainProcess] mingle: sync complete
+[2017-11-20 10:27:55,141: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-11-20 10:27:55,312: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-20 10:27:55.312435 recv: 2017-11-20 14:27:55.310468]
+
+
+worker: Warm shutdown (MainProcess)
+2017-11-20 10:29:40,507 WARNING 57135 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-11-20 10:29:40,536 WARNING 57135 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-11-20 10:29:51,609 WARNING 57135 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-11-20 10:29:51,657 WARNING 57135 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-11-20 10:29:59,423 INFO 57135 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-11-20 10:30:01,641: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-11-20 10:30:01,671: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-11-20 10:30:01,694: INFO/MainProcess] mingle: searching for neighbors
+[2017-11-20 10:30:02,713: INFO/MainProcess] mingle: sync with 3 nodes
+[2017-11-20 10:30:02,714: INFO/MainProcess] mingle: sync complete
+[2017-11-20 10:30:02,728: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-11-20 10:30:03,141: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-11-20 10:30:03.141232 recv: 2017-11-20 14:30:03.137517]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-19 05:09:43,324 WARNING 1697 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-12-19 05:09:43,325 WARNING 1697 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-12-19 05:09:52,047 WARNING 1697 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-12-19 05:09:52,084 WARNING 1697 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-12-19 05:09:58,432 INFO 1697 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-12-19 05:09:59,081: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-12-19 05:09:59,100: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-12-19 05:09:59,111: INFO/MainProcess] mingle: searching for neighbors
+[2017-12-19 05:10:00,120: INFO/MainProcess] mingle: sync with 1 nodes
+[2017-12-19 05:10:00,122: INFO/MainProcess] mingle: sync complete
+[2017-12-19 05:10:00,136: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-12-19 05:10:00,609: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-19 05:10:00.609444 recv: 2017-12-19 09:10:00.607178]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-19 06:15:26,623 WARNING 58612 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-12-19 06:15:26,625 WARNING 58612 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-12-19 06:15:37,662 WARNING 58612 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-12-19 06:15:37,672 WARNING 58612 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-12-19 06:15:46,610 INFO 58612 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-12-19 06:15:49,030: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-12-19 06:15:49,057: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-12-19 06:15:49,069: INFO/MainProcess] mingle: searching for neighbors
+[2017-12-19 06:15:50,083: INFO/MainProcess] mingle: sync with 3 nodes
+[2017-12-19 06:15:50,084: INFO/MainProcess] mingle: sync complete
+[2017-12-19 06:15:50,097: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-12-19 06:15:50,462: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-19 06:15:50.462343 recv: 2017-12-19 10:15:50.460640]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-19 07:50:43,209 WARNING 4833 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-12-19 07:50:43,210 WARNING 4833 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-12-19 07:50:54,430 WARNING 4833 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-12-19 07:50:54,432 WARNING 4833 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-12-19 07:51:03,452 INFO 4833 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-12-19 07:51:04,556: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-12-19 07:51:04,576: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-12-19 07:51:04,586: INFO/MainProcess] mingle: searching for neighbors
+[2017-12-19 07:51:05,598: INFO/MainProcess] mingle: sync with 1 nodes
+[2017-12-19 07:51:05,599: INFO/MainProcess] mingle: sync complete
+[2017-12-19 07:51:05,625: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-12-19 07:51:06,794: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-19 07:51:06.794668 recv: 2017-12-19 11:51:06.793291]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-19 08:17:14,484 WARNING 29654 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-12-19 08:17:14,495 WARNING 29654 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-12-19 08:17:23,634 WARNING 29654 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-12-19 08:17:23,639 WARNING 29654 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-12-19 08:17:29,778 INFO 29654 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-12-19 08:17:30,524: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-12-19 08:17:30,539: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-12-19 08:17:30,547: INFO/MainProcess] mingle: searching for neighbors
+[2017-12-19 08:17:31,568: INFO/MainProcess] mingle: sync with 3 nodes
+[2017-12-19 08:17:31,571: INFO/MainProcess] mingle: sync complete
+[2017-12-19 08:17:31,584: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-12-19 08:17:33,026: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-19 08:17:33.025999 recv: 2017-12-19 12:17:33.024249]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-20 13:24:33,104 WARNING 8040 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-12-20 13:24:33,111 WARNING 8040 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-12-20 13:24:41,379 WARNING 8040 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-12-20 13:24:41,395 WARNING 8040 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-12-20 13:24:47,538 INFO 8040 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-12-20 13:24:49,356: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-12-20 13:24:49,380: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-12-20 13:24:49,389: INFO/MainProcess] mingle: searching for neighbors
+[2017-12-20 13:24:50,401: INFO/MainProcess] mingle: sync with 2 nodes
+[2017-12-20 13:24:50,402: INFO/MainProcess] mingle: sync complete
+[2017-12-20 13:24:50,430: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-12-20 13:24:50,492: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-20 13:24:50.492263 recv: 2017-12-20 17:24:50.491351]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-25 05:52:00,196 WARNING 20946 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-12-25 05:52:00,203 WARNING 20946 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-12-25 05:52:09,998 WARNING 20946 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-12-25 05:52:10,036 WARNING 20946 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-12-25 05:52:15,728 INFO 20946 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-12-25 05:52:17,643: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-12-25 05:52:17,665: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-12-25 05:52:17,679: INFO/MainProcess] mingle: searching for neighbors
+[2017-12-25 05:52:18,697: INFO/MainProcess] mingle: sync with 2 nodes
+[2017-12-25 05:52:18,698: INFO/MainProcess] mingle: sync complete
+[2017-12-25 05:52:18,723: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-12-25 05:52:19,047: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-25 05:52:19.047622 recv: 2017-12-25 09:52:19.043554]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-25 07:07:47,725 WARNING 81841 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-12-25 07:07:47,726 WARNING 81841 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-12-25 07:07:56,760 WARNING 81841 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-12-25 07:07:56,762 WARNING 81841 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-12-25 07:08:03,421 INFO 81841 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-12-25 07:08:04,213: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-12-25 07:08:04,229: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-12-25 07:08:04,237: INFO/MainProcess] mingle: searching for neighbors
+[2017-12-25 07:08:05,250: INFO/MainProcess] mingle: sync with 3 nodes
+[2017-12-25 07:08:05,251: INFO/MainProcess] mingle: sync complete
+[2017-12-25 07:08:05,265: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-12-25 07:08:05,451: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-25 07:08:05.450919 recv: 2017-12-25 11:08:05.448046]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-25 10:24:53,265 WARNING 1621 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-12-25 10:24:53,287 WARNING 1621 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-12-25 10:25:05,157 WARNING 1621 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-12-25 10:25:05,196 WARNING 1621 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-12-25 10:25:13,197 INFO 1621 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-12-25 10:25:14,463: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-12-25 10:25:14,492: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-12-25 10:25:14,504: INFO/MainProcess] mingle: searching for neighbors
+[2017-12-25 10:25:15,516: INFO/MainProcess] mingle: sync with 1 nodes
+[2017-12-25 10:25:15,517: INFO/MainProcess] mingle: sync complete
+[2017-12-25 10:25:15,533: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-12-25 10:25:16,613: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-25 10:25:16.612860 recv: 2017-12-25 14:25:16.608485]
+
+
+worker: Warm shutdown (MainProcess)
+2017-12-26 09:26:21,244 WARNING 60079 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:9: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.Schedule doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class Schedule(TimeStampedModel):
+
+2017-12-26 09:26:21,259 WARNING 60079 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/openedx/core/djangoapps/schedules/models.py:31: RemovedInDjango19Warning: Model class openedx.core.djangoapps.schedules.models.ScheduleConfig doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class ScheduleConfig(ConfigurationModel):
+
+2017-12-26 09:26:38,679 WARNING 60079 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:20: RemovedInDjango19Warning: Model class survey.models.SurveyForm doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyForm(TimeStampedModel):
+
+2017-12-26 09:26:38,680 WARNING 60079 [py.warnings] base.py:116 - /edx/app/edxapp/edx-platform/lms/djangoapps/survey/models.py:160: RemovedInDjango19Warning: Model class survey.models.SurveyAnswer doesn't declare an explicit app_label and either isn't in an application in INSTALLED_APPS or else was imported before its application was loaded. This will no longer be supported in Django 1.9.
+  class SurveyAnswer(TimeStampedModel):
+
+2017-12-26 09:26:50,781 INFO 60079 [dd.dogapi] dog_stats_api.py:66 - Initializing dog api to use statsd: localhost, 8125
+[2017-12-26 09:26:56,628: WARNING/MainProcess] /edx/app/edxapp/venvs/edxapp/local/lib/python2.7/site-packages/celery/apps/worker.py:161: CDeprecationWarning: 
+Starting from version 3.2 Celery will refuse to accept pickle by default.
+
+The pickle serializer is a security concern as it may give attackers
+the ability to execute any command.  It's important to secure
+your broker from unauthorized access when using pickle, so we think
+that enabling pickle should require a deliberate action and not be
+the default choice.
+
+If you depend on pickle then you should set a setting to disable this
+warning and to be sure that everything will continue working
+when you upgrade to Celery 3.2::
+
+    CELERY_ACCEPT_CONTENT = ['pickle', 'json', 'msgpack', 'yaml']
+
+You must only enable the serializers that you will actually use.
+
+
+  warnings.warn(CDeprecationWarning(W_PICKLE_DEPRECATED))
+
+[2017-12-26 09:26:56,747: INFO/MainProcess] Connected to amqp://celery:**@127.0.0.1:5672//
+[2017-12-26 09:26:56,795: INFO/MainProcess] mingle: searching for neighbors
+[2017-12-26 09:26:57,815: INFO/MainProcess] mingle: sync with 1 nodes
+[2017-12-26 09:26:57,816: INFO/MainProcess] mingle: sync complete
+[2017-12-26 09:26:57,827: WARNING/MainProcess] celery@edx.cms.core.high.tatweer02 ready.
+[2017-12-26 09:26:58,685: WARNING/MainProcess] Substantial drift from celery@tatweer02 may mean clocks are out of sync.  Current drift is
+14400 seconds.  [orig: 2017-12-26 09:26:58.684892 recv: 2017-12-26 13:26:58.683537]
+

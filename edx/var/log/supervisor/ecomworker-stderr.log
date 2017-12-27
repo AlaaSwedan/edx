@@ -1,0 +1,302 @@
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+Traceback (most recent call last):
+  File "/edx/app/ecomworker/venvs/ecomworker/bin/celery", line 11, in <module>
+    sys.exit(main())
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/__main__.py", line 30, in main
+    main()
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 81, in main
+    cmd.execute_from_commandline(argv)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 769, in execute_from_commandline
+    super(CeleryCommand, self).execute_from_commandline(argv)))
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 311, in execute_from_commandline
+    return self.handle_argv(self.prog_name, argv[1:])
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 761, in handle_argv
+    return self.execute(command, argv)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 693, in execute
+    ).run_from_argv(self.prog_name, argv[1:], command=argv[0])
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/worker.py", line 177, in run_from_argv
+    *self.parse_options(prog_name, argv, command))
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 411, in parse_options
+    self.parser = self.create_parser(prog_name, command)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 417, in create_parser
+    self.get_options() +
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/worker.py", line 221, in get_options
+    conf = self.app.conf
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/app/base.py", line 629, in conf
+    return self._get_config()
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/app/base.py", line 453, in _get_config
+    self.loader.config_from_object(self._config_source)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 140, in config_from_object
+    obj = self._smart_import(obj, imp=self.import_from_cwd)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 158, in _smart_import
+    return imp(path)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 112, in import_from_cwd
+    package=package,
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/utils/imports.py", line 101, in import_from_cwd
+    return imp(module, package=package)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 106, in import_module
+    return importlib.import_module(module, package=package)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/edx/app/ecomworker/ecomworker/ecommerce_worker/configuration/production.py", line 12, in <module>
+    dictConfig(logger_config)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/edx/app/ecomworker/venvs/ecomworker/bin/celery", line 11, in <module>
+    sys.exit(main())
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/__main__.py", line 30, in main
+    main()
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 81, in main
+    cmd.execute_from_commandline(argv)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 769, in execute_from_commandline
+    super(CeleryCommand, self).execute_from_commandline(argv)))
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 311, in execute_from_commandline
+    return self.handle_argv(self.prog_name, argv[1:])
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 761, in handle_argv
+    return self.execute(command, argv)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 693, in execute
+    ).run_from_argv(self.prog_name, argv[1:], command=argv[0])
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/worker.py", line 177, in run_from_argv
+    *self.parse_options(prog_name, argv, command))
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 411, in parse_options
+    self.parser = self.create_parser(prog_name, command)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 417, in create_parser
+    self.get_options() +
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/worker.py", line 221, in get_options
+    conf = self.app.conf
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/app/base.py", line 629, in conf
+    return self._get_config()
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/app/base.py", line 453, in _get_config
+    self.loader.config_from_object(self._config_source)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 140, in config_from_object
+    obj = self._smart_import(obj, imp=self.import_from_cwd)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 158, in _smart_import
+    return imp(path)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 112, in import_from_cwd
+    package=package,
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/utils/imports.py", line 101, in import_from_cwd
+    return imp(module, package=package)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 106, in import_module
+    return importlib.import_module(module, package=package)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/edx/app/ecomworker/ecomworker/ecommerce_worker/configuration/production.py", line 12, in <module>
+    dictConfig(logger_config)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/edx/app/ecomworker/venvs/ecomworker/bin/celery", line 11, in <module>
+    sys.exit(main())
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/__main__.py", line 30, in main
+    main()
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 81, in main
+    cmd.execute_from_commandline(argv)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 769, in execute_from_commandline
+    super(CeleryCommand, self).execute_from_commandline(argv)))
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 311, in execute_from_commandline
+    return self.handle_argv(self.prog_name, argv[1:])
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 761, in handle_argv
+    return self.execute(command, argv)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 693, in execute
+    ).run_from_argv(self.prog_name, argv[1:], command=argv[0])
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/worker.py", line 177, in run_from_argv
+    *self.parse_options(prog_name, argv, command))
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 411, in parse_options
+    self.parser = self.create_parser(prog_name, command)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 417, in create_parser
+    self.get_options() +
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/worker.py", line 221, in get_options
+    conf = self.app.conf
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/app/base.py", line 629, in conf
+    return self._get_config()
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/app/base.py", line 453, in _get_config
+    self.loader.config_from_object(self._config_source)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 140, in config_from_object
+    obj = self._smart_import(obj, imp=self.import_from_cwd)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 158, in _smart_import
+    return imp(path)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 112, in import_from_cwd
+    package=package,
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/utils/imports.py", line 101, in import_from_cwd
+    return imp(module, package=package)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 106, in import_module
+    return importlib.import_module(module, package=package)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/edx/app/ecomworker/ecomworker/ecommerce_worker/configuration/production.py", line 12, in <module>
+    dictConfig(logger_config)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+
+worker: Warm shutdown (MainProcess)
+Traceback (most recent call last):
+  File "/edx/app/ecomworker/venvs/ecomworker/bin/celery", line 11, in <module>
+    sys.exit(main())
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/__main__.py", line 30, in main
+    main()
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 81, in main
+    cmd.execute_from_commandline(argv)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 769, in execute_from_commandline
+    super(CeleryCommand, self).execute_from_commandline(argv)))
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 311, in execute_from_commandline
+    return self.handle_argv(self.prog_name, argv[1:])
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 761, in handle_argv
+    return self.execute(command, argv)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 693, in execute
+    ).run_from_argv(self.prog_name, argv[1:], command=argv[0])
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/worker.py", line 177, in run_from_argv
+    *self.parse_options(prog_name, argv, command))
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 411, in parse_options
+    self.parser = self.create_parser(prog_name, command)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 417, in create_parser
+    self.get_options() +
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/worker.py", line 221, in get_options
+    conf = self.app.conf
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/app/base.py", line 629, in conf
+    return self._get_config()
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/app/base.py", line 453, in _get_config
+    self.loader.config_from_object(self._config_source)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 140, in config_from_object
+    obj = self._smart_import(obj, imp=self.import_from_cwd)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 158, in _smart_import
+    return imp(path)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 112, in import_from_cwd
+    package=package,
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/utils/imports.py", line 101, in import_from_cwd
+    return imp(module, package=package)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 106, in import_module
+    return importlib.import_module(module, package=package)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/edx/app/ecomworker/ecomworker/ecommerce_worker/configuration/production.py", line 12, in <module>
+    dictConfig(logger_config)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/edx/app/ecomworker/venvs/ecomworker/bin/celery", line 11, in <module>
+    sys.exit(main())
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/__main__.py", line 30, in main
+    main()
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 81, in main
+    cmd.execute_from_commandline(argv)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 769, in execute_from_commandline
+    super(CeleryCommand, self).execute_from_commandline(argv)))
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 311, in execute_from_commandline
+    return self.handle_argv(self.prog_name, argv[1:])
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 761, in handle_argv
+    return self.execute(command, argv)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 693, in execute
+    ).run_from_argv(self.prog_name, argv[1:], command=argv[0])
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/worker.py", line 177, in run_from_argv
+    *self.parse_options(prog_name, argv, command))
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 411, in parse_options
+    self.parser = self.create_parser(prog_name, command)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 417, in create_parser
+    self.get_options() +
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/worker.py", line 221, in get_options
+    conf = self.app.conf
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/app/base.py", line 629, in conf
+    return self._get_config()
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/app/base.py", line 453, in _get_config
+    self.loader.config_from_object(self._config_source)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 140, in config_from_object
+    obj = self._smart_import(obj, imp=self.import_from_cwd)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 158, in _smart_import
+    return imp(path)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 112, in import_from_cwd
+    package=package,
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/utils/imports.py", line 101, in import_from_cwd
+    return imp(module, package=package)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 106, in import_module
+    return importlib.import_module(module, package=package)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/edx/app/ecomworker/ecomworker/ecommerce_worker/configuration/production.py", line 12, in <module>
+    dictConfig(logger_config)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/edx/app/ecomworker/venvs/ecomworker/bin/celery", line 11, in <module>
+    sys.exit(main())
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/__main__.py", line 30, in main
+    main()
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 81, in main
+    cmd.execute_from_commandline(argv)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 769, in execute_from_commandline
+    super(CeleryCommand, self).execute_from_commandline(argv)))
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 311, in execute_from_commandline
+    return self.handle_argv(self.prog_name, argv[1:])
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 761, in handle_argv
+    return self.execute(command, argv)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/celery.py", line 693, in execute
+    ).run_from_argv(self.prog_name, argv[1:], command=argv[0])
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/worker.py", line 177, in run_from_argv
+    *self.parse_options(prog_name, argv, command))
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 411, in parse_options
+    self.parser = self.create_parser(prog_name, command)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/base.py", line 417, in create_parser
+    self.get_options() +
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/bin/worker.py", line 221, in get_options
+    conf = self.app.conf
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/kombu/utils/__init__.py", line 325, in __get__
+    value = obj.__dict__[self.__name__] = self.__get(obj)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/app/base.py", line 629, in conf
+    return self._get_config()
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/app/base.py", line 453, in _get_config
+    self.loader.config_from_object(self._config_source)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 140, in config_from_object
+    obj = self._smart_import(obj, imp=self.import_from_cwd)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 158, in _smart_import
+    return imp(path)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 112, in import_from_cwd
+    package=package,
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/utils/imports.py", line 101, in import_from_cwd
+    return imp(module, package=package)
+  File "/edx/app/ecomworker/venvs/ecomworker/local/lib/python2.7/site-packages/celery/loaders/base.py", line 106, in import_module
+    return importlib.import_module(module, package=package)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/edx/app/ecomworker/ecomworker/ecommerce_worker/configuration/production.py", line 12, in <module>
+    dictConfig(logger_config)
+  File "/usr/lib/python2.7/logging/config.py", line 794, in dictConfig
+    dictConfigClass(config).configure()
+  File "/usr/lib/python2.7/logging/config.py", line 576, in configure
+    '%r: %s' % (name, e))
+ValueError: Unable to configure handler 'local': [Errno 2] No such file or directory
+
+worker: Warm shutdown (MainProcess)

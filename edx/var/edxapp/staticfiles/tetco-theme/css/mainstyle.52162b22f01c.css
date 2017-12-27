@@ -1,0 +1,7 @@
+
+@font-face {
+	font-family: 'DroidKufi';
+	src: local('☺'), url("/static/css/${static.url('tetco-theme/fonts/DroidKufi-Regular.ttf")}') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
